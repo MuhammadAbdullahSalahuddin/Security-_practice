@@ -7,11 +7,12 @@ def run_scraper():
         course_name = input("Course Name: ").strip()
         num_exams = int(input("Number of exams to capture (default 1): ") or "1")
         questions_per_exam = int(input("Questions per exam (default 90): ") or "90")
+        debug = input("Enable debug mode? (y/N): ").strip().lower() == 'y'
         
         for i in range(1, num_exams + 1):
             if i > 1:
                 input(f"\nNavigate to Exam {i} and press ENTER...")
-            scraper.scrape_exam(course_name, i, questions_per_exam)
+            scraper.scrape_exam(course_name, i, questions_per_exam, debug_mode=debug)
         
         print("\n" + "="*70)
         print("✅ ALL EXAMS COMPLETED!")

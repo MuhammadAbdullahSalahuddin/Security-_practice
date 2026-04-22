@@ -48,6 +48,55 @@ class QuizScraper(BaseBrowser):
                 self.driver.switch_to.default_content()
                 continue
 
+    def _debug_page_structure(self):
+        """
+        Debug helper: Print the DOM structure to help identify correct selectors.
+        Call this after clicking 'Check Answer' to see what's available.
+        """
+        print("\n" + "="*70)
+        print("DEBUG: Page Structure After 'Check Answer'")
+        print("="*70)
+        
+        # Check for explanation containers
+        print("\n1. Looking for explanation containers:")
+        test_selectors = [
+            "#overall-explanation",
+            "div[class*='explanation']",
+            "div[class*='result']",
+            "div[class*='feedback']",
+            "[data-purpose*='explanation']"
+        ]
+        for sel in test_selectors:
+            try:
+                els = self.driver.find_elements(By.CSS_SELECTOR, sel)
+                if els:
+                    print(f"  ✓ Found: {sel} ({len(els)} elements)")
+                    if els[0].is_displayed():
+                        print(f"    Text preview: {els[0].text[:100]}...")
+            except:
+                pass
+        
+        # Check option structure
+        print("\n2. Looking at option elements:")
+        option_selectors = [
+            "li[class*='answer']",
+            "div[class*='option']"
+        ]
+        for sel in option_selectors:
+            try:
+                els = self.driver.find_elements(By.CSS_SELECTOR, sel)
+                if els and len(els) > 0:
+                    print(f"  ✓ Found: {sel} ({len(els)} options)")
+                    # Show HTML of first option
+                    print(f"    First option HTML:")
+                    html = els[0].get_attribute("outerHTML")
+                    print(f"    {html[:200]}...")
+            except:
+                pass
+        
+        print("="*70 + "\n")
+        input("Press ENTER to continue...")
+
     def _detect_required_selections(self) -> int:
         """Detect how many options need to be selected (for multiple choice)"""
         instruction_selectors = [
@@ -143,8 +192,20 @@ class QuizScraper(BaseBrowser):
                 found = self.driver.find_elements(By.CSS_SELECTOR, sel)
                 if found and found[0].is_displayed():
                     for idx, el in enumerate(found):
-                        text = el.text.strip()
-                        if not text:
+                        # Get the main option text (before any explanation)
+                        # Try to find the option label/text element first
+                        option_text = ""
+                        option_explanation = ""
+                        
+                        try:
+                            # Look for the main option text element
+                            label_elem = el.find_element(By.CSS_SELECTOR, "label, span[class*='answer-text'], div[class*='answer-text']")
+                            option_text = label_elem.text.strip()
+                        except:
+                            # Fallback: use the full text but we'll clean it later
+                            option_text = el.text.strip()
+                        
+                        if not option_text:
                             continue
                         
                         # Check if this option is marked as correct
@@ -155,31 +216,57 @@ class QuizScraper(BaseBrowser):
                         if any(x in html for x in ["correct", "success", "check-circle"]):
                             is_correct = True
                         
+                        # Extract individual option explanation (if exists)
+                        # This appears within each option after submission
+                        try:
+                            expl_elem = el.find_element(By.CSS_SELECTOR, "div[class*='explanation'], span[class*='explanation'], div[class*='feedback']")
+                            option_explanation = expl_elem.text.strip()
+                            # Remove explanation from option text if it was included
+                            if option_explanation and option_explanation in option_text:
+                                option_text = option_text.replace(option_explanation, "").strip()
+                        except:
+                            pass
+                        
                         if is_correct:
                             q_data['correct_indices'].append(idx)
                         
                         q_data['options'].append(
-                            Option(text=text, is_correct=is_correct, index=idx)
+                            Option(
+                                text=option_text, 
+                                is_correct=is_correct, 
+                                index=idx,
+                                explanation=option_explanation
+                            )
                         )
                     break
             
-            # 4. Extract Explanation (shown after submitting answer)
+            # 4. Extract Overall Explanation (shown after submitting answer)
+            # This is the general explanation for the entire question, not individual options
             explanation_selectors = [
-                "div[class*='result-pane--answer-result-pane']",
-                "div[class*='domain-pane']",
-                "div[data-testid='description']"
+                "#overall-explanation",  # The ID you specified
+                "div[id='overall-explanation']",
+                "div[class*='explanation--explanation']",
+                "div[class*='quiz-result-panel']",
+                "[data-purpose='question-explanation']"
             ]
             
             for sel in explanation_selectors:
-                els = self.driver.find_elements(By.CSS_SELECTOR, sel)
-                if els:
-                    q_data['explanation'] = "\n".join([
-                        e.text.strip() for e in els if e.is_displayed()
-                    ])
-                    break
+                try:
+                    els = self.driver.find_elements(By.CSS_SELECTOR, sel)
+                    if els and els[0].is_displayed():
+                        q_data['explanation'] = els[0].text.strip()
+                        break
+                except:
+                    continue
                     
         except Exception as e:
             print(f"⚠️ Extraction Warning: {e}")
+        
+        # Debug output to verify extraction
+        print(f"  ✓ Question: {q_data['text'][:50]}...")
+        print(f"  ✓ Options: {len(q_data['options'])} found")
+        print(f"  ✓ Correct: {q_data['correct_indices']}")
+        print(f"  ✓ Overall Explanation: {'Yes' if q_data['explanation'] else 'No'}")
         
         return Question(
             question_number=q_data['number'],
@@ -190,7 +277,7 @@ class QuizScraper(BaseBrowser):
             explanation=q_data['explanation']
         )
 
-    def scrape_exam(self, course_name: str, exam_number: int, total_questions: int = 90):
+    def scrape_exam(self, course_name: str, exam_number: int, total_questions: int = 90, debug_mode: bool = False):
         """
         Main scraping loop for one exam.
         For each question: select random answer → check → extract data → screenshot → save → next
@@ -237,6 +324,10 @@ class QuizScraper(BaseBrowser):
                     "button[data-purpose='check-answer']"
                 ])
                 time.sleep(5)  # Wait for explanation to load
+                
+                # Optional: Debug page structure (only on first question if enabled)
+                if debug_mode and q_num == 1:
+                    self._debug_page_structure()
                 
                 # Extract all data from DOM
                 question_obj = self._extract_question_data(q_num, q_type)
