@@ -57,14 +57,46 @@ class QuizScraper(BaseBrowser):
         print("DEBUG: Page Structure After 'Check Answer'")
         print("="*70)
         
+        # Check for answer divs with data-purpose="answer"
+        print("\n1. Looking for answer containers [div[data-purpose='answer']]:")
+        try:
+            answer_divs = self.driver.find_elements(By.CSS_SELECTOR, 'div[data-purpose="answer"]')
+            print(f"  ✓ Found {len(answer_divs)} answer div(s)")
+            
+            if len(answer_divs) > 0:
+                print("\n  First answer div structure:")
+                first = answer_divs[0]
+                print(f"    Outer HTML (first 300 chars):")
+                print(f"    {first.get_attribute('outerHTML')[:300]}...")
+                
+                # Check for #answer-text
+                try:
+                    text_elem = first.find_element(By.CSS_SELECTOR, '#answer-text')
+                    print(f"\n    ✓ Found #answer-text: '{text_elem.text}'")
+                except:
+                    print(f"\n    ✗ #answer-text not found")
+                
+                # Check for state classes
+                class_attr = first.get_attribute("class")
+                print(f"    Class attribute: {class_attr}")
+                
+                # Check child divs
+                try:
+                    child_divs = first.find_elements(By.CSS_SELECTOR, 'div[class*="answer-"]')
+                    print(f"    Found {len(child_divs)} child divs with 'answer-' in class")
+                    for i, child in enumerate(child_divs[:3]):  # Show first 3
+                        print(f"      Child {i}: {child.get_attribute('class')}")
+                except:
+                    pass
+        except Exception as e:
+            print(f"  ✗ Error: {e}")
+        
         # Check for explanation containers
-        print("\n1. Looking for explanation containers:")
+        print("\n2. Looking for explanation containers:")
         test_selectors = [
             "#overall-explanation",
             "div[class*='explanation']",
-            "div[class*='result']",
-            "div[class*='feedback']",
-            "[data-purpose*='explanation']"
+            "div[data-purpose='question-explanation']"
         ]
         for sel in test_selectors:
             try:
@@ -73,24 +105,6 @@ class QuizScraper(BaseBrowser):
                     print(f"  ✓ Found: {sel} ({len(els)} elements)")
                     if els[0].is_displayed():
                         print(f"    Text preview: {els[0].text[:100]}...")
-            except:
-                pass
-        
-        # Check option structure
-        print("\n2. Looking at option elements:")
-        option_selectors = [
-            "li[class*='answer']",
-            "div[class*='option']"
-        ]
-        for sel in option_selectors:
-            try:
-                els = self.driver.find_elements(By.CSS_SELECTOR, sel)
-                if els and len(els) > 0:
-                    print(f"  ✓ Found: {sel} ({len(els)} options)")
-                    # Show HTML of first option
-                    print(f"    First option HTML:")
-                    html = els[0].get_attribute("outerHTML")
-                    print(f"    {html[:200]}...")
             except:
                 pass
         
@@ -160,94 +174,143 @@ class QuizScraper(BaseBrowser):
     def _extract_question_data(self, q_num: int, q_type: str) -> Question:
         """
         Extract all question data from DOM after 'Check Answer' is clicked.
-        This gets: question text, all options, correct answers, and explanation.
+        Uses exact selectors for Udemy's post-answer state.
         """
         q_data = {
             'number': str(q_num),
             'text': "Not Found",
-            'options': [],
+            'all_options': [],
+            'correct_answers': [],
+            'user_incorrect_answers': [],
             'correct_indices': [],
             'explanation': ""
         }
         
         try:
             # 1. Extract Question Number
-            for sel in ["div[class*='question-title']", "form[data-testid='mc-quiz-question'] span"]:
+            number_selectors = [
+                "div[class*='question-title']",
+                "form[data-testid='mc-quiz-question'] span",
+                "div[class*='question-number']"
+            ]
+            for sel in number_selectors:
                 els = self.driver.find_elements(By.CSS_SELECTOR, sel)
                 for e in els:
                     if "Question" in e.text:
                         q_data['number'] = e.text.replace(':', '').strip()
                         break
+                if q_data['number'] != str(q_num):
+                    break
 
             # 2. Extract Question Text
-            for sel in ["#question-prompt", "div[class*='mc-quiz-question--question-prompt']"]:
+            text_selectors = [
+                "#question-prompt",
+                "div[class*='mc-quiz-question--question-prompt']",
+                "div[data-purpose='question-prompt']"
+            ]
+            for sel in text_selectors:
                 els = self.driver.find_elements(By.CSS_SELECTOR, sel)
-                if els:
+                if els and els[0].is_displayed():
                     q_data['text'] = els[0].text.strip()
                     break
             
-            # 3. Extract Options and Identify Correct Answers
-            # After clicking "Check Answer", Udemy marks correct answers with CSS classes
-            for sel in ["li[class*='mc-quiz-question--answer']", "ul[class*='ud-unstyled-list'] li"]:
-                found = self.driver.find_elements(By.CSS_SELECTOR, sel)
-                if found and found[0].is_displayed():
-                    for idx, el in enumerate(found):
-                        # Get the main option text (before any explanation)
-                        # Try to find the option label/text element first
-                        option_text = ""
-                        option_explanation = ""
-                        
-                        try:
-                            # Look for the main option text element
-                            label_elem = el.find_element(By.CSS_SELECTOR, "label, span[class*='answer-text'], div[class*='answer-text']")
-                            option_text = label_elem.text.strip()
-                        except:
-                            # Fallback: use the full text but we'll clean it later
-                            option_text = el.text.strip()
-                        
-                        if not option_text:
-                            continue
-                        
-                        # Check if this option is marked as correct
-                        is_correct = False
-                        html = el.get_attribute("outerHTML").lower()
-                        
-                        # Udemy uses these indicators for correct answers
-                        if any(x in html for x in ["correct", "success", "check-circle"]):
-                            is_correct = True
-                        
-                        # Extract individual option explanation (if exists)
-                        # This appears within each option after submission
-                        try:
-                            expl_elem = el.find_element(By.CSS_SELECTOR, "div[class*='explanation'], span[class*='explanation'], div[class*='feedback']")
-                            option_explanation = expl_elem.text.strip()
-                            # Remove explanation from option text if it was included
-                            if option_explanation and option_explanation in option_text:
-                                option_text = option_text.replace(option_explanation, "").strip()
-                        except:
-                            pass
-                        
-                        if is_correct:
-                            q_data['correct_indices'].append(idx)
-                        
-                        q_data['options'].append(
-                            Option(
-                                text=option_text, 
-                                is_correct=is_correct, 
-                                index=idx,
-                                explanation=option_explanation
-                            )
-                        )
-                    break
+            # 3. Extract ALL Options using exact selectors
+            # Find all answer containers: div[data-purpose="answer"]
+            answer_divs = self.driver.find_elements(By.CSS_SELECTOR, 'div[data-purpose="answer"]')
             
-            # 4. Extract Overall Explanation (shown after submitting answer)
-            # This is the general explanation for the entire question, not individual options
+            print(f"  📋 Found {len(answer_divs)} answer divs")
+            
+            for idx, answer_div in enumerate(answer_divs):
+                try:
+                    # Get the option text from #answer-text inside this div
+                    option_text = ""
+                    try:
+                        text_elem = answer_div.find_element(By.CSS_SELECTOR, '#answer-text')
+                        option_text = text_elem.text.strip()
+                    except:
+                        # Fallback: try other text selectors
+                        try:
+                            text_elem = answer_div.find_element(By.CSS_SELECTOR, '[id*="answer-text"]')
+                            option_text = text_elem.text.strip()
+                        except:
+                            option_text = answer_div.text.strip()
+                    
+                    if not option_text:
+                        continue
+                    
+                    # Determine the state by checking the class attribute
+                    # Get the wrapper div inside answer_div that has the state classes
+                    state = "skipped"
+                    is_correct = False
+                    is_user_selected = False
+                    
+                    # Check the answer_div itself and its children for state classes
+                    html_content = answer_div.get_attribute("outerHTML")
+                    class_attr = answer_div.get_attribute("class") or ""
+                    
+                    # Also check immediate child divs for the state classes
+                    try:
+                        child_divs = answer_div.find_elements(By.CSS_SELECTOR, 'div[class*="answer-"]')
+                        for child in child_divs:
+                            child_class = child.get_attribute("class") or ""
+                            class_attr += " " + child_class
+                    except:
+                        pass
+                    
+                    # Determine state based on class names
+                    if "answer-correct" in class_attr or "answer-correct" in html_content:
+                        state = "correct"
+                        is_correct = True
+                        q_data['correct_answers'].append(option_text)
+                        q_data['correct_indices'].append(idx)
+                    elif "answer-incorrect" in class_attr or "answer-incorrect" in html_content:
+                        state = "incorrect"
+                        is_user_selected = True
+                        q_data['user_incorrect_answers'].append(option_text)
+                    elif "answer-skipped" in class_attr or "answer-skipped" in html_content:
+                        state = "skipped"
+                    
+                    # Try to extract individual option explanation
+                    option_explanation = ""
+                    try:
+                        # Look for explanation elements within this answer div
+                        expl_selectors = [
+                            "div[class*='explanation']",
+                            "span[class*='explanation']",
+                            "div[class*='feedback']",
+                            "div[data-purpose='explanation']"
+                        ]
+                        for expl_sel in expl_selectors:
+                            expl_elem = answer_div.find_element(By.CSS_SELECTOR, expl_sel)
+                            if expl_elem.is_displayed():
+                                option_explanation = expl_elem.text.strip()
+                                break
+                    except:
+                        pass
+                    
+                    # Create Option object
+                    option_obj = Option(
+                        text=option_text,
+                        is_correct=is_correct,
+                        is_user_selected=is_user_selected,
+                        index=idx,
+                        explanation=option_explanation,
+                        state=state
+                    )
+                    
+                    q_data['all_options'].append(option_obj)
+                    
+                except Exception as e:
+                    print(f"  ⚠️ Error processing option {idx}: {e}")
+                    continue
+            
+            # 4. Extract Overall Explanation from #overall-explanation
             explanation_selectors = [
-                "#overall-explanation",  # The ID you specified
+                "#overall-explanation",
                 "div[id='overall-explanation']",
                 "div[class*='explanation--explanation']",
-                "div[class*='quiz-result-panel']",
-                "[data-purpose='question-explanation']"
+                "div[data-purpose='question-explanation']",
+                "div[class*='quiz-result-panel']"
             ]
             
             for sel in explanation_selectors:
@@ -260,19 +323,23 @@ class QuizScraper(BaseBrowser):
                     continue
                     
         except Exception as e:
-            print(f"⚠️ Extraction Warning: {e}")
+            print(f"⚠️ Extraction Error: {e}")
         
         # Debug output to verify extraction
         print(f"  ✓ Question: {q_data['text'][:50]}...")
-        print(f"  ✓ Options: {len(q_data['options'])} found")
-        print(f"  ✓ Correct: {q_data['correct_indices']}")
+        print(f"  ✓ All Options: {len(q_data['all_options'])} found")
+        print(f"  ✓ Correct Answers: {len(q_data['correct_answers'])} - {q_data['correct_answers']}")
+        print(f"  ✓ User Incorrect: {len(q_data['user_incorrect_answers'])} - {q_data['user_incorrect_answers']}")
         print(f"  ✓ Overall Explanation: {'Yes' if q_data['explanation'] else 'No'}")
         
         return Question(
             question_number=q_data['number'],
             question_text=q_data['text'],
             question_type=q_type,
-            options=q_data['options'],
+            all_options=q_data['all_options'],
+            correct_answers=q_data['correct_answers'],
+            user_incorrect_answers=q_data['user_incorrect_answers'],
+            options=q_data['all_options'],  # Legacy compatibility
             correct_indices=q_data['correct_indices'],
             explanation=q_data['explanation']
         )
@@ -382,8 +449,13 @@ class QuizScraper(BaseBrowser):
                 'timestamp': datetime.now().isoformat()
             }
             
-            # Convert Option objects to dicts
+            # Convert Option objects to dicts in both 'options' and 'all_options' fields
             for q in data['questions']:
-                q['options'] = [vars(o) for o in q['options']]
+                # Convert all_options
+                if 'all_options' in q:
+                    q['all_options'] = [vars(o) for o in q['all_options']]
+                # Convert options (legacy field)
+                if 'options' in q:
+                    q['options'] = [vars(o) for o in q['options']]
             
             json.dump(data, f, indent=2, ensure_ascii=False)
