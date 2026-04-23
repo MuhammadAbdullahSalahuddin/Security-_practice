@@ -417,7 +417,10 @@ class QuizScraper(BaseBrowser):
                     ])
                 
             except Exception as e:
-                input(f"❌ Error on Q{q_num}: {e}. Resolve manually then ENTER...")
+                print(f"❌ Error on Q{q_num}: {e}")
+                import traceback
+                traceback.print_exc()
+                input(f"Resolve manually then ENTER...")
         
         print(f"\n✅ Exam {exam_number} complete! Data saved to {exam_dir}")
 
@@ -441,21 +444,52 @@ class QuizScraper(BaseBrowser):
 
     def _save_incremental_json(self, course: str, exam_num: int, questions: list, exam_dir: Path):
         """Save extracted data to JSON after each question (prevents data loss)"""
+        
+        def to_dict(obj):
+            """Recursively convert dataclass objects to dicts"""
+            if isinstance(obj, dict):
+                return obj
+            elif hasattr(obj, '__dict__'):
+                return vars(obj)
+            else:
+                return obj
+        
+        def convert_options_list(options_list):
+            """Convert a list of Option objects (or dicts) to list of dicts"""
+            if not options_list:
+                return []
+            result = []
+            for opt in options_list:
+                if isinstance(opt, dict):
+                    result.append(opt)
+                else:
+                    result.append(vars(opt))
+            return result
+        
         with open(exam_dir / "exam_data.json", 'w', encoding='utf-8') as f:
+            # Convert questions to dicts
+            questions_data = []
+            for q in questions:
+                if isinstance(q, dict):
+                    q_dict = q
+                else:
+                    q_dict = vars(q)
+                
+                # Convert all_options list
+                if 'all_options' in q_dict:
+                    q_dict['all_options'] = convert_options_list(q_dict['all_options'])
+                
+                # Convert options list (legacy)
+                if 'options' in q_dict:
+                    q_dict['options'] = convert_options_list(q_dict['options'])
+                
+                questions_data.append(q_dict)
+            
             data = {
                 'course': course,
                 'exam_number': exam_num,
-                'questions': [vars(q) for q in questions],
+                'questions': questions_data,
                 'timestamp': datetime.now().isoformat()
             }
-            
-            # Convert Option objects to dicts in both 'options' and 'all_options' fields
-            for q in data['questions']:
-                # Convert all_options
-                if 'all_options' in q:
-                    q['all_options'] = [vars(o) for o in q['all_options']]
-                # Convert options (legacy field)
-                if 'options' in q:
-                    q['options'] = [vars(o) for o in q['options']]
             
             json.dump(data, f, indent=2, ensure_ascii=False)
