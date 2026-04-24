@@ -1429,17 +1429,56 @@
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_4/q017.png"
     },
     {
-      "question_number": "Question 18",
-      "question_text": "Which of the following BEST describes a playbook in cybersecurity?",
-      "question_type": "multiple_choice",
-      "all_options": [],
-      "correct_answers": [],
-      "user_incorrect_answers": [],
-      "options": [],
-      "correct_indices": [],
-      "explanation": "",
-      "screenshot_path": "quiz_screenshots/Practice_set_1/exam_4/q018.png"
+  "question_number": "Question 18",
+  "question_text": "Which of the following BEST describes a playbook in cybersecurity?",
+  "all_options": [
+    {
+      "text": "A documentation of all cyberattacks that an organization has faced over the years.",
+      "is_correct": false,
+      "is_user_selected": true,
+      "index": 0,
+      "state": "incorrect"
     },
+    {
+      "text": "A data-driven standard operating procedure (SOP) for responding to cyberthreats.",
+      "is_correct": true,
+      "is_user_selected": false,
+      "index": 1,
+      "state": "correct"
+    },
+    {
+      "text": "A manual guide on installing and setting up SIEM systems.",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 2,
+      "state": "skipped"
+    },
+    {
+      "text": "A listing of all junior analysts and their assigned tasks in the cybersecurity team.",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 3,
+      "state": "skipped"
+    }
+  ],
+  "correct_answers": [
+    "A data-driven standard operating procedure (SOP) for responding to cyberthreats."
+  ],
+  "user_incorrect_answers": [
+    "A documentation of all cyberattacks that an organization has faced over the years."
+  ],
+  "user_selected": [
+    "A documentation of all cyberattacks that an organization has faced over the years."
+  ],
+  "additional_information": {
+    "question_type": "multiple_choice",
+    "correct_indices": [
+      1
+    ],
+    "explanation": "OBJ: 5.1 - A playbook, also known as a runbook, guides junior analysts through steps to detect and handle cyberthreats such as phishing, SQL injection, and others, starting with a SIEM report. A playbook is not a personnel roster; it's a guideline to address specific cyberthreat scenarios effectively. While historical records are crucial, a playbook is a proactive tool designed to guide the response to specific types of cyber threats. While SIEM systems are essential in cybersecurity, a playbook specifically details the response process to certain cyberthreats and not the setup of the SIEM system.\n  For support or reporting issues, include Question ID: \n654499c34ff4a550f0eb01ff in your ticket. Thank you.",
+    "screenshot_path": "image_78c850.png"
+  }
+},
     {
       "question_number": "Question 19",
       "question_text": "Future Tech, an industrial heating and cooling company, seeks to implement a security measure to restrict unauthorized entry into their facility. Which of the following is an example of a physical security control the company could use?",
