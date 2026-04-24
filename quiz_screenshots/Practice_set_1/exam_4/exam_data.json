@@ -1515,17 +1515,56 @@
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q018.png"
     },
     {
-      "question_number": "Question 19",
-      "question_text": "When evaluating different architecture models, which of the following factors is MOST crucial to consider in terms of compute considerations for security optimization?",
-      "question_type": "multiple_choice",
-      "all_options": [],
-      "correct_answers": [],
-      "user_incorrect_answers": [],
-      "options": [],
-      "correct_indices": [],
-      "explanation": "",
-      "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q019.png"
+  "question_number": "Question 19",
+  "question_text": "When evaluating different architecture models, which of the following factors is MOST crucial to consider in terms of compute considerations for security optimization?",
+  "all_options": [
+    {
+      "text": "Resource allocation and scalability",
+      "is_correct": true,
+      "is_user_selected": false,
+      "index": 0,
+      "state": "correct"
     },
+    {
+      "text": "Deployment frequency of instances",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 1,
+      "state": "skipped"
+    },
+    {
+      "text": "Cost-effectiveness of the service",
+      "is_correct": false,
+      "is_user_selected": true,
+      "index": 2,
+      "state": "incorrect"
+    },
+    {
+      "text": "Geographical distribution",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 3,
+      "state": "skipped"
+    }
+  ],
+  "correct_answers": [
+    "Resource allocation and scalability"
+  ],
+  "user_incorrect_answers": [
+    "Cost-effectiveness of the service"
+  ],
+  "user_selected": [
+    "Cost-effectiveness of the service"
+  ],
+  "additional_information": {
+    "question_type": "multiple_choice",
+    "correct_indices": [
+      0
+    ],
+    "explanation": "OBJ: 3.1 - Compute considerations encompass the ability of an architecture to allocate resources efficiently and scale as needed. Efficient resource management is vital for handling varying workloads, especially during high-demand scenarios, which can also be targets for attacks. Although cost considerations are essential, they don't specifically address the compute capacity and efficiency of an architecture from a security perspective. While frequent deployments might suggest active development and possibly security updates, it does not directly relate to the compute capabilities of an architecture. While distributing resources geographically can enhance availability and potentially security, it doesn't inherently convey the compute strengths or weaknesses of an architecture model. For support or reporting issues, include Question ID: 64bf7c585ff7b41f675e423a in your ticket. Thank you.",
+    "screenshot_path": "image_794456.png"
+  }
+},
     {
       "question_number": "Question 20",
       "question_text": "Kelly Innovations LLC, an e-commerce website, experienced a sudden spike in its incoming traffic. The website's logs showed that thousands of requests were being sent per second, originating from just a handful of IP addresses. However, upon further analysis, it was revealed that the request packets contained IP addresses that were not part of the originating addresses. The server quickly became overloaded, preventing access to legitimate users. Which of the following types of malicious activities is BEST described in this scenario?",
@@ -2525,17 +2564,54 @@
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q031.png"
     },
     {
-      "question_number": "Question 32",
-      "question_text": "Sasha often travels for work. Her company's secure system detects her login attempts based on her geographical location, allowing access only if she's logging in from an approved country. This system considers which factor of multi-factor authentication?",
-      "question_type": "multiple_choice",
-      "all_options": [],
-      "correct_answers": [],
-      "user_incorrect_answers": [],
-      "options": [],
-      "correct_indices": [],
-      "explanation": "",
-      "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q032.png"
+  "question_number": "Question 32",
+  "question_text": "Sasha often travels for work. Her company's secure system detects her login attempts based on her geographical location, allowing access only if she's logging in from an approved country. This system considers which factor of multi-factor authentication?",
+  "all_options": [
+    {
+      "text": "Something you have",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 0,
+      "state": "skipped"
     },
+    {
+      "text": "Somewhere you are",
+      "is_correct": true,
+      "is_user_selected": true,
+      "index": 1,
+      "state": "correct"
+    },
+    {
+      "text": "Something you do",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 2,
+      "state": "skipped"
+    },
+    {
+      "text": "Something you know",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 3,
+      "state": "skipped"
+    }
+  ],
+  "correct_answers": [
+    "Somewhere you are"
+  ],
+  "user_incorrect_answers": [],
+  "user_selected": [
+    "Somewhere you are"
+  ],
+  "additional_information": {
+    "question_type": "multiple_choice",
+    "correct_indices": [
+      1
+    ],
+    "explanation": "OBJ 4.6: Somewhere you are considers the geographical location or \nnetwork from which an access request originates. Something you do \nrelates to behavioral attributes, like signature patterns or keystrokes.\n Something you know pertains to knowledge-based information, like \npasswords or PINs. Something you have pertains to having a physical \ndevice or token Lily might possess, not her location.\n  For support or reporting issues, include Question ID: \n65446118878b620a335d517c in your ticket. Thank you.",
+    "screenshot_path": "image_78ea5a.png"
+  }
+},
     {
       "question_number": "Question 33",
       "question_text": "When entering his password online, Ivan notices that each letter is quickly replaced by a dot. He finds this annoying and wishes that it wouldn't happen. It has resulted in him entering the wrong password because there are as many dots as the number of characters in his password. What is Ivan observing?",
