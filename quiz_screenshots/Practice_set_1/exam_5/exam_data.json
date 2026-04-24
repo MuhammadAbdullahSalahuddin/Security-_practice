@@ -3053,17 +3053,56 @@
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_3/q036.png"
     },
     {
-      "question_number": "Question 37",
-      "question_text": "Wonka Industries, a multinational company, is planning to open a new office in a different city. The company's IT team wants to determine if any new security requirements are needed for the new office. They want to ensure that the computing resources will be adequately protected against potential threats. Which of the following should Wonka Industries do to determine if new requirements are needed?",
-      "question_type": "multiple_choice",
-      "all_options": [],
-      "correct_answers": [],
-      "user_incorrect_answers": [],
-      "options": [],
-      "correct_indices": [],
-      "explanation": "",
-      "screenshot_path": "quiz_screenshots/Practice_set_1/exam_3/q037.png"
+  "question_number": "Question 37",
+  "question_text": "Wonka Industries, a multinational company, is planning to open a new office in a different city. The company's IT team wants to determine if any new security requirements are needed for the new office. They want to ensure that the computing resources will be adequately protected against potential threats. Which of the following should Wonka Industries do to determine if new requirements are needed?",
+  "all_options": [
+    {
+      "text": "Implementing biometric authentication for all employees",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 0,
+      "state": "skipped"
     },
+    {
+      "text": "Conducting a thorough site survey",
+      "is_correct": false,
+      "is_user_selected": true,
+      "index": 1,
+      "state": "incorrect"
+    },
+    {
+      "text": "Conducting a vulnerability assessment and penetration testing",
+      "is_correct": true,
+      "is_user_selected": false,
+      "index": 2,
+      "state": "correct"
+    },
+    {
+      "text": "Installing CCTV cameras in all office areas",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 3,
+      "state": "skipped"
+    }
+  ],
+  "correct_answers": [
+    "Conducting a vulnerability assessment and penetration testing"
+  ],
+  "user_incorrect_answers": [
+    "Conducting a thorough site survey"
+  ],
+  "user_selected": [
+    "Conducting a thorough site survey"
+  ],
+  "additional_information": {
+    "question_type": "multiple_choice",
+    "correct_indices": [
+      2
+    ],
+    "explanation": "OBJ 4.1: Performing a vulnerability assessment and penetration testing \nis a crucial security technique. This process helps identify potential \nweaknesses and security flaws in the computing resources and the network\n infrastructure of the new office. The results of this assessment will \naid in developing a robust security plan to protect the computing \nresources effectively. Site surveys are used to install Wi-Fi systems \nwhere they consider how signals might be blocked by things like solid \nwalls and other forms of interference.  They are used to determine where\n WAPs should be placed to provide the strongest, most reliable signal. \nBiometric authentication is more of an access control measure and does \nnot address potential vulnerabilities or risks specific to the new \noffice's computing resources. Installing CCTV cameras is a valid \nsecurity measure for physical security, but it doesn't directly address \ncomputing resource security during a site survey. It mainly helps with \nmonitoring and recording activities within the office premises, but it \ndoesn't assess the security posture of the IT infrastructure.\n  For support or reporting issues, include Question ID: \n64b9d7a5eef725ae5880c29e in your ticket. Thank you.",
+    "screenshot_path": "image_78de81.png"
+  }
+},
     {
       "question_number": "Question 38",
       "question_text": "Which term refers to ensuring data is available and usable when needed by authorized users?",
@@ -3815,17 +3854,56 @@
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_3/q046.png"
     },
     {
-      "question_number": "Question 47",
-      "question_text": "In digital forensics, which of the following is MOST crucial to consider when determining the requirements for an investigative report?",
-      "question_type": "multiple_choice",
-      "all_options": [],
-      "correct_answers": [],
-      "user_incorrect_answers": [],
-      "options": [],
-      "correct_indices": [],
-      "explanation": "",
-      "screenshot_path": "quiz_screenshots/Practice_set_1/exam_3/q047.png"
+  "question_number": "Question 47",
+  "question_text": "In digital forensics, which of the following is MOST crucial to consider when determining the requirements for an investigative report?",
+  "all_options": [
+    {
+      "text": "The personal preferences of the forensic analyst",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 0,
+      "state": "skipped"
     },
+    {
+      "text": "The intended audience of the report",
+      "is_correct": true,
+      "is_user_selected": false,
+      "index": 1,
+      "state": "correct"
+    },
+    {
+      "text": "The geographical location of the incident",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 2,
+      "state": "skipped"
+    },
+    {
+      "text": "The software tools used in the investigation",
+      "is_correct": false,
+      "is_user_selected": true,
+      "index": 3,
+      "state": "incorrect"
+    }
+  ],
+  "correct_answers": [
+    "The intended audience of the report"
+  ],
+  "user_incorrect_answers": [
+    "The software tools used in the investigation"
+  ],
+  "user_selected": [
+    "The software tools used in the investigation"
+  ],
+  "additional_information": {
+    "question_type": "multiple_choice",
+    "correct_indices": [
+      1
+    ],
+    "explanation": "OBJ 4.8: Understanding the audience, whether it's legal professionals, \nexecutives, or technical teams, determines the report's depth, language,\n and emphasis. An objective, standardized approach is favored in digital\n forensics over individual preferences in reporting. While important for\n internal records and repeatability, the specific tools used don't \ntypically define reporting requirements. While the location might \ninfluence some elements of a case, it doesn't typically dictate the \nstructure or content of the report itself.\n  For support or reporting issues, include Question ID: \n6543e5ea37ac18cc00032e4d in your ticket. Thank you.",
+    "screenshot_path": "image_78d412.png"
+  }
+},
     {
       "question_number": "Question 48",
       "question_text": "Your company has recently acquired a batch of new servers for the software development department. As a security specialist, you are tasked with setting up the initial environment before handing it over to the developers. You have just installed the operating system, and the next step involves a baseline deployment process. Which of the following statements would be the BEST next course of action?",
@@ -6497,17 +6575,54 @@
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_3/q079.png"
     },
     {
-      "question_number": "Question 80",
-      "question_text": "Which of the following terms refer to situations in which specific laws and regulations set by a country's government dictate how the personal data of its citizens should be collected, stored, and processed?",
-      "question_type": "multiple_choice",
-      "all_options": [],
-      "correct_answers": [],
-      "user_incorrect_answers": [],
-      "options": [],
-      "correct_indices": [],
-      "explanation": "",
-      "screenshot_path": "quiz_screenshots/Practice_set_1/exam_3/q080.png"
+  "question_number": "Question 80",
+  "question_text": "Which of the following terms refer to situations in which specific laws and regulations set by a country's government dictate how the personal data of its citizens should be collected, stored, and processed?",
+  "all_options": [
+    {
+      "text": "Data encryption",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 0,
+      "state": "skipped"
     },
+    {
+      "text": "General Data Protection Regulation (GDPR)",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 1,
+      "state": "skipped"
+    },
+    {
+      "text": "Consent management",
+      "is_correct": false,
+      "is_user_selected": false,
+      "index": 2,
+      "state": "skipped"
+    },
+    {
+      "text": "National legal implications",
+      "is_correct": true,
+      "is_user_selected": true,
+      "index": 3,
+      "state": "correct"
+    }
+  ],
+  "correct_answers": [
+    "National legal implications"
+  ],
+  "user_incorrect_answers": [],
+  "user_selected": [
+    "National legal implications"
+  ],
+  "additional_information": {
+    "question_type": "multiple_choice",
+    "correct_indices": [
+      3
+    ],
+    "explanation": "OBJ: 5.4 - National legal implications are laws and regulations set at \nthe country level that outline the requirements and boundaries for data \nprotection and privacy. Data encryption is a method used to protect data\n from unauthorized access by converting it into a code. Consent \nmanagement is a process that ensures organizations obtain and manage the\n consent of individuals before collecting or processing their personal \ndata. The GDPR is a regulation enacted by the European Union to ensure \ndata protection and privacy for all its citizens.\n  For support or reporting issues, include Question ID: \n64bf61030620f92445ad768c in your ticket. Thank you.",
+    "screenshot_path": "image_78cfd5.png"
+  }
+},
     {
       "question_number": "Question 81",
       "question_text": "Which component of the Zero Trust architecture is responsible for enforcing policies by allowing or denying access to resources?",
