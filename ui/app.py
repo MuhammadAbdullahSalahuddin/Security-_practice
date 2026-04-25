@@ -355,6 +355,22 @@ def inject_css():
 
 
 # ─────────────────────────────────────────────
+# HELPERS
+# ─────────────────────────────────────────────
+import re as _re
+
+def _parse_question_number(raw) -> int:
+    """Convert any question_number representation to int.
+    Handles: 1, "1", "Question 1", "Question 1:", etc.
+    The scraper stores question_number as "Question N" strings in MongoDB.
+    """
+    if isinstance(raw, int):
+        return raw
+    m = _re.search(r'\d+', str(raw))
+    return int(m.group()) if m else 0
+
+
+# ─────────────────────────────────────────────
 # API CLIENT
 # ─────────────────────────────────────────────
 class APIClient:
@@ -383,10 +399,12 @@ class APIClient:
     def grade_exam(self, practice_set: str, exam_id: str, answers: Dict) -> Optional[Dict]:
         user_answers = []
         for q_num, indices in answers.items():
-            try:
-                user_answers.append({"question_number": int(q_num), "selected_indices": indices})
-            except (ValueError, TypeError):
-                user_answers.append({"question_number": q_num, "selected_indices": indices})
+            # q_num is the raw question_number from MongoDB ("Question 1", etc.)
+            # _parse_question_number strips that to a plain int for Pydantic
+            user_answers.append({
+                "question_number": _parse_question_number(q_num),
+                "selected_indices": indices if indices else [],
+            })
 
         payload = {
             "practice_set": practice_set,
@@ -563,11 +581,10 @@ class UIManager:
         return sorted(q.get("correct_indices", []))
 
     def _q_num(self, q: Dict):
-        """Normalise question_number to int."""
-        try:
-            return int(q["question_number"])
-        except (ValueError, TypeError):
-            return q["question_number"]
+        """Normalise question_number to int.
+        Handles both plain integers and 'Question N' strings from MongoDB."""
+        raw = q.get("question_number", 0)
+        return _parse_question_number(raw)
 
     # ── Sidebar ─────────────────────────────
     def render_sidebar(self):
