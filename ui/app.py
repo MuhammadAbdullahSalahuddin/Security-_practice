@@ -37,7 +37,6 @@ def welcome_screen():
         
     for practice_set in available_sets:
         st.subheader(practice_set["_id"].replace("_", " ").title())
-        # Create a dynamic row of buttons for the exams
         cols = st.columns(len(practice_set["exams"]))
         for i, exam_id in enumerate(practice_set["exams"]):
             with cols[i]:
@@ -46,6 +45,7 @@ def welcome_screen():
                     if resp.status_code == 200:
                         st.session_state.exam_data = resp.json()
                         st.session_state.current_page = "mode_select"
+                        st.session_state.answers.clear() # Clear old answers
                         st.rerun()
 
 def mode_selection():
@@ -53,17 +53,17 @@ def mode_selection():
     col1, col2 = st.columns(2)
     
     with col1:
-        st.info("### 📘 Practice Mode\nTake your time. See correct answers and explanations at the end.")
+        st.info("### 📘 Practice Mode\nTake your time. Get instant feedback and explanations as you answer.")
         if st.button("Start Practice Mode", use_container_width=True):
             st.session_state.mode = "practice"
             st.session_state.current_page = "exam"
             st.rerun()
             
     with col2:
-        st.warning("### ⏳ Exam Mode\nStrict 2-hour timer. Simulates the real testing environment.")
+        st.warning("### ⏳ Exam Mode\nStrict 2-hour timer. Simulates the real testing environment. No instant feedback.")
         if st.button("Start Exam Mode", use_container_width=True):
             st.session_state.mode = "exam"
-            st.session_state.end_time = time.time() + 7200 # 2 hours in seconds
+            st.session_state.end_time = time.time() + 7200 # 2 hours
             st.session_state.current_page = "exam"
             st.rerun()
 
@@ -81,28 +81,39 @@ def render_exam():
     
     st.write("---")
     
-    # Render all questions
     for q in exam['questions']:
         st.markdown(f"**Question {q['question_number']}**")
         st.write(q['question_text'])
         
-        # Display image placeholder if a screenshot path exists
         if q.get("screenshot_path"):
             st.caption(f"*(Exhibit tied to: {q['screenshot_path']})*")
             
         options = [opt['text'] for opt in q['all_options']]
         
-        # Determine if we need checkboxes (multiple choice) or radio buttons (single choice)
-        # For this MVP, we use multiselect to safely handle questions with 1 or more answers
         selected = st.multiselect(
             "Select your answer(s):", 
             options, 
             key=f"q_{q['question_number']}"
         )
         
-        # Save the indices of the selected options
         selected_indices = [q['all_options'][options.index(s)]['index'] for s in selected]
         st.session_state.answers[q['question_number']] = selected_indices
+        
+        # --- TRUE PRACTICE MODE LOGIC ---
+        if st.session_state.mode == "practice" and selected_indices:
+            actual_correct = q.get("correct_indices", [])
+            is_correct = sorted(selected_indices) == sorted(actual_correct)
+            
+            if is_correct:
+                st.success("✅ Correct!")
+            else:
+                st.error("❌ Incorrect")
+                
+            # Dropdown for explanation
+            with st.expander("📖 View Explanation", expanded=not is_correct):
+                st.info(q.get("explanation", "No explanation provided for this question."))
+                st.write(f"**Correct Answer Indices:** {actual_correct}")
+
         st.write("---")
         
     if st.button("Submit Exam", type="primary", use_container_width=True):
@@ -110,37 +121,45 @@ def render_exam():
 
 def submit_exam():
     exam = st.session_state.exam_data
+    
+    # Force cast question_number to int to satisfy Pydantic
+    clean_answers = []
+    for k, v in st.session_state.answers.items():
+        try:
+            q_num = int(k)
+        except ValueError:
+            q_num = k # Fallback if it's deeply weird data
+        clean_answers.append({"question_number": q_num, "selected_indices": v})
+
     payload = {
         "practice_set": exam["practice_set"],
         "exam_id": exam["exam_id"],
-        "user_answers": [
-            {"question_number": k, "selected_indices": v} 
-            for k, v in st.session_state.answers.items()
-        ]
+        "user_answers": clean_answers
     }
     
-    # Send to FastAPI for grading
     with st.spinner("Grading..."):
-        response = requests.post(f"{API_BASE_URL}/grade", json=payload)
-        if response.status_code == 200:
-            st.session_state.results = response.json()
-            st.session_state.current_page = "results"
-            st.rerun()
-        else:
-            st.error("An error occurred while grading.")
+        try:
+            response = requests.post(f"{API_BASE_URL}/grade", json=payload)
+            if response.status_code == 200:
+                st.session_state.results = response.json()
+                st.session_state.current_page = "results"
+                st.rerun()
+            else:
+                # If it fails, print the exact JSON error to the screen so we can debug it
+                st.error(f"❌ Backend Rejected Submission (Status {response.status_code})")
+                st.json(response.json())
+        except Exception as e:
+            st.error(f"Connection Error: {e}")
 
 def render_results():
     results = st.session_state.results
     st.title("📊 Exam Results")
     
-    # Score display
     st.metric("Final Score", f"{results['score']} / {results['total_questions']}", f"{results['percentage']}%")
     st.write("---")
     
-    # Detailed breakdown
     st.subheader("Question Breakdown")
     for detail in results["details"]:
-        color = "green" if detail["is_correct"] else "red"
         status = "✅ Correct" if detail["is_correct"] else "❌ Incorrect"
         
         with st.expander(f"Question {detail['question_number']}: {status}"):
