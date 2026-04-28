@@ -56,10 +56,11 @@ def grade_exam(payload: GradingRequest):
     results = []
     
     # Create a quick lookup dictionary for correct answers
-    correct_lookup = {q["question_number"]: q["correct_indices"] for q in exam["questions"]}
+    correct_lookup = {int(q["question_number"]): q["correct_indices"] 
+                          for q in exam["questions"]}
     
     for answer in payload.user_answers:
-        actual_correct = correct_lookup.get(answer.question_number, [])
+        actual_correct = correct_lookup.get(int(answer.question_number), [])
         is_correct = sorted(answer.selected_indices) == sorted(actual_correct)
         
         if is_correct:
@@ -69,7 +70,7 @@ def grade_exam(payload: GradingRequest):
             "question_number": answer.question_number,
             "is_correct": is_correct,
             "correct_indices": actual_correct,
-            "explanation": next((q["explanation"] for q in exam["questions"] if q["question_number"] == answer.question_number), "")
+            "explanation": next((q["explanation"] for q in exam["questions"] if int(q["question_number"]) == int(answer.question_number)), "")
         })
         
     return {

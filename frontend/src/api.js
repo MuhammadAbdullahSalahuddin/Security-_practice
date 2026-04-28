@@ -14,14 +14,22 @@ export async function getExam(practice_set, exam_id) {
 }
 
 export async function gradeExam(practice_set, exam_id, answers, questions) {
-  // Mark unanswered / skipped questions as empty → backend scores as wrong
+  if (!questions || questions.length === 0) {
+    throw new Error("No questions loaded — cannot grade.");
+  }
+
   const user_answers = questions.map((q) => {
     const qNum = parseQNum(q.question_number);
+    const selected = answers[qNum];
     return {
       question_number: qNum,
-      selected_indices: answers[qNum] ?? [],
+      // Only use the answer if it's a non-empty array, otherwise force []
+      selected_indices:
+        Array.isArray(selected) && selected.length > 0 ? selected : [],
     };
   });
+
+  console.log("Submitting answers:", user_answers); // ← add this temporarily
 
   const r = await fetch(`${BASE}/grade`, {
     method: "POST",
@@ -29,7 +37,17 @@ export async function gradeExam(practice_set, exam_id, answers, questions) {
     body: JSON.stringify({ practice_set, exam_id, user_answers }),
   });
   if (!r.ok) throw new Error("Grading failed");
-  return r.json();
+
+  const data = await r.json();
+
+  const answerLookup = Object.fromEntries(
+    user_answers.map((a) => [a.question_number, a.selected_indices]),
+  );
+  for (const detail of data.details ?? []) {
+    detail.user_selected = answerLookup[detail.question_number] ?? [];
+  }
+
+  return data;
 }
 
 export function parseQNum(raw) {
