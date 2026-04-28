@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,600;1,9..144,300&family=DM+Sans:wght@300;400;500&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg:        #0c0e14;
+  --surface:   #13161f;
+  --elevated:  #1a1e2a;
+  --hover:     #21263a;
+  --border:    #252b3d;
+  --border-hi: #3b4460;
+  --text:      #dde1ed;
+  --muted:     #7a8299;
+  --faint:     #3d4560;
+  --amber:     #f0a830;
+  --amber-dim: #7a5418;
+  --green:     #3fcf8e;
+  --green-bg:  rgba(63,207,142,.1);
+  --red:       #e5566d;
+  --red-bg:    rgba(229,86,109,.1);
+  --blue:      #5b8ef0;
+  --font-mono: 'DM Mono', monospace;
+  --font-body: 'Fraunces', Georgia, serif;
+  --font-ui:   'DM Sans', sans-serif;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0; padding: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+
+#app { min-height: 100vh; display: flex; flex-direction: column; }
+
+/* Scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: var(--bg); }
+::-webkit-scrollbar-thumb { background: var(--border-hi); border-radius: 3px; }
+
+/* Utility classes */
+.font-mono  { font-family: var(--font-mono); }
+.font-ui    { font-family: var(--font-ui); }
+.font-body  { font-family: var(--font-body); }
+.text-amber { color: var(--amber); }
+.text-muted { color: var(--muted); }
+.text-faint { color: var(--faint); }
+.text-green { color: var(--green); }
+.text-red   { color: var(--red); }
+
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  transition: border-color .2s;
+}
+.card:hover { border-color: var(--border-hi); }
+
+.btn {
+  font-family: var(--font-ui);
+  font-size: .85rem;
+  font-weight: 500;
+  padding: .45rem 1.1rem;
+  border-radius: 8px;
+  border: 1px solid var(--border-hi);
+  background: var(--elevated);
+  color: var(--text);
+  cursor: pointer;
+  transition: all .15s;
+  white-space: nowrap;
+}
+.btn:hover:not(:disabled) { border-color: var(--amber); color: var(--amber); }
+.btn:disabled { opacity: .4; cursor: not-allowed; }
+.btn-primary {
+  border-color: var(--amber);
+  background: rgba(240,168,48,.08);
+  color: var(--amber);
+}
+.btn-primary:hover:not(:disabled) { background: rgba(240,168,48,.16); }
+.btn-ghost { border-color: transparent; background: transparent; color: var(--muted); }
+.btn-ghost:hover:not(:disabled) { color: var(--text); border-color: var(--border); }
