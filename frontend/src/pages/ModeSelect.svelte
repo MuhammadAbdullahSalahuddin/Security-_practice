@@ -35,7 +35,7 @@
       <div>
         <div class="font-mono text-xs text-[var(--amber)] mb-2 tracking-widest uppercase">⏱ Exam</div>
         <p class="font-ui text-sm text-[var(--muted)] leading-relaxed">
-          Strict 2-hour countdown. Navigate freely between questions. No feedback until submission.
+          Strict 1.5-hour countdown. Navigate freely between questions. 85 percentage required for passing No feedback until submission.
         </p>
       </div>
       <button class="btn mt-auto" on:click={() => start('exam')}>

@@ -53,6 +53,7 @@
         const q = qLookup[d.question_number];
         d.question_text = q?.question_text ?? '';
         d.all_options = q?.all_options ?? [];
+        d.displayNumber = q?.displayNumber ?? d.question_number;
       }
       examStore.setResults(results);
     } catch (e) {
@@ -91,6 +92,7 @@
     <div class="flex flex-col gap-1 flex-1">
       {#each questions as q, i}
         {@const qn = parseQNum(q.question_number)}
+        {@const displayNum = q.displayNumber ?? (i + 1)}
         {@const isActive = i === idx}
         {@const isAnswered = answeredSet.has(qn)}
         {@const isSubmitted = $examStore.submitted.has(qn)}
@@ -103,7 +105,7 @@
               : 'text-[var(--muted)] hover:text-[var(--text)] hover:bg-[var(--hover)]'}"
           on:click={() => jumpTo(i)}
         >
-          <span>Q{qn}</span>
+          <span>Q{displayNum}</span>
           <span class="ml-1 text-[10px]">
             {#if mode === 'practice' && isSubmitted}
               {isCorrectQ ? '✓' : '✗'}
@@ -177,7 +179,7 @@
       {/if}
 
       <!-- Practice mode: show submit anywhere -->
-      {#if mode === 'practice' && idx < total - 1}
+      {#if idx < total - 1}
         <div class="text-center mt-2">
           <button class="btn btn-ghost text-xs" on:click={submitExam} disabled={submitting}>
             {submitting ? 'Grading...' : 'Finish early & see results'}

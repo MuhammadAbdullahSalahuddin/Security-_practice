@@ -3,11 +3,12 @@
   import { examStore } from '../store.js';
 
   $: results = $examStore.results;
+  $: mode = $examStore.mode;
   $: pct = results?.percentage ?? 0;
   $: score = results?.score ?? 0;
   $: total = results?.total_questions ?? 0;
-  $: passing = pct >= 75;
-  $: details = results?.details ?? [];
+  $: passing = pct >= 85;
+  $: details = (results?.details ?? []).slice().sort((a, b) => (a.displayNumber ?? a.question_number) - (b.displayNumber ?? b.question_number));
 
   let filter = 'all'; // 'all' | 'wrong' | 'correct'
   $: filtered = details.filter(d =>
@@ -26,10 +27,12 @@
       style="color: {passing ? 'var(--green)' : 'var(--red)'}">
       {pct}%
     </div>
-    <div class="font-ui font-medium text-lg mb-6"
-      style="color: {passing ? 'var(--green)' : 'var(--red)'}">
-      {passing ? 'PASS' : 'FAIL'}
-    </div>
+  {#if mode === 'exam'}
+  <div class="font-ui font-medium text-lg mb-6"
+    style="color: {passing ? 'var(--green)' : 'var(--red)'}">
+    {passing ? 'PASS' : 'FAIL'}
+  </div>
+  {/if}
 
     <div class="flex justify-center gap-8">
       <div>
@@ -78,7 +81,7 @@
             {ok ? '✓' : '✗'}
           </span>
           <div class="flex-1 min-w-0">
-            <div class="font-mono text-[10px] text-[var(--faint)] mb-1">Q {detail.question_number}</div>
+            <div class="font-mono text-[10px] text-[var(--faint)] mb-1">Q {detail.displayNumber ?? detail.question_number}</div>
             <p class="font-body text-sm leading-relaxed text-[var(--text)] mb-2">
               {detail.question_text?.slice(0, 200)}{detail.question_text?.length > 200 ? '…' : ''}
             </p>

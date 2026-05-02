@@ -2,6 +2,14 @@ from fastapi import FastAPI, HTTPException
 from pymongo import MongoClient
 from pydantic import BaseModel
 from typing import List
+import re
+
+def extract_qnum(raw) -> int:
+    """Handles 'Question 1', '1', 1, etc."""
+    if isinstance(raw, int):
+        return raw
+    m = re.search(r'\d+', str(raw))
+    return int(m.group()) if m else 0
 
 app = FastAPI(title="Security+ Practice API")
 
@@ -47,35 +55,45 @@ def get_exam(practice_set: str, exam_id: str):
 
 @app.post("/api/v1/grade")
 def grade_exam(payload: GradingRequest):
-    """Evaluates the user's submissions against the database."""
     exam = exams_collection.find_one({"practice_set": payload.practice_set, "exam_id": payload.exam_id})
     if not exam:
         raise HTTPException(status_code=404, detail="Exam not found")
 
     score = 0
     results = []
-    
-    # Create a quick lookup dictionary for correct answers
-    correct_lookup = {int(q["question_number"]): q["correct_indices"] 
-                          for q in exam["questions"]}
-    
+
+    correct_lookup = {
+    int(str(q["question_number"]).replace("Question ", "").strip()): 
+        q.get("correct_indices") or q.get("additional_information", {}).get("correct_indices", [])
+    for q in exam["questions"]
+}
+
+    question_lookup = {
+        extract_qnum(q["question_number"]): q
+        for q in exam["questions"]
+    }
+
     for answer in payload.user_answers:
-        actual_correct = correct_lookup.get(int(answer.question_number), [])
+        qnum = extract_qnum(answer.question_number)
+        actual_correct = correct_lookup.get(qnum, [])
         is_correct = sorted(answer.selected_indices) == sorted(actual_correct)
-        
+
         if is_correct:
             score += 1
-            
+
+        q = question_lookup.get(qnum, {})
         results.append({
-            "question_number": answer.question_number,
+            "question_number": qnum,
             "is_correct": is_correct,
             "correct_indices": actual_correct,
-            "explanation": next((q["explanation"] for q in exam["questions"] if int(q["question_number"]) == int(answer.question_number)), "")
+            "explanation": q.get("explanation") or q.get("additional_information", {}).get("explanation", ""),
         })
-        
+
+    total = len(exam["questions"])
+
     return {
-        "total_questions": len(exam["questions"]),
+        "total_questions": total,
         "score": score,
-        "percentage": round((score / len(exam["questions"])) * 100, 2),
+        "percentage": round((score / total) * 100, 2) if total else 0,
         "details": results
     }

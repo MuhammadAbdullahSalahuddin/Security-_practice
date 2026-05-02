@@ -1,22 +1,22 @@
-import { writable, derived, get } from 'svelte/store';
+import { writable, derived, get } from "svelte/store";
 
 // ─── Router ───────────────────────────────────────────────────────────────────
-export const page = writable('home'); // 'home' | 'mode_select' | 'exam' | 'results'
+export const page = writable("home"); // 'home' | 'mode_select' | 'exam' | 'results'
 
 // ─── Session config ───────────────────────────────────────────────────────────
 export const pendingExam = writable(null); // { practice_set, exam_id, exam_data }
 
 // ─── Active exam state ────────────────────────────────────────────────────────
 const INITIAL = {
-  mode: null,           // 'practice' | 'exam'
+  mode: null, // 'practice' | 'exam'
   practice_set: null,
   exam_id: null,
-  questions: [],        // shuffled
+  questions: [], // shuffled
   currentIndex: 0,
-  answers: {},          // { [question_number]: [idx, ...] }
+  answers: {}, // { [question_number]: [idx, ...] }
   submitted: new Set(), // question_numbers locked in practice mode
   results: null,
-  endTime: null,        // ms timestamp
+  endTime: null, // ms timestamp
   timeExpired: false,
 };
 
@@ -39,8 +39,14 @@ function createExamStore() {
 
     startSession(pendingExamData, mode) {
       clearInterval(timerInterval);
-      const questions = shuffle(pendingExamData.exam_data.questions);
-      const endTime = mode === 'exam' ? Date.now() + 7200_000 : null;
+      // Shuffle then assign sequential display numbers (1-based)
+      const questions = shuffle(pendingExamData.exam_data.questions).map(
+        (q, i) => ({
+          ...q,
+          displayNumber: i + 1,
+        }),
+      );
+      const endTime = mode === "exam" ? Date.now() + 5400_000 : null;
 
       set({
         mode,
@@ -55,9 +61,9 @@ function createExamStore() {
         timeExpired: false,
       });
 
-      if (mode === 'exam') {
+      if (mode === "exam") {
         timerInterval = setInterval(() => {
-          update(s => {
+          update((s) => {
             if (!s.endTime) return s;
             if (Date.now() >= s.endTime) {
               clearInterval(timerInterval);
@@ -68,15 +74,15 @@ function createExamStore() {
         }, 500);
       }
 
-      page.set('exam');
+      page.set("exam");
     },
 
     setAnswer(qNum, indices) {
-      update(s => ({ ...s, answers: { ...s.answers, [qNum]: indices } }));
+      update((s) => ({ ...s, answers: { ...s.answers, [qNum]: indices } }));
     },
 
     lockQuestion(qNum) {
-      update(s => {
+      update((s) => {
         const submitted = new Set(s.submitted);
         submitted.add(qNum);
         return { ...s, submitted };
@@ -84,30 +90,30 @@ function createExamStore() {
     },
 
     goTo(index) {
-      update(s => ({ ...s, currentIndex: index }));
+      update((s) => ({ ...s, currentIndex: index }));
     },
 
     next() {
-      update(s => ({
+      update((s) => ({
         ...s,
         currentIndex: Math.min(s.currentIndex + 1, s.questions.length - 1),
       }));
     },
 
     prev() {
-      update(s => ({ ...s, currentIndex: Math.max(s.currentIndex - 1, 0) }));
+      update((s) => ({ ...s, currentIndex: Math.max(s.currentIndex - 1, 0) }));
     },
 
     setResults(results) {
       clearInterval(timerInterval);
-      update(s => ({ ...s, results }));
-      page.set('results');
+      update((s) => ({ ...s, results }));
+      page.set("results");
     },
 
     reset() {
       clearInterval(timerInterval);
       set({ ...INITIAL });
-      page.set('home');
+      page.set("home");
     },
   };
 }
@@ -117,19 +123,16 @@ export const examStore = createExamStore();
 // ─── Derived helpers ──────────────────────────────────────────────────────────
 export const currentQuestion = derived(
   examStore,
-  $s => $s.questions[$s.currentIndex] ?? null
+  ($s) => $s.questions[$s.currentIndex] ?? null,
 );
 
-export const progress = derived(
-  examStore,
-  $s => ({
-    current: $s.currentIndex + 1,
-    total: $s.questions.length,
-    answered: Object.keys($s.answers).length,
-  })
-);
+export const progress = derived(examStore, ($s) => ({
+  current: $s.currentIndex + 1,
+  total: $s.questions.length,
+  answered: Object.keys($s.answers).length,
+}));
 
-export const remainingMs = derived(examStore, $s => {
+export const remainingMs = derived(examStore, ($s) => {
   if (!$s.endTime) return null;
   return Math.max(0, $s.endTime - Date.now());
 });

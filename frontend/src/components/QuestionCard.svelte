@@ -7,7 +7,11 @@
   export let mode;
   export let direction = 1; // 1 = forward, -1 = back
 
+  // Original question_number is the grading key
   $: qNum = parseQNum(question?.question_number);
+  // displayNumber is the sequential 1-based label shown to the user
+  $: displayNum = question?.displayNumber ?? qNum;
+
   $: options = question?.all_options ?? [];
   $: correct = question?.correct_indices ?? [];
   $: isMulti = correct.length > 1 || question?.question_type === 'multiple_choice';
@@ -30,11 +34,7 @@
     examStore.lockQuestion(qNum);
   }
 
-  function skip() {
-    examStore.setAnswer(qNum, []);
-    examStore.lockQuestion(qNum);
-  }
-
+ 
   $: userCorrect = mode === 'practice' && isLocked
     ? JSON.stringify([...selected].sort()) === JSON.stringify([...correct].sort())
     : null;
@@ -48,20 +48,20 @@
   >
     <!-- Question header -->
     <div class="flex items-center gap-3 mb-5">
-      <span class="font-mono text-[10px] tracking-widest text-[var(--amber)] uppercase">
-        Q {qNum}
+      <span class="font-mono text-xs tracking-widest text-[var(--amber)] uppercase">
+        Question {displayNum}
       </span>
-      <span class="font-ui text-[10px] text-[var(--faint)]">
+      <span class="font-ui text-xs text-[var(--faint)]">
         {isMulti ? `Select ${correct.length}` : 'Select one'}
       </span>
     </div>
 
-    <!-- Question text -->
-    <p class="font-body text-[1.05rem] leading-relaxed text-[var(--text)] mb-6">
+    <!-- Question text — bumped from 1.05rem to 1.15rem, slightly more line-height -->
+    <p class="font-body text-[1.15rem] leading-[1.75] text-[var(--text)] mb-6">
       {question?.question_text ?? ''}
     </p>
 
-    <!-- Options -->
+    <!-- Options — bumped from text-sm to text-[0.95rem] -->
     <div class="flex flex-col gap-2">
       {#each options as opt, idx}
         {@const isSel = selected.includes(idx)}
@@ -69,7 +69,7 @@
         {@const showFeedback = mode === 'practice' && isLocked}
 
         <button
-          class="text-left px-4 py-3 rounded-lg border transition-all duration-150 font-ui text-sm leading-relaxed
+          class="text-left px-4 py-3 rounded-lg border transition-all duration-150 font-ui text-[0.95rem] leading-relaxed
             {showFeedback
               ? isCorrectOpt
                 ? 'border-[var(--green)] bg-[var(--green-bg)] text-[var(--green)]'
@@ -83,7 +83,7 @@
           on:click={() => toggle(idx)}
           disabled={isLocked && mode === 'practice'}
         >
-          <span class="font-mono text-[10px] mr-2 opacity-50">{String.fromCharCode(65 + idx)}.</span>
+          <span class="font-mono text-xs mr-2 opacity-50">{String.fromCharCode(65 + idx)}.</span>
           {opt.text}
         </button>
       {/each}
@@ -96,7 +96,6 @@
           <button class="btn btn-primary" on:click={check} disabled={selected.length === 0}>
             Check Answer
           </button>
-          <button class="btn btn-ghost text-xs" on:click={skip}>Skip</button>
         </div>
       {:else}
         <div class="mt-5 flex items-center gap-2">
@@ -113,10 +112,11 @@
 
         {#if question?.explanation}
           <details class="mt-4">
-            <summary class="font-ui text-xs text-[var(--muted)] cursor-pointer select-none">
+            <summary class="font-ui text-sm text-[var(--muted)] text-[1.1rem] cursor-pointer select-none">
               📖 Explanation
             </summary>
-            <div class="mt-2 pl-3 border-l-2 border-[var(--amber-dim)] font-body text-sm text-[var(--muted)] leading-relaxed">
+            <!-- Explanation text bumped from text-sm to text-[0.95rem] -->
+            <div class="mt-2 pl-3 border-l-2 border-[var(--amber-dim)] font-body text-[1.1rem] text-[#a0aabf]   leading-relaxed">
               {question.explanation}
             </div>
           </details>
