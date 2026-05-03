@@ -3,7 +3,7 @@ from pymongo import MongoClient
 from pydantic import BaseModel
 from typing import List
 import re
-
+import os
 def extract_qnum(raw) -> int:
     """Handles 'Question 1', '1', 1, etc."""
     if isinstance(raw, int):
