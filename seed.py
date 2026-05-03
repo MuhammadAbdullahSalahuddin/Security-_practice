@@ -4,7 +4,7 @@ from pymongo import MongoClient
 
 # Connect to your local MongoDB container
 # (If you set a username/password, update this URI)
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient(os.getenv("MONGO_URI", "mongodb://localhost:27017/"))
 db = client["security_practice"]
 exams_collection = db["exams"]
 
