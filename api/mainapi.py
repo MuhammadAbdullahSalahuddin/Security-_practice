@@ -14,6 +14,12 @@ def extract_qnum(raw) -> int:
     return int(m.group()) if m else 0
 
 app = FastAPI(title="Security+ Practice API")
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # tighten this for production
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 # Connect to the local MongoDB container mapped to 27017
 client = MongoClient(os.getenv("MONGO_URI", "mongodb://localhost:27017/"))
@@ -100,9 +106,3 @@ def grade_exam(payload: GradingRequest):
         "details": results
     }
 
-app.add_middleware(
-    CORSMiddleware,
-    allow_origins=["*"],  # tighten this for production
-    allow_methods=["*"],
-    allow_headers=["*"],
-)
