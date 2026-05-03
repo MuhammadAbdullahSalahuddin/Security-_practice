@@ -4,5 +4,7 @@ COPY requirements.txt .
 RUN pip install --no-cache-dir -r requirements.txt
 COPY api/ ./api/
 COPY seed.py .
-EXPOSE 8000
-CMD ["uvicorn", "api.mainapi:app", "--host", "0.0.0.0", "--port", "8000"]
+COPY quiz_screenshots/ ./quiz_screenshots/
+COPY entrypoint.sh .
+RUN chmod +x entrypoint.sh
+CMD ["./entrypoint.sh"]

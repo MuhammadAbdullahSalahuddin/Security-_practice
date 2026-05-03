@@ -47,7 +47,7 @@ def get_exam(practice_set: str, exam_id: str):
     """Fetches a specific exam without the correct answers to prevent cheating."""
     exam = exams_collection.find_one(
         {"practice_set": practice_set, "exam_id": exam_id},
-        {"_id": 0} 
+        {"_id": 0, "questions.correct_indices": 0, "questions.explanation": 0} 
     )
     if not exam:
         raise HTTPException(status_code=404, detail="Exam not found")

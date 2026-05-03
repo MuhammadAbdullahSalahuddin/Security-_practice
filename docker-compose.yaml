@@ -8,6 +8,8 @@ services:
     restart: unless-stopped
 
   api:
+    environment:
+      - MONGO_URI=mongodb://mongo:27017/
     build:
       context: .
       dockerfile: Dockerfile.api
