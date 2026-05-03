@@ -14,7 +14,7 @@ def extract_qnum(raw) -> int:
 app = FastAPI(title="Security+ Practice API")
 
 # Connect to the local MongoDB container mapped to 27017
-client = MongoClient("mongodb://localhost:27017/")
+client = MongoClient(os.getenv("MONGO_URI", "mongodb://localhost:27017/"))
 db = client["security_practice"]
 exams_collection = db["exams"]
 
