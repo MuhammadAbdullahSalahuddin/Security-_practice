@@ -29,9 +29,6 @@ export async function gradeExam(practice_set, exam_id, answers, questions) {
     };
   });
 
-  console.log("Submitting answers:", JSON.stringify(user_answers, null, 2));
-  window._lastAnswers = user_answers; // ← add this temporarily
-
   const r = await fetch(`${BASE}/grade`, {
     method: "POST",
     headers: { "Content-Type": "application/json" },

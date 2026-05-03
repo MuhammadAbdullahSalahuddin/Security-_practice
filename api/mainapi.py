@@ -4,6 +4,8 @@ from pydantic import BaseModel
 from typing import List
 import re
 import os
+from fastapi.middleware.cors import CORSMiddleware
+
 def extract_qnum(raw) -> int:
     """Handles 'Question 1', '1', 1, etc."""
     if isinstance(raw, int):
@@ -97,3 +99,10 @@ def grade_exam(payload: GradingRequest):
         "percentage": round((score / total) * 100, 2) if total else 0,
         "details": results
     }
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["*"],  # tighten this for production
+    allow_methods=["*"],
+    allow_headers=["*"],
+)

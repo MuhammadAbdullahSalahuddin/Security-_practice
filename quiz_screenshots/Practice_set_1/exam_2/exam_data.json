@@ -40,12 +40,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Recovery and restoration processes"
-      ],
-      "user_incorrect_answers": [
-        "Risk assessment"
-      ],
+      "correct_answers": ["Recovery and restoration processes"],
+      "user_incorrect_answers": ["Risk assessment"],
       "options": [
         {
           "text": "Risk assessment",
@@ -80,9 +76,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 5.1 - This scenario illustrates the recovery and restoration processes within the organization’s disaster recovery policy. When the severe storm disrupts power, the IT team’s actions to activate backup systems at an alternate location and restore critical data are part of the recovery plan. These steps are essential for minimizing downtime and ensuring that critical operations can continue after an incident. Unlike risk assessment or data redundancy testing, recovery and restoration directly focus on restoring services and access following a disruption. For support or reporting issues, include Question ID: 67223a264ba26b3d1637fc1a in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q001.png"
     },
@@ -124,12 +118,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Data destruction certification"
-      ],
-      "user_incorrect_answers": [
-        "HCL"
-      ],
+      "correct_answers": ["Data destruction certification"],
+      "user_incorrect_answers": ["HCL"],
       "options": [
         {
           "text": "Data destruction certification",
@@ -164,9 +154,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.2: A data destruction certification is a formal document attesting that specific data sanitization processes were followed, ensuring that data on devices has been securely and irreversibly removed. The HCL provides a list of hardware devices known to be compatible with specific software or operating systems and does not relate to data destruction processes. An Asset Inventory Report provides a record of all the assets within an organization but does not attest to the secure removal of data from those assets. A SLA outlines the expected level of service between a provider and a client, including response times and uptime guarantees, but does not confirm the data destruction process. For support or reporting issues, include Question ID: 64be9b294a0dd75c4bddfc38 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q002.png"
     },
@@ -208,12 +196,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Bollards"
-      ],
-      "user_incorrect_answers": [
-        "Wire Fencing"
-      ],
+      "correct_answers": ["Bollards"],
+      "user_incorrect_answers": ["Wire Fencing"],
       "options": [
         {
           "text": "Bollards",
@@ -248,9 +232,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 1.2 - Bollards are specifically engineered as strong, fixed posts that can stop vehicles by acting as a robust physical barrier, making them ideal for preventing vehicular access to sensitive areas. A security checkpoint controls and monitors the access of individuals and vehicles into a secure area, it primarily functions as a screening point rather than a physical barrier. Security checkpoints might manage vehicle flow but do not necessarily stop a determined vehicle from breaching a perimeter if not combined with physical barriers. Wire fencing is used to delineate boundaries and can restrict pedestrian and smaller vehicles, however it is not strong enough to stop vehicles effectively, especially if the vehicle is determined to breach the perimeter. Intrusion Detection Systems primarily focus on detecting unauthorized entries or breaches within a building or area using sensors and alarms. It does not provide a physical barrier to stop vehicles; instead, it alerts security personnel of possible intrusions. For support or reporting issues, include Question ID: 65245928ae19f8bdaee92dc6 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q003.png"
     },
@@ -292,9 +274,7 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Layer 4"
-      ],
+      "correct_answers": ["Layer 4"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -330,9 +310,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 3.2: Layer 4, or the transport layer, deals with protocols like TCP and UDP and is concerned with port numbers and connection-oriented communication. Network appliances operating at this layer filter and manage traffic based on source and destination IP addresses, as well as port numbers. Layer 2, the data link layer, deals with frames and MAC addresses. Switches typically operate at this layer. Layer 5, the session layer, establishes, maintains, and terminates connections between applications on different devices. It doesn't handle filtering based on IP addresses and port numbers. Layer 3, the network layer, is primarily focused on routing data and IP addressing. Devices at this layer, like routers, aren't primarily concerned with port numbers. For support or reporting issues, include Question ID: 652c848c3b1d2556f6cb6b7a in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q004.png"
     },
@@ -414,9 +392,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 4.4 - Agentless posture assessment in NAC solutions, while beneficial for supporting a broad range of devices, often provides less granular data about the client compared to agent-based solutions. This can limit the depth of assessment and control. Agentless solutions don't require storage on the client device for an agent, so this isn't a disadvantage of agentless posture assessment. Agentless solutions are often chosen specifically because they can support a wider range of devices, including smartphones, tablets, and IoT devices. The presence or absence of an agent doesn't directly correlate with an increased risk of malware. Malware protection is more related to the specific security mechanisms in place. For support or reporting issues, include Question ID: 6542fac17a7f9376f6eca40c in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q005.png"
     },
@@ -458,9 +434,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Introduce a company-wide password manager"
-      ],
+      "correct_answers": ["Introduce a company-wide password manager"],
       "user_incorrect_answers": [
         "Allow their employees to write down their passwords as long as they keep them safe"
       ],
@@ -498,9 +472,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.6: A password manager securely stores and autofill's credentials, reducing the burden on employees to remember multiple strong passwords. Advising employees to regularly change passwords increases security but does not alleviate the primary issue of password recall. Encouraging their employees to write down their passwords is not recommended since they can be potentially found if not secured properly. Encouraging employees to use similar passwords for different platforms can lead to security vulnerabilities due to password reuse. For support or reporting issues, include Question ID: 654448f50c5ecc119a27011e in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q006.png"
     },
@@ -542,12 +514,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Regulated"
-      ],
-      "user_incorrect_answers": [
-        "Secret"
-      ],
+      "correct_answers": ["Regulated"],
+      "user_incorrect_answers": ["Secret"],
       "options": [
         {
           "text": "Regulated",
@@ -582,9 +550,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 3.3: Regulated data implies that it's a category of data that adheres to specific compliance standards due to its sensitive nature. Confidential and secret data might require high standards for handling, but it does not specifically encompass data that adheres to regulatory compliance standards. Data at rest is a state of data, typically stored data. It doesn't designate whether the data adheres to specific compliance standards. For support or reporting issues, include Question ID: 64c196c9ecb41e3664cf3e58 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q007.png"
     },
@@ -701,11 +667,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        1,
-        4,
-        5
-      ],
+      "correct_indices": [1, 4, 5],
       "explanation": "OBJ 3.2: A Next Generation Firewall (NGFW) has several improvements over the company's previous stateful firewall, such as application awareness that can distinguish between different types of traffic, can conduct deep packet inspection and use signature-based intrusion detection, and has the ability to be integrated with various other security products. Tracking of connections and requests, allowing return traffic for outbound requests, and improving awareness of connection states on layer 4 were already features on the stateful firewall that was replaced. The addition of multiple functions, including firewall, intrusion prevention, antivirus, and more, is advancing into the area of a Unified Threat Management (UTM) firewall rather than a basic NGFW. Increased focus on HTTP traffic helping to prevent common web application attacks like cross-site scripting and SQL injections would be a description of a Web Application Firewall (WAF), not a NFGW.\n    For support or reporting issues, include Question ID: 65432c686491794aff7fb0c9 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q008.png"
     },
@@ -759,9 +721,7 @@
         "Unusual data transfers",
         "Frequent unauthorized access"
       ],
-      "user_incorrect_answers": [
-        "Increased work hours"
-      ],
+      "user_incorrect_answers": ["Increased work hours"],
       "options": [
         {
           "text": "Unusual data transfers",
@@ -804,10 +764,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0,
-        2
-      ],
+      "correct_indices": [0, 2],
       "explanation": "OBJ: 5.6 - An employee is found attempting to access files and systems outside the scope of their job responsibilities on several occasions. Large amounts of data are being transferred to unknown external locations, especially during odd hours, suggesting potential data exfiltration. System maintenance that is outside of typical patterns is fairly common. While security may want to check on the issue, it is not typically a sign of an insider threat. Working overtime by itself does not signal a threat; it could reflect dedication or increased workload and is not inherently suspicious. An employee who actively promotes security policies is showing commitment to the company’s safety, not an insider threat.   For support or reporting issues, include Question ID: 6549cd4f4e3ef4759e7c0ddd in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q009.png"
     },
@@ -849,12 +806,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Integration with existing security protocols"
-      ],
-      "user_incorrect_answers": [
-        "Total cost of ownership (TCO)"
-      ],
+      "correct_answers": ["Integration with existing security protocols"],
+      "user_incorrect_answers": ["Total cost of ownership (TCO)"],
       "options": [
         {
           "text": "Total cost of ownership (TCO)",
@@ -889,9 +842,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 3.1 - When deploying a new architectural model, ensuring it integrates seamlessly with the organization's existing security protocols and measures is paramount. If not, it can lead to security gaps and vulnerabilities. TCO provides an insight into the overall costs associated with an architecture model. However, while cost can influence the decision, it does not specifically address security implications tied to deployment ease. While scalability is essential for future growth, it doesn't directly impact the initial ease of deployment considerations concerning security. Although the reputation of a vendor can give insights about the reliability and quality of their products, it does not directly correlate with the ease of deployment considerations from a security perspective. For support or reporting issues, include Question ID: 64bf76e15ff7b41f675e4230 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q010.png"
     },
@@ -933,12 +884,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "To detect and divert potential attackers"
-      ],
-      "user_incorrect_answers": [
-        "To block unauthorized access"
-      ],
+      "correct_answers": ["To detect and divert potential attackers"],
+      "user_incorrect_answers": ["To block unauthorized access"],
       "options": [
         {
           "text": "To block unauthorized access",
@@ -973,9 +920,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 1.2 - The primary purpose of a honeypot in a network environment is to detect and divert potential attackers by attracting them to a decoy system. This setup allows security teams to observe unauthorized activity and gather information without risking actual network resources. Unlike blocking unauthorized access, which actively prevents entry, a honeypot passively lures attackers. It does not prevent malware from executing, as it is meant for monitoring rather than directly stopping threats. Similarly, it does not serve to recover lost data after an attack, focusing instead on early detection and diversion. For support or reporting issues, include Question ID: 6720ff1fe8b5ca200ac63846 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q011.png"
     },
@@ -1017,12 +962,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Encryption and ACLs"
-      ],
-      "user_incorrect_answers": [
-        "Using passwords for access"
-      ],
+      "correct_answers": ["Encryption and ACLs"],
+      "user_incorrect_answers": ["Using passwords for access"],
       "options": [
         {
           "text": "Storing in remote locations and changing locations frequently",
@@ -1057,9 +998,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 3.3: Data at rest, such as that found in databases, archived media, or configuration files, can be vulnerable to unauthorized access. To protect this data, organizations commonly employ encryption methods. This can range from whole disk encryption to database or individual file/folder encryption. Additionally, by setting up access control lists (ACLs), organizations can ensure that only authorized individuals can access or modify the stored data. While passwords provide a level of security, they are not comprehensive methods for protecting data at rest, especially when compared to encryption and ACLs. Storing data remotely might offer some physical security benefits, but it doesn't address the core concerns of unauthorized access or tampering. While regular backups are essential for data recovery, they do not inherently provide protection against unauthorized access or modification. For support or reporting issues, include Question ID: 64c189817afca4c13451de4d in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q012.png"
     },
@@ -1174,12 +1113,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        0,
-        1,
-        2,
-        5
-      ],
+      "correct_indices": [0, 1, 2, 5],
       "explanation": "OBJ 4.1: WPA3 is the latest and most secure wireless security protocol; it utilizes a Diffie-Hellman key agreement; it provides individualized data encryption even in open networks; and it prevents eavesdropping, forging, and tampering with management frames. These were some of the additions to address flaws that were present in the previous WPA2 standard, which became an increasing security concern. The 4-way handshake was actually a part of the previous WPA2 standard, using a pre-shared key (PSK) that was replaced with the Diffie-Hellman key agreement. Enterprise Wi-Fi networks often use EAP-TLS (Extensible Authentication Protocol with TLS) for authentication (such as TACACS+), but this operates in conjunction with WPA3 and is not part of WPA3 itself.\n  For support or reporting issues, include Question ID: 65262aa26f507d8e8ff08998 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q013.png"
     },
@@ -1221,12 +1155,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Inadequate buffer overflow protections"
-      ],
-      "user_incorrect_answers": [
-        "Overhead from virtualization"
-      ],
+      "correct_answers": ["Inadequate buffer overflow protections"],
+      "user_incorrect_answers": ["Overhead from virtualization"],
       "options": [
         {
           "text": "Uncontrolled cloud access.",
@@ -1261,9 +1191,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 3.1 - RTOSs prioritize performance, sometimes at the expense of security features like buffer overflow protections, potentially leaving the system susceptible to certain attacks. While cloud access can pose risks, it's not an inherent security implication of using an RTOS. RTOSs are designed for efficiency and generally don't involve the overheads from virtualization layers. RTOSs aren't primarily concerned with supporting legacy protocols, and this isn't a direct security risk associated with them. For support or reporting issues, include Question ID: 652c438f6000c2244d013a0d in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q014.png"
     },
@@ -1305,9 +1233,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Physical"
-      ],
+      "correct_answers": ["Physical"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -1343,9 +1269,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 5.5 - Physical penetration testing involves evaluating an organization's physical security measures, such as access controls, surveillance systems, and security protocols, to identify vulnerabilities and potential breaches. Penetration testing in a partially known environment means that a some information has been given to the tester. There is no indication in the scenario that the tester has been given information Penetration testing in a known environment means that a significant amount of information has been given to the tester. This can include passwords, usernames, and other information. There is no indication in the scenario that the tester has been given information Integrated penetration testing refers to a comprehensive approach that combines different types of penetration tests to assess an organization's overall security posture. While physical security may be part of the assessment, it is not the main focus of this type of testing. For support or reporting issues, include Question ID: 64c1a87d3c0620e9baa77d4b in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q015.png"
     },
@@ -1427,9 +1351,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 4.8: A legal hold is the process of securing and preserving evidence related to a security incident for potential use in legal proceedings. When a security incident occurs, it is essential to preserve all relevant data and evidence to support any potential investigation, legal actions, or regulatory requirements. Legal Hold ensures that data, logs, and other information related to the incident are not tampered with or deleted, allowing it to be used as evidence if needed. While identifying the individuals or groups responsible for an incident might be valuable for legal proceedings, a legal hold itself is primarily focused on preserving evidence and ensuring its integrity for potential legal actions. Legal holds aren't part of a search warrant process for law enforcement. They are a method for ensuring that evidence is preserved in case there is a legal proceeding. A legal hold is not related to the classification of laws that may have been broken; rather, it ensures that evidence is preserved in case there is a legal proceeding. For support or reporting issues, include Question ID: 64c162d48d1f702de4fdf19e in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q016.png"
     },
@@ -1471,12 +1393,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Enforce full device encryption"
-      ],
-      "user_incorrect_answers": [
-        "Enable Bluetooth discoverable mode"
-      ],
+      "correct_answers": ["Enforce full device encryption"],
+      "user_incorrect_answers": ["Enable Bluetooth discoverable mode"],
       "options": [
         {
           "text": "Enforce full device encryption",
@@ -1511,9 +1429,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.1: Encrypting the entire device ensures that the data remains inaccessible even if the physical device is compromised. This is paramount for data protection. Enable Bluetooth discoverable mode makes pairing easier but increases vulnerability by allowing unsolicited connections. It doesn't contribute to overall security as much as the other answer options. A screen lock is essential to prevent unauthorized access, but a determined attacker could still extract data from the device directly. Strong Wi-Fi passwords protect against unauthorized network access but don't safeguard the device's stored data. For support or reporting issues, include Question ID: 652f33f17d7a95707741eab2 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q017.png"
     },
@@ -1555,9 +1471,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Software authentication tokens"
-      ],
+      "correct_answers": ["Software authentication tokens"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -1593,9 +1507,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 4.6: Software authentication tokens generate time-sensitive codes on devices like smartphones, providing an added layer of security without the need for a physical device other than the user's own device. Biometric authentication leverages unique biological characteristics, such as fingerprints or facial recognition, but does not involve generating temporary codes. A static password is a fixed set of characters used for authentication and does not provide the dynamic, temporary nature of the described solution. Network location-based authentication validates users based on their network's location, not a temporary numeric code. For support or reporting issues, include Question ID: 65445e70fbad95d7ea4e4c49 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q018.png"
     },
@@ -1677,9 +1589,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 4.6: Secure Sign-On (SSO) allows users to log in once and gain access to multiple systems that are integrated with the IAM system. This enhances the user experience, reduces the need for multiple credentials, and ensures a unified and secure authentication process. While replacing all existing systems may seem like a straightforward solution, it is often costly, time-consuming, and may disrupt business operations. Additionally, compatibility issues might still arise with the new systems. Assigning different user roles in each system does not address the interoperability requirement. It only focuses on permissions and access rights within individual systems, but it does not enable seamless access and management across the various systems. Managing separate user accounts for each system can lead to inefficiencies, increased administrative overhead, and potential discrepancies in user access across different systems. For support or reporting issues, include Question ID: 64c157fb528e3065c137971d in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q019.png"
     },
@@ -1721,12 +1631,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "EF"
-      ],
-      "user_incorrect_answers": [
-        "Asset impact"
-      ],
+      "correct_answers": ["EF"],
+      "user_incorrect_answers": ["Asset impact"],
       "options": [
         {
           "text": "EF",
@@ -1761,9 +1667,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 5.2 - The exposure factor (EF) is the fraction of the asset value that is at risk in the event of a security incident. Asset impact can refer to the general effect on an asset but doesn't provide a quantifiable percentage like the exposure factor does. Damage proporiton might be used informally to describe a similar concept as EF, but it is not the standard term used in risk assessment. While SLE (Single loss expectancy) calculates the cost of a single occurrence of a risk event, it does not account for the frequency of that event over time, which is necessary to calculate ALE.   For support or reporting issues, include Question ID: 65487b93acaa0dbbe5e8022e in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q020.png"
     },
@@ -1805,12 +1709,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Risk reporting"
-      ],
-      "user_incorrect_answers": [
-        "Risk analysis"
-      ],
+      "correct_answers": ["Risk reporting"],
+      "user_incorrect_answers": ["Risk analysis"],
       "options": [
         {
           "text": "Risk assessment",
@@ -1845,9 +1745,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 5.2 - Risk reporting is the element of the risk management process that involves communicating risk-related information, including risk assessment results, to relevant stakeholders and management. Risk analysis involves analyzing risks in terms of their potential financial impact and other factors. This is done before reporting to the stakeholders. Risk assessment involves evaluating the identified risks to determine their potential impact and likelihood of occurrence. This is done before reporting to the stakeholders. Risk identification involves identifying potential risks and vulnerabilities within an organization's environment. This is done before reporting to the stakeholders. For support or reporting issues, include Question ID: 64b9f70d974c18fd63dd24c5 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q021.png"
     },
@@ -1889,12 +1787,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "ARO"
-      ],
-      "user_incorrect_answers": [
-        "SLE"
-      ],
+      "correct_answers": ["ARO"],
+      "user_incorrect_answers": ["SLE"],
       "options": [
         {
           "text": "SLE",
@@ -1929,9 +1823,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 5.2 - ARO (Annualized rate of occurrence) quantifies the expected frequency of a risk occurring within a one-year time frame. While SLE (Single loss expectancy) calculates the cost of a single occurrence of a risk event, it does not account for the frequency of that event over time, which is necessary to calculate ALE. Exposure Factor (EF) determines the proportion of asset value lost per risk event, a component of SLE calculation, but not directly related to the annualized expected loss. Annualized Loss Expectancy (ALE) represents the yearly financial loss a company can expect from a specific risk, factoring in both the severity and frequency of the event. For support or reporting issues, include Question ID: 654879a9acaa0dbbe5e80224 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q022.png"
     },
@@ -2013,9 +1905,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.3: The maintaining and monitoring of environmental variables are very important for maintaining an efficient data center environment. For instance, high-standard HVAC systems keeping a steady temperature and humidity and continuous power supply contribute to the operational efficiency and longevity of assets. Proper understanding of environmental variables assists in determining the specific requirements of different hardware and software, promoting effective asset management. Environmental variables like temperature and humidity can greatly affect the performance, efficiency, and life cycle of hardware assets in a data center. Environmental factors such as a consistent power supply and efficient cooling systems are crucial to minimizing hardware malfunction and maximizing asset longevity. For support or reporting issues, include Question ID: 64c19a0c1e0c5b8b7971dad8 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q023.png"
     },
@@ -2097,9 +1987,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 5.4 - Attestation provides clients with a level of assurance that the provider's security controls have been independently assessed and found to comply with specific security standards. The effectiveness of marketing strategies is outside the scope of security attestation. Attestation does not guarantee that security controls are infallible; it only verifies that they are implemented as per certain standards. Attestation focuses on the verification of security measures, not on evaluating cost-effectiveness. For support or reporting issues, include Question ID: 654983c35429895e833da5de in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q024.png"
     },
@@ -2141,12 +2029,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Tabletop exercise"
-      ],
-      "user_incorrect_answers": [
-        "Functional exercise"
-      ],
+      "correct_answers": ["Tabletop exercise"],
+      "user_incorrect_answers": ["Functional exercise"],
       "options": [
         {
           "text": "Live drill",
@@ -2181,9 +2065,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 3.4: Tabletop exercises begin with a scenario, where participants discuss how they would respond. These are discussion-based and don’t require technology. In this case, the team is discussing solutions to a scenario, making it a tabletop exercise. Simulations, on the other hand, are team-based, with one team acting as intruders and the other responding to the threat. Moderators enforce the rules, and these exercises are more extensive than tabletop exercises. A functional exercise involves real-time simulations where teams actively use tools, processes, and communication, making it more hands-on compared to tabletop exercises. Lastly, a live drill involves real systems and environments in real-time to simulate events like a cyberattack, requiring immediate, hands-on responses. Since the Data Core team is only discussing the scenario, this is not a live drill, simulation, or functional exercise, but a tabletop exercise. For support or reporting issues, include Question ID: 64c19cf4f13766bcfbac4f63 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q025.png"
     },
@@ -2225,9 +2107,7 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Informed consent"
-      ],
+      "correct_answers": ["Informed consent"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -2263,9 +2143,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 5.1 - GDPR mandates that personal data can only be collected and processed with the individual's informed consent, which means the purpose for data collection must be clearly communicated in plain language. Continuous monitoring is crucial for cybersecurity but is not the primary tenet of GDPR's approach to personal data. While GDPR does address the retention of personal data, its primary focus is on ensuring data subjects give informed consent for data collection and processing. While encryption is essential for safeguarding data, GDPR's core principle revolves around the individual's right to understand and consent to how their data is used. For support or reporting issues, include Question ID: 654561b37dcb30bec4e75c3f in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q026.png"
     },
@@ -2345,9 +2223,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 4.4 - Benchmarks refer to the process of comparing an organization's security performance against industry-standard metrics, best practices, or regulatory requirements to identify potential security weaknesses and deviations. While cryptographic algorithms are essential for securing data transmission over the internet, they are not referred to as Benchmarks. Benchmarks are not intrusion detection systems; rather, they involve comparing security performance against established standards. Benchmarks are not firewall technologies but rather a process of assessing an organization's security performance. For support or reporting issues, include Question ID: 64bfffaf22b117b12e6981b5 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q027.png"
     },
@@ -2429,9 +2305,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 4.5: Configuring DLP to scan outbound emails and files helps identify and prevent data loss, reducing the risk of breaches while supporting legitimate business needs. Blocking all email attachments and USB devices could limit data leakage but may disrupt necessary operations. The core value of DLP lies in preventing data loss in real-time, not just monitoring. While internal transfer monitoring can be beneficial, the priority here is preventing sensitive data from leaving via email or removable storage. For support or reporting issues, include Question ID: 64c12584d3b7c5521ae6f5c3 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q028.png"
     },
@@ -2473,9 +2347,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Wireless network"
-      ],
+      "correct_answers": ["Wireless network"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -2511,9 +2383,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 2.2 - Attackers exploit vulnerabilities in remote access or wireless networks. By setting up rogue access points, spoofing legitimate resources, or cracking security protocols, they can intercept or gain unauthorized access. Phishing involves attackers trying to trick individuals into providing sensitive data by posing as a trusted entity, usually through emails or deceptive websites. The default credential threat vector involves the intruder seizing the command of a network device or application due to it remaining set with its factory-default password. Such default login details are often found in the product's installation guide or can be easily found out. Supply chain attacks involve compromising one part of an organization's supply chain to later attack the main organization. It doesn't directly relate to wireless networks. For support or reporting issues, include Question ID: 6525b7e83856455739a1582e in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q029.png"
     },
@@ -2555,9 +2425,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Just-in-time permissions"
-      ],
+      "correct_answers": ["Just-in-time permissions"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -2593,9 +2461,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.6: By granting access only when it's specifically needed and for a short duration, just-in-time permissions minimize the exposure of critical systems. MAC (Mandatory access control) assigns access based on labels and does not consider the specific timing or short duration for access needs. While RBAC (Role-based access control) assigns permissions based on job function, it does not consider the timing or duration of access needs. This method categorizes data based on its sensitivity, not the timing or duration of access. For support or reporting issues, include Question ID: 65445b6fc47e0cf3c470dd71 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q030.png"
     },
@@ -2637,12 +2503,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Tokenization"
-      ],
-      "user_incorrect_answers": [
-        "Data Masking"
-      ],
+      "correct_answers": ["Tokenization"],
+      "user_incorrect_answers": ["Data Masking"],
       "options": [
         {
           "text": "Steganography",
@@ -2677,9 +2539,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 1.4 - Tokenization is the process of substituting a sensitive data element with a non-sensitive equivalent, referred to as a token. The token and the data it substitutes are stored in a secure database. If the original data is needed, it can be accessed using the token and querying the database. The token will be a different size and have a different structure than the original data so the token can’t be used to decipher the original data. Steganography is the practice of concealing a file, message, image, or video within another file, message, image, or video. It doesn't use a database Data masking is a method to de-identify some or all characters in a sequence, but not changing the total number of characters that a field should contain. The masked version will be structurally the same, but the data will be hidden. Changing the letters or numbers entered into a password field with dots is an example of data masking. Data that is masked will have the same number of characters as the original data, not a smaller set. Encryption is the process of converting information or data into a code to prevent unauthorized access. It often uses an algorithm to replace the original data with other data. If a person figures out or acquires the algorithm, the data can be decrypted. Encrypted data isn't stored in a database. For support or reporting issues, include Question ID: 64c3d5eececafa5b2df5d307 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q031.png"
     },
@@ -2721,12 +2581,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Granular access controls requirements"
-      ],
-      "user_incorrect_answers": [
-        "Reduced monitoring endpoints"
-      ],
+      "correct_answers": ["Granular access controls requirements"],
+      "user_incorrect_answers": ["Reduced monitoring endpoints"],
       "options": [
         {
           "text": "Reduced monitoring endpoints",
@@ -2761,9 +2617,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 3.1 - As applications are broken down into microservices, each service might need specific access controls, potentially complicating the permissions landscape. Microservices can actually increase the number of endpoints that need to be monitored, rather than reducing them. Microservices allow for independent deployments, moving away from a singular deployment cadence which is more associated with monolithic structures. Microservices often distribute data storage needs across services, rather than consolidating them, making this option less relevant. For support or reporting issues, include Question ID: 652c463484c5639ae7b63f1b in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q032.png"
     },
@@ -2805,12 +2659,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Revenge"
-      ],
-      "user_incorrect_answers": [
-        "Blackmail"
-      ],
+      "correct_answers": ["Revenge"],
+      "user_incorrect_answers": ["Blackmail"],
       "options": [
         {
           "text": "Blackmail",
@@ -2845,9 +2695,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 2.1 - Revenge is a powerful motivator where the individual, driven by feelings of anger, resentment, or betrayal, aims to retaliate against those they perceive as responsible for their grievances. In the context of cybersecurity, this could manifest in various ways, such as DDoS attacks, data tampering, or other malicious activities, with the intent of causing harm to the targeted entity. Espionage is typically driven by the need to gather secret or sensitive information for political, military, or economic advantage. It often involves stealthy techniques to infiltrate a system, gather intelligence, and exfiltrate the data without detection. Blackmail is a form of extortion where an attacker threatens to release sensitive or damaging information unless their demands, often financial, are met. This involves leveraging stolen or accessed data as a means to coerce the victim into compliance, making it different from acts purely driven by revenge. Motivated by the allure of monetary benefits, individuals or groups engaging in activities for financial gain often aim to steal, manipulate, or ransom data or services. This could involve ransomware attacks, data breaches with the intent to sell the data, or other financially motivated cybercrimes. For support or reporting issues, include Question ID: 6525a52eb511ef5634172a7b in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q033.png"
     },
@@ -2889,9 +2737,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Least Privilege"
-      ],
+      "correct_answers": ["Least Privilege"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -2927,9 +2773,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 2.5 - Least privilege is a mitigation technique that limits users to the level of access and privilege they need to do their work. This can limit the extent of an attack by limiting the attacker’s access and privilege to those of the compromised user. Least privilege involves applying predefined rules and permissions, such as roles, groups, and functions and enforcing the rules and permissions through mechanisms such as passwords, tokens, and biometrics. Using least privilege, employees will have access to the patient data they need, but not to the data of other patients. Monitoring is a mitigation technique that can help detect and respond to potential threats or incidents on a network. By collecting and analyzing data about the activities and events on the network, security analysts can develop theories about the vulnerabilities and incidents that occur on the system. Monitoring involves using tools and techniques such as logs, alerts, and audits. Monitoring will allow you to know if the data is breached, but monitoring will not prevent unauthorized people from seeing patient data. An application allow list is a mitigation technique that can help enforce compliance with security standards and policies on a system or network. It does this by comparing applications to a list of applications that are allowed to run. These applications have been verified and authorized by the system or network administrator. Any application that is not on the list is not allowed to run. Limiting the applications that employees can use will not prevent them from seeing patient data. Isolation is a mitigation technique that can help prevent malware from spreading from one system or process to another by limiting their interaction and communication. Isolation involves sandboxing or simply disconnecting an infected system. This prevents potentially malicious programs or scripts from accessing the rest of the system or network. Patient data can't be isolated in this way because authorized people will need access to it. For support or reporting issues, include Question ID: 64bef17bcdab7c65df69bb3b in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q034.png"
     },
@@ -2971,12 +2815,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Centralized"
-      ],
-      "user_incorrect_answers": [
-        "Decentralized"
-      ],
+      "correct_answers": ["Centralized"],
+      "user_incorrect_answers": ["Decentralized"],
       "options": [
         {
           "text": "Decentralized",
@@ -3011,9 +2851,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 3.1 - Centralized is an architecture model that involves using a single point of control or authority to manage a system or service. Centralized systems or services can have advantages such as simplicity, consistency, and security, but also disadvantages such as single point of failure, scalability issues, and lack of autonomy. A responsibility matrix is a document that defines the roles and responsibilities of different parties involved in a cloud service agreement, such as the cloud service provider, the cloud customer, and the cloud user. It clarifies who is accountable for what aspects of security, compliance, and operations in a cloud environment. It isn't an architecture model. On-premises is an architecture model that involves hosting and managing infrastructure on the organization’s own premises. It can be centralized or decentralized. Decentralized is an architecture model that involves using multiple distributed points of control or authority to manage a system or service. Decentralized systems or services can have advantages such as resilience, scalability, and autonomy, but also disadvantages such as complexity, inconsistency, and security challenges. For support or reporting issues, include Question ID: 64c050ab622fbc04cdbf2532 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q035.png"
     },
@@ -3055,12 +2893,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Rescanning"
-      ],
-      "user_incorrect_answers": [
-        "Segmentation"
-      ],
+      "correct_answers": ["Rescanning"],
+      "user_incorrect_answers": ["Segmentation"],
       "options": [
         {
           "text": "Reviewing event logs",
@@ -3095,9 +2929,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 4.3: Rescanning involves running the vulnerability scan again after remediation efforts to confirm that identified vulnerabilities have been addressed properly and no longer pose a threat. While segmentation is a mitigation technique, it doesn't involve retesting systems for vulnerabilities. Intrusive scanning refers to aggressive scanning that might disrupt operations. While it can be part of a rescan, it's not the specific action of confirming remediation. Examining event logs can provide insights into system behaviors, but it is not the act of running the same tests to validate the remediation of vulnerabilities. For support or reporting issues, include Question ID: 6541d97e902ccdf6404e822d in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q036.png"
     },
@@ -3139,12 +2971,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Proxy server"
-      ],
-      "user_incorrect_answers": [
-        "Jump server"
-      ],
+      "correct_answers": ["Proxy server"],
+      "user_incorrect_answers": ["Jump server"],
       "options": [
         {
           "text": "IDS",
@@ -3179,9 +3007,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 3.2: A proxy server stands between the user's computer and the internet, intercepting requests and potentially reducing the public-facing attack surface by masking the internal server, meeting the scenario requirements. A jump server is used as a bridge to connect to other servers or networks in separate security zones, but not specifically for relaying requests for another server to reduce attack surfaces. An intrusion detection system (IDS) monitors network traffic for malicious activities. It alerts to the potential activity but does not prevent it from passing through the network. In this way, it provides a layer of protection without slowing down network performance. It will provide you with improved security, but won't reduce the attack surface. A load balancer distributes network or application traffic across many servers. This optimizes the use of resources, maximizes throughput, and reduces latency. It will not reduce the attack surface of a network. For support or reporting issues, include Question ID: 64c16da16ab51895b912b830 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q037.png"
     },
@@ -3223,12 +3049,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Active reconnaissance"
-      ],
-      "user_incorrect_answers": [
-        "Passive reconnaissance"
-      ],
+      "correct_answers": ["Active reconnaissance"],
+      "user_incorrect_answers": ["Passive reconnaissance"],
       "options": [
         {
           "text": "Active reconnaissance",
@@ -3263,9 +3085,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 5.5 - Active reconnaissance involves the attacker directly engaging with the target systems, like scanning ports or attempting direct network connections. It often leaves traces and can alert the target. In passive reconnaissance, the attacker indirectly gathers information without directly touching the target system. Common methods include studying publicly available information. Although it's an information-gathering technique, network enumeration typically occurs after reconnaissance and involves detailed identification of network resources that can be targeted for exploitation. While OSINT (Open-source intelligence) is a form of passive reconnaissance, it specifically involves collecting data from publicly available sources such as websites, forums, and social media. For support or reporting issues, include Question ID: 64c1abf93c0620e9baa77d69 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q038.png"
     },
@@ -3307,12 +3127,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Process flow"
-      ],
-      "user_incorrect_answers": [
-        "Inputs"
-      ],
+      "correct_answers": ["Process flow"],
+      "user_incorrect_answers": ["Inputs"],
       "options": [
         {
           "text": "Process flow",
@@ -3347,9 +3163,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 5.3 - In a BPA (Business Process Analysis), process flow details each operational step, describing how the mission essential function is systematically executed. While inputs are crucial for starting the process, they do not constitute the sequential operational guide that is the process flow. Hardware identifies the physical infrastructure used in the process, not the step-by-step procedural narrative. Outputs relate to the final products or data produced by the function, which is the result of the process flow but not the description of the steps themselves. For support or reporting issues, include Question ID: 65497e37f0813714ed1d059f in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q039.png"
     },
@@ -3429,9 +3243,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 5.5 - The audit committee plays a pivotal role in making sure that the organization meets necessary regulatory standards while also acknowledging the evolving cybersecurity landscape. The audit committee's emphasis is on strategic oversight and governance, rather than managing the minutiae of daily IT operations. While the audit committee provides oversight, they typically don't delve into the specifics of cybersecurity implementations. While insurance is essential, the audit committee's primary role isn't focused on detailed negotiations with insurance carriers. For support or reporting issues, include Question ID: 64c1ab973c0620e9baa77d64 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q040.png"
     },
@@ -3511,9 +3323,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.2: Classification ensures that assets are labeled with appropriate access levels, limiting unauthorized access to sensitive information. This process allows organizations to implement access controls, reducing the risk of data breaches and ensuring data security. Although classification documentation can support financial tracking and budget allocation, its main purpose is access control and data protection. Assigning classifications to individuals or departments may enhance accountability, but accountability alone is not the focus of classification. Similarly, classification is not centered on the physical organization of assets for audits or inventory; it is primarily concerned with access controls and protecting data. For support or reporting issues, include Question ID: 64bd92ebe95286472e079184 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q041.png"
     },
@@ -3555,9 +3365,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Public key"
-      ],
+      "correct_answers": ["Public key"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -3593,9 +3401,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 1.4 - The client would use the company's public key to encrypt the message. Only Dion Training, with the corresponding private key, can decrypt and read the message, ensuring confidentiality and demonstrating the importance of public-key cryptography. Key escrow refers to the secure storage of cryptographic keys, ensuring they can be accessed under specific conditions, but it's not directly used to encrypt or decrypt messages. A private key is kept secret by its holder and is used to decrypt messages that are encrypted with its corresponding public key. It's not used by external entities to encrypt messages to the key holder. A wildcard certificate secures multiple subdomains under a main domain but doesn't directly involve message encryption or decryption. For support or reporting issues, include Question ID: 65257f22f1de9bff7fa68806 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q042.png"
     },
@@ -3637,12 +3443,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Load balancing"
-      ],
-      "user_incorrect_answers": [
-        "Data mirroring"
-      ],
+      "correct_answers": ["Load balancing"],
+      "user_incorrect_answers": ["Data mirroring"],
       "options": [
         {
           "text": "Virtualization",
@@ -3677,9 +3479,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 3.4: Load balancing is the process of distributing network traffic across several servers to prevent any single server from becoming a bottleneck, thereby ensuring optimum resource utilization, maximizing throughput, and reducing latency. Virtualization allows for running multiple operating systems on a single physical machine; it's primarily used to optimize server utilization but does not inherently distribute incoming network traffic across servers. Clustering refers to the use of multiple servers that work together and can be seen as a single system. Clusters can provide fault tolerance, high availability, and scalability; however, their primary goal is not necessarily traffic distribution. Data mirroring involves creating identical data sets in two or more locations; it provides data redundancy and is generally used for disaster recovery rather than traffic distribution. For support or reporting issues, include Question ID: 64c1a7233c0620e9baa77d41 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q043.png"
     },
@@ -3721,9 +3521,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "RTO"
-      ],
+      "correct_answers": ["RTO"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -3759,9 +3557,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 5.2 - The Recovery Time Objective (RTO) is the maximum acceptable time allowed for the recovery of a system or process after a disruption. It defines the time frame within which critical systems and operations must be restored to normal functionality. The Recovery Point Objective (RPO) is the maximum amount of data that an organization can afford to lose during a disruption. It represents the point in time to which data must be recovered after recovery efforts are initiated. The Mean Time to Repair (MTTR) is the average time it takes to restore a failed system or component to a working state after a disruption. It measures the efficiency of the repair process. The Mean Time Between Failures (MTBF) is the average time elapsed between two consecutive failures of a system or component. It provides an indication of the system's reliability. For support or reporting issues, include Question ID: 64b9f3c43f4084e37d4f8fea in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q044.png"
     },
@@ -3803,12 +3599,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Non-human readable"
-      ],
-      "user_incorrect_answers": [
-        "Geographically restricted"
-      ],
+      "correct_answers": ["Non-human readable"],
+      "user_incorrect_answers": ["Geographically restricted"],
       "options": [
         {
           "text": "Non-human readable",
@@ -3843,9 +3635,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 3.3: Non-human-readable data typically refers to information that requires a machine or specialized software to interpret. Being critical, data might have significant importance to the running of a business or organization, but it does not determine whether it's readable by humans. Geographic restrictions apply limitations based on data's location. This describes a security method, not the nature of data readability. Segmentation is a method of dividing a network into manageable parts. It's not a type of data. For support or reporting issues, include Question ID: 64c1972fdd32557d54e4c0f5 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q045.png"
     },
@@ -3887,12 +3677,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "File-based"
-      ],
-      "user_incorrect_answers": [
-        "Voice call"
-      ],
+      "correct_answers": ["File-based"],
+      "user_incorrect_answers": ["Voice call"],
       "options": [
         {
           "text": "Business email compromise",
@@ -3927,9 +3713,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 2.2 - File-based threats arise when malicious content is embedded or attached in standard files, which, when opened or executed, compromises the security of the system. While emails can contain malicious attachments, the email itself is a message-based threat vector. Voice call is a method often used in vishing attacks, where attackers may pose as legitimate entities over the phone to deceive users into providing sensitive information or taking specific actions, but it doesn't involve file transfers or execution. A Business email compromise is an advanced phishing attack where an attacker impersonates a high-ranking official or department within a company, usually targeting those who have the ability to conduct financial transactions. It doesn't primarily concern file execution or transfer. For support or reporting issues, include Question ID: 652623b17d94fbceb5d12419 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q046.png"
     },
@@ -3971,12 +3755,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Encryption during transmission"
-      ],
-      "user_incorrect_answers": [
-        "Access control policies"
-      ],
+      "correct_answers": ["Encryption during transmission"],
+      "user_incorrect_answers": ["Access control policies"],
       "options": [
         {
           "text": "Virtualization isolation",
@@ -4011,9 +3791,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 3.1 - When integrating with external applications like Salesforce, it's crucial to consider the data encryption during transmission to assess and mitigate security risks. While crucial, endpoint security primarily safeguards the devices connected to a network, not focusing on the data transmission to external service providers. While Access Control Policies are important, they primarily govern who can access what within an environment and do not specifically address data transmission security to external providers. Virtualization isolation involves the segregation of virtual machines, but doesn’t specifically cater to data transmission security with third-party applications. For support or reporting issues, include Question ID: 65171dfb50fd765762f8e252 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q047.png"
     },
@@ -4055,12 +3833,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Neutral"
-      ],
-      "user_incorrect_answers": [
-        "Expansionary"
-      ],
+      "correct_answers": ["Neutral"],
+      "user_incorrect_answers": ["Expansionary"],
       "options": [
         {
           "text": "Risk-Averse",
@@ -4095,9 +3869,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 5.2 - The business demonstrates a neutral risk appetite, as it aims for a balanced approach, weighing risk and reward without extreme caution or high-risk tolerance. Expansionary appetite would involve seeking aggressive growth despite risks, while conservative appetite would lean toward minimal risk. Risk-averse approaches are closely aligned with conservative stances, emphasizing avoidance of risk more than a neutral perspective would. For support or reporting issues, include Question ID: 672247623be32ad83a19dc8a in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q048.png"
     },
@@ -4139,12 +3911,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Vulnerable software"
-      ],
-      "user_incorrect_answers": [
-        "Default credentials"
-      ],
+      "correct_answers": ["Vulnerable software"],
+      "user_incorrect_answers": ["Default credentials"],
       "options": [
         {
           "text": "Default credentials",
@@ -4179,9 +3947,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 2.2 - Vulnerable software is software that has known or unknown flaws that can be exploited by attackers to gain unauthorized access or cause harm. Outdated software may have unpatched vulnerabilities that can compromise the security of the system or the network. Default credentials are usernames and passwords that are set by default for certain devices or applications. Default credentials can be easily guessed by attackers and used to gain access to the system or the network. Open service ports are ports that are listening for incoming connections from other systems or devices. Open service ports can expose services that may have vulnerabilities or allow unauthorized access to the system. Unsecure networks are networks that do not have adequate security measures, such as encryption, authentication, or firewall, to protect the data transmitted over them. Public Wi-Fi hotspots are examples of unsecure networks that can be intercepted by attackers, however, in this case, you are using a VPN which provides security for the connection. For support or reporting issues, include Question ID: 64ba1a31b711a9b6c71715d2 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q049.png"
     },
@@ -4223,12 +3989,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Quantitative risk analysis"
-      ],
-      "user_incorrect_answers": [
-        "Risk Matrix"
-      ],
+      "correct_answers": ["Quantitative risk analysis"],
+      "user_incorrect_answers": ["Risk Matrix"],
       "options": [
         {
           "text": "Annualized loss expectancy",
@@ -4263,9 +4025,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 5.2 - In risk analysis, the quantitative method involves assigning numerical values to risks based on financial figures, such as costs or potential losses. This approach helps in assessing risks in monetary terms, making it easier to prioritize and compare risks based on their potential impact on the organization's financials. The annualized loss expectancy (ALE) is a quantitative metric that calculates the expected financial loss from a risk over a year. It is derived from the product of the single loss expectancy (SLE) and the annualized rate of occurrence (ARO). The qualitative risk analysis involves assigning subjective values to risks based on descriptive terms like \"high,\" \"medium,\" or \"low.\" This method does not use numerical values but rather qualitative assessments. A risk matrix uses the likelihood of an event and the event’s impact on the project, stakeholders, or workflow to create a visual representation of the current risk posture or environment. Costs or potential losses are only one part of the matrix. For support or reporting issues, include Question ID: 64b9f1c3974c18fd63dd24b1 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q050.png"
     },
@@ -4307,12 +4067,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Infrastructure diversification"
-      ],
-      "user_incorrect_answers": [
-        "Geographic restrictions"
-      ],
+      "correct_answers": ["Infrastructure diversification"],
+      "user_incorrect_answers": ["Geographic restrictions"],
       "options": [
         {
           "text": "Geographic restrictions",
@@ -4347,9 +4103,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 3.4: Diversifying infrastructure ensures that organizations are not overly reliant on a single data center, network, or platform. By distributing their assets and systems across multiple locations or platforms, they can significantly reduce the risk of total service disruption if one component fails. Geographic restrictions primarily deal with ensuring data resides or is accessible only in certain locations due to legal or regulatory reasons. While it dictates where data can be, it doesn't inherently diversify infrastructure for resilience against disruptions. While data masking is an essential strategy for obfuscating sensitive information, it doesn't address the risk associated with centralized infrastructure or help in maintaining continuity during disruptions. Setting permission restrictions is crucial for controlling who can access specific resources. However, it doesn't offer a solution against the vulnerabilities of a single-point infrastructure failure. For support or reporting issues, include Question ID: 652ee4f0a5199fdd13f637ec in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q051.png"
     },
@@ -4391,12 +4145,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Evidence of internal audits"
-      ],
-      "user_incorrect_answers": [
-        "Regulatory compliance certificates"
-      ],
+      "correct_answers": ["Evidence of internal audits"],
+      "user_incorrect_answers": ["Regulatory compliance certificates"],
       "options": [
         {
           "text": "Regulatory compliance certificates",
@@ -4431,9 +4181,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 5.3 - Evidence of Internal Audits showcases a vendor's proactive approach to maintaining and enhancing their security measures. Such audits are conducted internally and reflect a rigorous self-assessment of security practices, vulnerabilities, and control mechanisms. By reviewing these, a company can gain insights into the vendor's commitment to security, how they address potential weaknesses, and their overall cybersecurity health. This evidence can be instrumental in gauging the reliability and trustworthiness of the vendor's internal security framework. While customer testimonials may provide feedback on the vendor's performance, they don't offer insights into the vendor's internal evaluations of their security measures. External penetration test reports show the results of external entities testing the vendor's defenses, not the vendor's own evaluations. Regulatory compliance certificates indicate compliance with specific regulations but don't provide detailed insights into internal evaluations. For support or reporting issues, include Question ID: 64bb437248f9d4fbc1cdd412 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q052.png"
     },
@@ -4515,9 +4263,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 4.4 - Log aggregation is essential for collecting, normalizing, and centralizing log data from various sources, such as network devices, servers, and applications. This centralized approach enables comprehensive analysis and detection of security incidents, providing valuable insights into potential security threats and breaches. While log aggregation makes it easier for analysts to view the data, aggregation doesn't involve analysis, only collection and centralization. Logging is the collection of data from a scan and making it available to security analysts. Log aggregation is the collecting of log data from many sources and normalizing it so it can be more easily analyzed. Log aggregation doesn't involve the actual monitoring of network traffic. For support or reporting issues, include Question ID: 64c00395f467f5bbfbbf11c7 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q053.png"
     },
@@ -4599,9 +4345,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 4.7: In fact, continuous integration speeds up the development process. By integrating the work often, problems are discovered early and can be fixed immediately, preventing them from slowing down the project in the later stages. Continuous integration involves automated processes like building and testing of code, thus relieving developers from manual, repetitive tasks and enabling them to focus on other aspects of their work. This consequently enhances their productivity. Continuous integration allows for the immediate detection of issues because code is integrated frequently. This immediate feedback makes it easier to address problems as they can be caught and fixed before further progress is made, improving overall security. The practice of making frequent commits and running automated tests means that errors are detected sooner. This early detection allows for quick fixes, thereby improving software quality. For support or reporting issues, include Question ID: 64c1a41ef35deb7523e71f56 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q054.png"
     },
@@ -4683,9 +4427,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 4.7: Employee retention enables the organization to retain experienced staff with valuable institutional knowledge, enhancing the management of security automation and orchestration. This accumulated expertise supports smoother operations and can improve response times in handling incidents. However, employee retention does not impact the prevention of social engineering attacks and is not directly related to the need for automation; the benefits of automation and orchestration remain essential regardless of retention rates. For support or reporting issues, include Question ID: 64c019867466b36c144bf8fb in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q055.png"
     },
@@ -4727,9 +4469,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Fileless Malware"
-      ],
+      "correct_answers": ["Fileless Malware"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -4765,9 +4505,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 2.4 - Fileless malware operates in memory, often leveraging legitimate system tools to evade detection. It might adjust registry values for persistence and can run within its own process or use tools like PowerShell to achieve its objectives. Lucas's computer exhibits classic signs of a fileless malware attack. Bloatware refers to unnecessary or unwanted software that comes pre-installed on a device. Lucas's issue isn't related to pre-installed applications. While spyware covertly tracks user activities, Lucas's computer doesn't seem to be demonstrating tracking or monitoring as the primary concern. A worm self-replicates to spread across networks. There's no evidence in the scenario of self-replicating software causing Lucas's computer issues. For support or reporting issues, include Question ID: 65281e61304674464742f9e3 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q056.png"
     },
@@ -4775,13 +4513,79 @@
       "question_number": "Question 57",
       "question_text": "Kelly Innovations LLC is keen on adopting technology to ensure the integrity and transparency of its financial transactions. They are looking for a solution where each transaction record is secured using cryptography, and the hash value of one record is used in the hash calculation of the next. Which of the following technologies would be MOST suitable for this requirement?",
       "question_type": "multiple_choice",
-      "all_options": [],
-      "correct_answers": [],
-      "user_incorrect_answers": [],
-      "options": [],
-      "correct_indices": [],
-      "explanation": "",
-      "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q057.png"
+      "all_options": [
+        {
+          "text": "Symmetric encryption",
+          "is_correct": false,
+          "is_user_selected": true,
+          "index": 0,
+          "explanation": "",
+          "state": "incorrect"
+        },
+        {
+          "text": "Digital watermarking",
+          "is_correct": false,
+          "is_user_selected": false,
+          "index": 1,
+          "explanation": "",
+          "state": "skipped"
+        },
+        {
+          "text": "Blockchain",
+          "is_correct": true,
+          "is_user_selected": false,
+          "index": 2,
+          "explanation": "",
+          "state": "correct"
+        },
+        {
+          "text": "Public key infrastructure (PKI)",
+          "is_correct": false,
+          "is_user_selected": false,
+          "index": 3,
+          "explanation": "",
+          "state": "skipped"
+        }
+      ],
+      "correct_answers": ["Blockchain"],
+      "user_incorrect_answers": ["Symmetric encryption"],
+      "options": [
+        {
+          "text": "Symmetric encryption",
+          "is_correct": false,
+          "is_user_selected": true,
+          "index": 0,
+          "explanation": "",
+          "state": "incorrect"
+        },
+        {
+          "text": "Digital watermarking",
+          "is_correct": false,
+          "is_user_selected": false,
+          "index": 1,
+          "explanation": "",
+          "state": "skipped"
+        },
+        {
+          "text": "Blockchain",
+          "is_correct": true,
+          "is_user_selected": false,
+          "index": 2,
+          "explanation": "",
+          "state": "correct"
+        },
+        {
+          "text": "Public key infrastructure (PKI)",
+          "is_correct": false,
+          "is_user_selected": false,
+          "index": 3,
+          "explanation": "",
+          "state": "skipped"
+        }
+      ],
+      "correct_indices": [2],
+      "explanation": "OBJ: 1.4 - Blockchain employs an expanding list of transactional records, each referred to as a block, and each block validates the hash of the previous one. This process ensures that historical transactions remain untampered with. Symmetric encryption uses a single key to both encrypt and decrypt information, but it does not inherently create a linked chain of records as described. While PKI is a framework of encryption and cybersecurity that protects communications between the server (your website) and the client (the users), it doesn't work with transactional records like blockchain does. Digital watermarking embeds information in digital content but doesn't deal with securing transaction records in the manner described. For support or reporting issues, include Question ID: 65244cca4c4116404f67d29d in your ticket. Thank you.",
+      "screenshot_path": "quiz_screenshots/Practice_set_1/exam_1/q057.png"
     },
     {
       "question_number": "Question 58",
@@ -4821,12 +4625,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Brute force"
-      ],
-      "user_incorrect_answers": [
-        "RFID cloning"
-      ],
+      "correct_answers": ["Brute force"],
+      "user_incorrect_answers": ["RFID cloning"],
       "options": [
         {
           "text": "RFID cloning",
@@ -4861,9 +4661,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 2.4 - Brute force attacks involve trying multiple combinations until the correct one is found. The \"maximum attempts reached\" error suggests that someone or something has been trying numerous combinations on the safe's electronic keypad. Phishing is a method used to trick individuals into revealing sensitive information, typically online, and isn't relevant to this physical security scenario. An environmental attack refers to exploiting environmental factors, and there's no evidence of that in this situation. RFID cloning method involves copying RFID data to gain unauthorized access. It's not applicable in a scenario where a keypad is being used. For support or reporting issues, include Question ID: 65296ae86fb1e3052b309216 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q058.png"
     },
@@ -4905,9 +4703,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Logical segmentation"
-      ],
+      "correct_answers": ["Logical segmentation"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -4943,9 +4739,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 3.1 - Logical segmentation segments a larger network into distinct units, improving both traffic management and security. Software-defined networking (SDN) focuses on centralizing network control through software, not on segmenting networks. High availability ensures continuous operation of systems and networks but doesn't inherently divide a network. Containerization encapsulates applications and their environments but doesn't pertain to network segmentation. For support or reporting issues, include Question ID: 652c310e895352c4197a4f42 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q059.png"
     },
@@ -4987,9 +4781,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Structured Query Language injection"
-      ],
+      "correct_answers": ["Structured Query Language injection"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -5025,9 +4817,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 2.3 - Structured Query Language injection is a web-based attack that involves inserting malicious SQL statements into user input fields or URLs that are executed by the database server. It can allow an attacker to read, modify, delete, or execute commands on the database. Cross-site scripting (XSS) is a web-based attack that involves inserting malicious scripts into web pages that are executed by the browser of unsuspecting users. It can allow an attacker to steal cookies, session tokens, credentials, or perform other actions on behalf of the user. Cross-site request forgery (CSRF) is a web-based attack that involves tricking a user into performing an unwanted action on a website where they are already authenticated. It can allow an attacker to transfer funds, change passwords, or perform other actions without the user’s consent. Directory traversal is a web-based attack that involves exploiting a vulnerability in a web server or application to access files or directories that are outside the intended scope. It can allow an attacker to read, modify, delete, or execute files or directories on the server. For support or reporting issues, include Question ID: 64bc22aca1b9d558709b3f6d in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q060.png"
     },
@@ -5069,9 +4859,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Service disruption"
-      ],
+      "correct_answers": ["Service disruption"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -5107,9 +4895,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 2.1 - A service disruption refers to the act of impairing or interrupting the availability or functionality of a system or network. Service disruption can be done for protest, sabotage, extortion, or diversion purposes. In this example, the Hacktivist is preventing the system from functioning. Espionage refers to the act of spying on another entity’s activities, operations, or secrets. Espionage can be done for political, military, economic, or competitive reasons. The Hacktivist in the example doesn't attempt to gain information or use it. Creating disorder/chaos refers to the act of causing disorder or confusion in a system or network. It is most often done for amusement, diversion, experimentation, or nihilism. The Hacktivist's actions may disrupt the company's business, but the main motivation is to prevent the company from providing a service. Data exfiltration refers to the act of stealing sensitive or confidential data from a system or network. Data exfiltration can be done for financial gain, espionage, blackmail, or other purposes. In the example, the Hacktivist doesn't take information. For support or reporting issues, include Question ID: 64b86349030c7ba35a5609e7 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q061.png"
     },
@@ -5151,12 +4937,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "RFID cloning"
-      ],
-      "user_incorrect_answers": [
-        "Environmental attack"
-      ],
+      "correct_answers": ["RFID cloning"],
+      "user_incorrect_answers": ["Environmental attack"],
       "options": [
         {
           "text": "Brute force",
@@ -5191,9 +4973,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 2.4 - Radio Frequency Identification cloning involves copying the data from one RFID tag (like those found in many security pass cards) and then using a duplicate or \"clone\" to gain unauthorized access. The mysterious nighttime entries using legitimate employee credentials suggest this. This is a software-based threat and not relevant to the physical security scenario described. Environmental attacks focus on exploiting physical environmental factors, such as temperature, humidity, etc. There's no evidence pointing to this based on the scenario. Brute force attacks typically involve trying many combinations to gain unauthorized entry. This would not likely result in the logs showing authorized employees accessing the facility. For support or reporting issues, include Question ID: 65296a066fb1e3052b309211 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q062.png"
     },
@@ -5235,9 +5015,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Risk assessments"
-      ],
+      "correct_answers": ["Risk assessments"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -5273,9 +5051,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 1.1 - Periodic evaluations, like risk assessments, are a managerial security control that involves regularly evaluating the threats to systems and networks. This can help the company identify potential threats and take steps to mitigate them. Security guards are considered operational controls, not managerial controls. Intrusion detection system is a technical security control that monitors network traffic for signs of security threats. Firewall is a technical security control that monitors and controls incoming and outgoing network traffic based on predetermined security rules. For support or reporting issues, include Question ID: 64bd55d28ecaa950633d569c in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q063.png"
     },
@@ -5317,9 +5093,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Cloud"
-      ],
+      "correct_answers": ["Cloud"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -5355,9 +5129,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 3.1 - Cloud is an architecture model that involves delivering computing services over the internet, such as servers, storage, databases, networking, software, analytics, and intelligence. Cloud can offer benefits such as scalability, flexibility, and cost-effectiveness, but it also introduces challenges such as security, privacy, and governance. IoT stands for Internet of Things, which is a network of physical devices that can communicate and exchange data over the internet. It does not refer to the delivery of computing services over the internet. On-premises is an architecture model that involves hosting and managing infrastructure on the organization’s own premises. It does not refer to the delivery of computing services over the internet. Virtualization is a technique that involves creating virtual versions of physical resources, such as servers, storage, or networks. It does not refer to the delivery of computing services over the internet. For support or reporting issues, include Question ID: 64c04870aa720bef4eafef15 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q064.png"
     },
@@ -5399,9 +5171,7 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Port 5060"
-      ],
+      "correct_answers": ["Port 5060"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -5437,9 +5207,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 2.5 - Session Initiation Protocol (SIP), port 5060, is used for signaling in Voice over IP (VoIP) services. Unauthorized access to this port can result in toll fraud or unauthorized call control. Simple Network Management Protocol (SNMP), port 161, is used for collecting and organizing information about managed devices, and it's unrelated to VoIP services. NetBIOS, port 139, is used for file and print sharing over local networks, not for VoIP signaling. Post Office Protocol (POP3), port 110, is used for retrieving emails from a mail server, unrelated to VoIP services. For support or reporting issues, include Question ID: 652b3568818ffad49a170582 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q065.png"
     },
@@ -5521,9 +5289,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 4.8: E-discovery focuses on the systematic search of electronic data to identify pieces of evidence that can be produced in legal contexts. While data protection methodologies are essential in digital investigations, they are not the central aspect of e-discovery. Though understanding financial implications can be essential, e-discovery's main goal isn't centered around financial assessments. Tool selection is critical, but e-discovery specifically deals with the production of electronic evidence. For support or reporting issues, include Question ID: 6543eb4ca69e5671c3827c55 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q066.png"
     },
@@ -5565,9 +5331,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Honeyfile"
-      ],
+      "correct_answers": ["Honeyfile"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -5603,9 +5367,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 1.2 - A honeyfile is a fake file or set of files designed to appear valuable or sensitive in order to attract attackers. A honeytoken is a fake piece of data, such as a username or password, designed to appear valuable or sensitive in order to attract attackers. A honeynet is a network of honeypots designed to simulate a real network and attract attackers. A honeypot is a cybersecurity mechanism that uses a manufactured attack target to lure cybercriminals away from legitimate targets and gather intelligence about their identity, methods, and motivations. For support or reporting issues, include Question ID: 64c04411e69668a02c0dfe0b in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q067.png"
     },
@@ -5647,9 +5409,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Spyware"
-      ],
+      "correct_answers": ["Spyware"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -5685,9 +5445,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 2.4 - Spyware is a type of malware that monitors the network traffic and captures sensitive information, such as passwords, credit card numbers, or personal details. A worm is a type of malware that self-replicates and spreads to other systems or networks without user interaction. Ransomware is a type of malware that encrypts the data or files on a system and demands a ransom for their decryption or restoration. A Trojan is a type of malware that disguises itself as a legitimate or benign program, but performs malicious actions when executed, such as creating a backdoor for remote access or control. For support or reporting issues, include Question ID: 64bcd4d64f97be0dbe753493 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q068.png"
     },
@@ -5729,12 +5487,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Self-signed certificate"
-      ],
-      "user_incorrect_answers": [
-        "CSR"
-      ],
+      "correct_answers": ["Self-signed certificate"],
+      "user_incorrect_answers": ["CSR"],
       "options": [
         {
           "text": "Root certificate",
@@ -5769,9 +5523,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 1.4 - A self-signed certificate is generated and signed by the same entity and is not backed by a trusted certificate authority (CA). While it's cost-effective and good for internal uses, it may be viewed with skepticism by external systems since it lacks a third-party verification. An extended validation certificate offers the highest level of assurance for websites, with rigorous checks by CAs, but it is not self-signed. A root certificate is a top-level certificate in a certificate hierarchy and is used to validate the certificate of the issuing CA. It doesn't inherently indicate a lack of third-party trust. A CSR (Certificate Signing Request) is a message sent from an applicant to a certificate authority in order to apply for a digital identity certificate. It is not a type of certificate itself. For support or reporting issues, include Question ID: 6524e5389e22f124a23e7938 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q069.png"
     },
@@ -5853,9 +5605,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 4.5: Agent-based web filters are installed directly on the end-user's device, ensuring that the filtering policy is enforced consistently, whether the user is on the corporate network or working remotely. The filtering speed is dependent on many factors, including the efficiency of the software, the hardware it's running on, and the network's overall capacity, not just on the type of filtering solution. All software, including agent-based web filters, requires updates to ensure they are effective against the latest threats and compatible with current systems. While there might be some cost savings without needing specific hardware, agent-based solutions also come with their own costs, such as licensing and maintenance. For support or reporting issues, include Question ID: 654325b46809155389722589 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q070.png"
     },
@@ -5937,9 +5687,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 4.8: Acquiring evidence correctly guarantees the evidence remains unchanged, making it admissible and valuable in legal proceedings. While communication is key in forensics, the acquisition is more important because it deals with collecting evidence in its pristine form. Acquisition is about collecting evidence accurately, not determining its relevance to a particular case. Access might be necessary, but the acquisition phase is more about copying evidence without altering it. For support or reporting issues, include Question ID: 6543e8b0896f42788ac46b08 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q071.png"
     },
@@ -5981,12 +5729,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Proxy server"
-      ],
-      "user_incorrect_answers": [
-        "Jump server"
-      ],
+      "correct_answers": ["Proxy server"],
+      "user_incorrect_answers": ["Jump server"],
       "options": [
         {
           "text": "Jump server",
@@ -6021,9 +5765,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 3.2: A proxy server sits between a client and the destination server, forwarding requests and responses on behalf of the client. By doing this, it can effectively mask the client's IP address, providing a level of privacy and anonymity. A jump server facilitates administrative access to an environment but isn't designed to forward and mask internet requests from clients to destination servers. Routers forward data packets between computer networks and direct traffic on the internet. Though they can be configured for certain security tasks, they don't inherently mask the origin of internet requests like a proxy server does. An Intrusion Prevention System (IPS) monitors and blocks malicious traffic; it does not act as an intermediary for general internet requests or mask the origin of those requests. For support or reporting issues, include Question ID: 652c75a274644bf66062a2f2 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q072.png"
     },
@@ -6065,9 +5807,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Firmware vulnerability"
-      ],
+      "correct_answers": ["Firmware vulnerability"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -6103,9 +5843,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 2.3 - A firmware vulnerability is an issue that involves the ability to modify or replace the software that controls the functionality of a hardware device. It can allow an attacker to alter the behavior, performance, or security of the device, or install malware, backdoors, or spyware on it. Side loading is a mobile device vulnerability that involves installing applications from sources other than the official app store, such as third-party websites, USB drives, or email attachments. It can expose the device to malware, spyware, or unauthorized access. End-of-life attack is a hardware vulnerability that involves exploiting hardware devices that are no longer supported or updated by the manufacturer. It can allow an attacker to compromise the security or functionality of the device, or use it as a gateway to access other systems or networks. A legacy vulnerability is a issue with hardware that involves exploiting devices that are outdated or obsolete, but still in use. It can allow an attacker to compromise the security or functionality of the device, or use it as a gateway to access other systems or networks. For support or reporting issues, include Question ID: 64bc218faba7f3fba667ceef in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q073.png"
     },
@@ -6147,12 +5885,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Adaptive identity"
-      ],
-      "user_incorrect_answers": [
-        "MAC"
-      ],
+      "correct_answers": ["Adaptive identity"],
+      "user_incorrect_answers": ["MAC"],
       "options": [
         {
           "text": "Security zones",
@@ -6187,9 +5921,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 1.2 - Adaptive identity allows for more flexible and dynamic access control by using contextual data to make dynamic access control decisions. For example, the system might grant access to a sensitive resource based on the user’s location or the time of day. Policy-driven access control allows for more flexible and dynamic access control by using pre-defined policies to make access control decisions, but it does not necessarily adapt to changing user behavior and access patterns. MAC (Mandatory Access Control) is an access control system that is very rigid. Access is granted through a system of rules and categorization of data. It does not provide more flexible and dynamic access control. Security zones are used to segment a network into smaller, more manageable areas, but they do not necessarily provide more flexible and dynamic access control. For support or reporting issues, include Question ID: 64c03b8a3a8522a3b5997a5a in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q074.png"
     },
@@ -6231,12 +5963,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Sandboxing"
-      ],
-      "user_incorrect_answers": [
-        "Firewall"
-      ],
+      "correct_answers": ["Sandboxing"],
+      "user_incorrect_answers": ["Firewall"],
       "options": [
         {
           "text": "Sandboxing",
@@ -6271,9 +5999,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.1: Sandboxing is a technique that isolates a software application from the rest of the system so that it can run and be tested in a safe and controlled environment. Sandboxing prevents the application from accessing or affecting other programs or data on the system and limits the resources and permissions it can use. If the application contains malware or other threats, they will be contained within the sandbox and will not harm the system. A firewall is a device that monitors and controls the incoming and outgoing network traffic based on predefined rules. Firewall protects the system from unauthorized or malicious network connections, but it does not prevent malware or other threats from running on the system. Antivirus is a technique that detects and removes malware or other threats from the system using signatures, heuristics, or behavioral analysis. Antivirus protects the system from known or suspected malware or other threats, but it may not be able to detect new or unknown threats. Encryption is a technique that transforms data into an unreadable format using a secret key so that only authorized parties can access or modify it. Encryption protects data from unauthorized access or tampering, but it does not prevent malware or other threats from running on the system. For support or reporting issues, include Question ID: 64b889c675f3764616371b59 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q075.png"
     },
@@ -6315,12 +6041,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Qualitative Risk Assessment"
-      ],
-      "user_incorrect_answers": [
-        "Quantitative Risk Assessment"
-      ],
+      "correct_answers": ["Qualitative Risk Assessment"],
+      "user_incorrect_answers": ["Quantitative Risk Assessment"],
       "options": [
         {
           "text": "Residual Risk Analysis",
@@ -6355,9 +6077,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 5.2 - David is using a Qualitative Risk Assessment, as he is categorizing risks by likelihood and impact without applying numerical values, focusing instead on a priority ranking. Quantitative Risk Assessment would involve specific financial data, which David’s method lacks. Residual Risk Analysis assesses the risk that remains after mitigation, and Threat Vector Analysis centers on potential attack vectors rather than general risk categorization. For support or reporting issues, include Question ID: 672240d0059e10a8d42841f5 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q076.png"
     },
@@ -6399,12 +6119,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Espionage"
-      ],
-      "user_incorrect_answers": [
-        "Service disruption"
-      ],
+      "correct_answers": ["Espionage"],
+      "user_incorrect_answers": ["Service disruption"],
       "options": [
         {
           "text": "Espionage",
@@ -6439,9 +6155,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 2.1 - Espionage is the act of obtaining secret or confidential information without the permission of the holder of the information. A nation-state threat actor may conduct espionage to gain strategic advantage, intelligence, or insight into their adversaries or competitors. Service disruption is the act of interrupting or degrading the availability or performance of a system or network. A nation-state threat actor may conduct service disruption as part of other activities, but it is rarely their primary motivation for attacking. Nation-state threat actors usually have extensive funding from the government or military organization that funds them, so they wouldn't have financial gain as their primary motivation for attacking. Political beliefs may be part of a motivation for a Nation-state actor, but they are much more likely to be motivated by a desire for data or a competitive advantage. For support or reporting issues, include Question ID: 64b88c9688b3fb59a48a1039 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q077.png"
     },
@@ -6483,12 +6197,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "The content of secure encrypted communications"
-      ],
-      "user_incorrect_answers": [
-        "Protocols used in the captured data"
-      ],
+      "correct_answers": ["The content of secure encrypted communications"],
+      "user_incorrect_answers": ["Protocols used in the captured data"],
       "options": [
         {
           "text": "The content of secure encrypted communications",
@@ -6523,9 +6233,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.9: The content of secure encrypted communications is not decipherable in packet captures unless you possess the keys to decrypt it. While you can see that data is being sent and received, the content of these communications is securely encrypted. Timestamps are also kept in packet captures. This offers a chronological context that can be crucial when tracing events during investigations and offers time-based correlation across different data sources. Protocols used in the captured data are also recorded in packet captures. This can help analysts determine what type of communication was happening during the event. Source and destination IP addresses are crucial parts of information that are recorded in packet captures. They can assist in determining the origin and destination of the network traffic, which aids in investigating potential breaches. For support or reporting issues, include Question ID: 64c1a95cf35deb7523e71f74 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q078.png"
     },
@@ -6567,12 +6275,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Detection of impossible travel."
-      ],
-      "user_incorrect_answers": [
-        "Legitimate use of a VPN."
-      ],
+      "correct_answers": ["Detection of impossible travel."],
+      "user_incorrect_answers": ["Legitimate use of a VPN."],
       "options": [
         {
           "text": "Legitimate use of a VPN.",
@@ -6607,9 +6311,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 2.4 - The activity logs show John accessing his account from geographically disparate locations in a short time frame – a feat that's physically impossible. Such patterns indicate potential unauthorized access or account compromise. System maintenance might result in irregularities in system behavior, but it wouldn't cause login attempts from various global locations in rapid succession. Using a VPN can change a user's apparent location, but the specific pattern and speed of these global logins are unusual and not characteristic of typical VPN use. While multi-factor authentication is crucial for account security, the scenario doesn't mention any failed authentication attempts using multiple factors. For support or reporting issues, include Question ID: 6529e47678c8fd0f1b752da8 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q079.png"
     },
@@ -6651,12 +6353,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Risk register"
-      ],
-      "user_incorrect_answers": [
-        "Risk assessment"
-      ],
+      "correct_answers": ["Risk register"],
+      "user_incorrect_answers": ["Risk assessment"],
       "options": [
         {
           "text": "Risk register",
@@ -6691,9 +6389,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 5.2 - The risk register is a comprehensive record that lists all identified risks, their potential impacts, assigned risk owners, and current risk status. It serves as a central repository for tracking and monitoring risks over time. Business impact analysis assesses the potential consequences of specific risks on critical business functions, helping prioritize risk response efforts. Risk reporting involves the regular communication and documentation of identified risks, their potential impact, and risk management strategies to relevant stakeholders. Risk assessment is the initial step in the risk management process, involving the identification, analysis, and evaluation of potential risks. For support or reporting issues, include Question ID: 64b9f337974c18fd63dd24b6 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q080.png"
     },
@@ -6775,9 +6471,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 4.3: Package monitoring involves keeping track of software package versions and security patches, which helps identify potential vulnerabilities and ensures that appropriate actions are taken to mitigate risks. By promptly addressing vulnerabilities, organizations can reduce the risk of potential exploits and maintain a more secure environment. While updating software packages is essential for performance and functionality, package monitoring in the context of vulnerability management is not focused on general updates. The purpose of package monitoring is to keep track of software package versions and security patches, not tracking software package dependencies. Tracking the physical location and status of hardware packages is not the intended purpose of package monitoring. For support or reporting issues, include Question ID: 64bfd70627afd558bd9151f5 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q081.png"
     },
@@ -6819,12 +6513,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Logic bomb"
-      ],
-      "user_incorrect_answers": [
-        "Ransomware"
-      ],
+      "correct_answers": ["Logic bomb"],
+      "user_incorrect_answers": ["Ransomware"],
       "options": [
         {
           "text": "Logic bomb",
@@ -6859,9 +6549,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 2.4 - A logic bomb is a type of malware that executes a malicious action when a specific condition or trigger is met, such as a date, time, or event. Ransomware is a type of malware that encrypts the data or files on a system and demands a ransom for their decryption or restoration. A Trojan is a type of malware that disguises itself as a legitimate or benign program, but performs malicious actions when executed. A worm is a type of malware that self-replicates and spreads to other systems or networks without user interaction. For support or reporting issues, include Question ID: 64bcce73f1dea48c270e0947 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q082.png"
     },
@@ -6943,9 +6631,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 1.3 - An outdated diagram won't include recent changes, potentially missing out on identifying some vulnerabilities. The diagram's main goal is to depict the current structure, not necessarily future plans. The amount of detail is unrelated to the diagram's timeliness. Architecture diagrams focus on the system's structure, not employee access. For support or reporting issues, include Question ID: 64c15363528e3065c1379718 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q083.png"
     },
@@ -6987,12 +6673,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Wiretapping"
-      ],
-      "user_incorrect_answers": [
-        "On-path attack"
-      ],
+      "correct_answers": ["Wiretapping"],
+      "user_incorrect_answers": ["On-path attack"],
       "options": [
         {
           "text": "Wiretapping",
@@ -7027,9 +6709,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 2.2 - Wiretapping, in the context of a wired network, refers to the act of connecting directly to the network's physical infrastructure (cables) to monitor and capture data traffic. It is a direct method to eavesdrop on communications. Packet sniffing is the process of capturing data packets on a network. While a packet sniffer can be used maliciously, the act of packet sniffing itself doesn't specify the method of data capture or a direct connection to network cables. An on-path attack involves intercepting and potentially altering communication between two parties, it doesn't necessarily require direct access to the physical network cables. Port mirroring is a method used mainly for network troubleshooting and diagnostics. It allows a switch to send a copy of network packets to a network monitoring connection. While it can be used for nefarious purposes if misconfigured, it doesn't inherently imply malicious intent like wiretapping does. For support or reporting issues, include Question ID: 65262caf6f507d8e8ff089a2 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q084.png"
     },
@@ -7071,12 +6751,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Users who have accessed the file"
-      ],
-      "user_incorrect_answers": [
-        "Date and time of last modification"
-      ],
+      "correct_answers": ["Users who have accessed the file"],
+      "user_incorrect_answers": ["Date and time of last modification"],
       "options": [
         {
           "text": "Date and time of last modification",
@@ -7111,9 +6787,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 4.9: Metadata does NOT normally include information about users who have accessed the file, although it will have information about what IP addresses have accessed the file.The date and time of the last modification is an integral part of metadata. This can help establish timelines of activity and identify any unexpected changes, which is crucial during an investigation. File size is a common piece of metadata. This could potentially be useful in an investigation if, for example, a file's size significantly changes without a clear reason. The name of the user who created the file is often included as part of the file's metadata. This is crucial information during an investigation of unauthorized file access or alteration.   For support or reporting issues, include Question ID: 64c1a8fcf35deb7523e71f6f in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q085.png"
     },
@@ -7155,9 +6829,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Asset inventory manager"
-      ],
+      "correct_answers": ["Asset inventory manager"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -7193,9 +6865,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.2: The asset inventory manager focuses on tracking and recording all organizational assets. Mobile application developers are more concerned with app functionality than hardware inventory. The network administrator role involves managing network health and connectivity, not inventorying smartphones. IT support specialists handle technical issues, not necessarily inventory tasks. For support or reporting issues, include Question ID: 651ee362dcae756d17d5574d in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q086.png"
     },
@@ -7277,9 +6947,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 4.2: Sanitization involves the process of permanently erasing or de-identifying data on a device so it cannot be recovered, while destruction is about physically demolishing the asset, ensuring no data can be extracted from it. Sanitization and destruction involve methods of removing or totally destroying data or assets rather than internal asset redistribution in an organization. Sanitization does not refer to physically damaging the asset; instead, it has to do with removing or de-identifying data so it cannot be recovered. Destruction involves physical destruction of the asset itself. Sanitization and destruction refer to two different types of procedures in the disposal process and are not synonyms. For support or reporting issues, include Question ID: 64c1938ddd32557d54e4c0e6 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q087.png"
     },
@@ -7321,12 +6989,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Risk appetite"
-      ],
-      "user_incorrect_answers": [
-        "Risk acceptance"
-      ],
+      "correct_answers": ["Risk appetite"],
+      "user_incorrect_answers": ["Risk acceptance"],
       "options": [
         {
           "text": "Risk tolerance",
@@ -7361,9 +7025,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 5.2 - Risk appetite refers to an organization's willingness to take on risk in pursuit of its business objectives. It reflects the organization's strategic approach to risk and how much risk it is willing to undertake to achieve specific goals. Risk acceptance means that an organization understands the level of risk that in involved in an activity and is willing to accept the outcomes of taking the risk. The risk is either accepted or not, there aren't levels of risk acceptance. In this case they are not making a decision about a level of risk for a specific activity. Risk tolerance is the extent to which an organization is comfortable with the level of risk it is willing to take. It represents the organization's ability to withstand potential losses or disruptions. Risk deterrence involves taking measures to reduce or mitigate the impact of an event. In this case, they aren't evaluating the impact or taking measures to reduce the likelihood of a specific event. For support or reporting issues, include Question ID: 64b9f508974c18fd63dd24bb in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q088.png"
     },
@@ -7405,12 +7067,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Spraying"
-      ],
-      "user_incorrect_answers": [
-        "Downgrade"
-      ],
+      "correct_answers": ["Spraying"],
+      "user_incorrect_answers": ["Downgrade"],
       "options": [
         {
           "text": "Birthday",
@@ -7445,9 +7103,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 2.4 - A spraying attack is a type of password attack that involves trying common passwords against multiple accounts, hoping to find a match. A birthday attack is a type of cryptographic attack that involves finding two different inputs that produce the same output for a hashing algorithm. A brute force attack is a type of password attack that involves trying all possible combinations of characters until the correct password is found. The logs would show many log on attempts, but the passwords used are more likely to be sequential than to use common words and the attacker is more likely to focus on one computer rather than trying each password on all of the computers in the department. A downgrade attack is a type of cryptographic attack that involves forcing a communication channel to use a weaker encryption algorithm or protocol, making it easier to decrypt or intercept. It doesn't entail multiple password attempts. For support or reporting issues, include Question ID: 64bcc9e5d05f45402ccc6a2b in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q089.png"
     },
@@ -7489,12 +7145,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Image backup"
-      ],
-      "user_incorrect_answers": [
-        "File-level backup"
-      ],
+      "correct_answers": ["Image backup"],
+      "user_incorrect_answers": ["File-level backup"],
       "options": [
         {
           "text": "Incremental backup",
@@ -7529,9 +7181,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 2.2 - An image backup duplicates an OS installation, either from a physical hard disk or a VM's virtual hard disk. It offers a quick means to redeploy the system without reinstalling software and settings. File-level backup involves copying individual files and directories. It does not duplicate the entire OS installation like an image backup. Incremental backup saves only the changes made since the last backup, not the entire system configuration or OS installation. Differential backup saves all changes made since the last full backup but doesn't create a complete system image like the image backup. For support or reporting issues, include Question ID: 65263a9e8dac4f87323045ef in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_1/exam_2/q090.png"
     }

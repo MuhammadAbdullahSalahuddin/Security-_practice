@@ -4,7 +4,7 @@
 
   export let endTime;
 
-  let display = '02:00:00';
+  let display = '01:30:00';
   let cls = 'text-[var(--green)]';
 
   const interval = setInterval(() => {
