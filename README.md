@@ -1,4 +1,4 @@
-# 🛡️ Security+ Practice Engine
+# Security+ Practice Engine
 
 A self-hosted, full-stack practice exam platform I built after passing the **CompTIA Security+ (SY0-701)** certification. I purchased a set of practice exams during my studies and wanted to make them freely available to anyone preparing for the same exam — because good study material shouldn't sit on a hard drive collecting dust.
 
@@ -32,8 +32,8 @@ That's it. Everything else (Python, Node.js, MongoDB, Nginx) runs inside contain
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/YOUR_USERNAME/YOUR_REPO_NAME.git
-cd YOUR_REPO_NAME
+git clone https://github.com/MuhammadAbdullahSalahuddin/Security-_practice
+cd Security-_practice
 ```
 
 ### 2. Build and start the services
@@ -43,6 +43,7 @@ docker compose up --build
 ```
 
 This will:
+
 - Spin up a **MongoDB** instance and persist data in a Docker volume
 - Build and run the **FastAPI** backend, seed the database with all practice questions
 - Build the **Svelte** frontend and serve it via Nginx
@@ -61,68 +62,6 @@ You should see the Security+ Practice Engine home screen with all available prac
 
 ---
 
-## 🗂️ Project Structure
-
-```
-.
-├── api/                  # FastAPI backend
-│   └── mainapi.py
-├── frontend/             # Svelte frontend
-│   └── src/
-├── quiz_screenshots/     # Practice set data (exam_data.json files)
-│   └── Practice_set_1/
-│       └── exam_1/
-│           └── exam_data.json
-├── seed.py               # Seeds MongoDB from the quiz_screenshots directory
-├── Dockerfile.api
-├── Dockerfile.frontend
-├── docker-compose.yaml
-└── nginx.conf
-```
-
----
-
-## ➕ Adding Your Own Questions
-
-The app auto-discovers any `exam_data.json` file placed inside a correctly structured directory:
-
-```
-quiz_screenshots/
-└── <practice_set_name>/
-    └── <exam_name>/
-        └── exam_data.json
-```
-
-Each `exam_data.json` should follow this schema:
-
-```json
-{
-  "course": "Security+",
-  "questions": [
-    {
-      "question_number": 1,
-      "question_text": "Which of the following is an example of multi-factor authentication?",
-      "all_options": [
-        { "text": "Username and password" },
-        { "text": "Password and PIN" },
-        { "text": "Password and fingerprint scan" },
-        { "text": "Two different passwords" }
-      ],
-      "correct_indices": [2],
-      "explanation": "MFA requires two or more different factor types. A password (knowledge) combined with a fingerprint (biometric/inherence) satisfies this requirement."
-    }
-  ]
-}
-```
-
-After adding new files, restart the containers to re-seed the database:
-
-```bash
-docker compose down && docker compose up --build
-```
-
----
-
 ## 🛑 Stopping the App
 
 ```bash
@@ -135,21 +74,7 @@ To also remove the stored question data (MongoDB volume):
 docker compose down -v
 ```
 
----
-
-## 📋 Tech Stack
-
-| Layer | Technology |
-|---|---|
-| Frontend | Svelte + Tailwind CSS |
-| Backend | FastAPI (Python) |
-| Database | MongoDB |
-| Reverse Proxy | Nginx |
-| Containerization | Docker + Docker Compose |
-
----
-
-## 🙏 A Note
+## A Note
 
 I passed Security+ and wanted to give back to the community that helped me get there. The practice questions included here are from a set I personally purchased and used during my studies. I'm sharing them freely in the spirit of open learning — not for commercial use.
 
