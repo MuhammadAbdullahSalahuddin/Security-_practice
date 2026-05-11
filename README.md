@@ -32,8 +32,8 @@ That's it. Everything else (Python, Node.js, MongoDB, Nginx) runs inside contain
 ### 1. Clone the repository
 
 ```bash
-git clone https://github.com/MuhammadAbdullahSalahuddin/Security-_practice
-cd Security-_practice
+git clone https://github.com/MuhammadAbdullahSalahuddin/Security-plus
+cd Security-plus
 ```
 
 ### 2. Build and start the services
