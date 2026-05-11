@@ -39,7 +39,7 @@ cd Security-plus
 ### 2. Build and start the services
 
 ```bash
-docker compose up --build
+docker compose up --build -d
 ```
 
 This will:
