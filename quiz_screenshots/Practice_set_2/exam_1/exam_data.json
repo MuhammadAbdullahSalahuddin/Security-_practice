@@ -40,12 +40,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Development"
-      ],
-      "user_incorrect_answers": [
-        "Reporting and monitoring"
-      ],
+      "correct_answers": ["Development"],
+      "user_incorrect_answers": ["Reporting and monitoring"],
       "options": [
         {
           "text": "Initial",
@@ -80,9 +76,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 5.6 - The development phase in the security awareness program at Dion Training involves the creation and planning of phishing campaigns and training materials. During this phase, the cybersecurity team designs realistic phishing emails, identifies potential training topics, and develops educational materials to raise awareness among employees about phishing risks. The reporting and monitoring phase focuses on collecting data about employees' responses to phishing campaigns and their overall security awareness. It includes tracking metrics related to the number of reported suspicious emails and the success of the training materials. The execution phase comes after the development phase, where the cybersecurity team implements the planned phishing campaigns and training materials. They send simulated phishing emails to employees and analyze their responses to identify areas for improvement in the security awareness program. The term \"initial\" is not associated with a specific phase in the security awareness program. It does not describe any specific activities related to the creation and planning of phishing campaigns and training materials. For support or reporting issues, include Question ID: 64c351f284a7d77f398b888b in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q001.png"
     },
@@ -124,12 +118,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Encryption"
-      ],
-      "user_incorrect_answers": [
-        "Patching"
-      ],
+      "correct_answers": ["Encryption"],
+      "user_incorrect_answers": ["Patching"],
       "options": [
         {
           "text": "Patching",
@@ -164,9 +154,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 2.5 - Encryption is a mitigation technique that involves using mathematical algorithms to transform data into an unreadable format. Encryption can protect data from unauthorized access or modification, as only those who have the secret key or algorithm can decrypt the data. It will help protect data in transit. Patching is a mitigation technique that can help prevent exploitation of known vulnerabilities on systems and devices by updating them with the latest security fixes and enhancements. Patching involves applying patches or updates to software and systems. It won't protect data in transit. Disabling ports and protocols is a hardening technique that can help reduce exposure to potential attacks. This can be done on firewalls, switches, routers, and hosts to close or block any network ports or protocols that aren’t needed for the normal operation of the systems and devices. Ports are numerical identifiers that specify the destination or source of network traffic, and protocols are rules or standards that define how network traffic is formatted or transmitted. This will not protect data in transit. Access control through permissions is a mitigation technique that can help prevent unauthorized execution of programs or scripts on a system or device. This is achieved by defining permissions through policies and applying those policies to resources such as programs, scripts, files, folders, and databases. Users without the correct permissions, can’t access the resources. This won't protect data in transit. For support or reporting issues, include Question ID: 64beeeb613b78ab048d67eea in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q002.png"
     },
@@ -208,9 +196,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "To process and transmit data between systems"
-      ],
+      "correct_answers": ["To process and transmit data between systems"],
       "user_incorrect_answers": [
         "To enforce security policies across the network"
       ],
@@ -248,9 +234,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 1.2 - In Zero Trust architecture, the Data Plane’s role is to handle the processing and transmission of data between systems, managing the flow of network traffic. It focuses on the movement of data rather than enforcing security policies or managing authentication. Security policies are enforced by the Control Plane, which makes decisions on access and controls based on set policies. The Data Plane does not analyze threats in real-time; instead, it operates as the pathway for data, ensuring efficient delivery while the Control Plane maintains security oversight. For support or reporting issues, include Question ID: 6721029d6ecd963a7be80f4e in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q003.png"
     },
@@ -292,12 +276,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Downtime"
-      ],
-      "user_incorrect_answers": [
-        "Change management"
-      ],
+      "correct_answers": ["Downtime"],
+      "user_incorrect_answers": ["Change management"],
       "options": [
         {
           "text": "Change management",
@@ -332,9 +312,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 1.3 - Downtime is a period when a system is unavailable or its performance is degraded, often due to planned maintenance or unforeseen incidents. In the scenario, the server's unavailability during the upgrade process is a clear example of downtime. A service restart is the act of stopping and then starting a service, often to apply changes or updates. While this can lead to downtime, the scenario specifically mentioned a system upgrade, not just a service restart. Change management is a formalized procedure to ensure changes are reviewed and approved before implementation. This is a process but does not specifically define the time a system is unavailable. A maintenance window is a predefined time frame during which system changes or updates are applied to minimize disruption to business operations. This indicates when changes may occur but does not specifically define the period of system unavailability. For support or reporting issues, include Question ID: 64c147ffec13eb3da6e3e7e1 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q004.png"
     },
@@ -376,12 +354,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Implementing URL scanning"
-      ],
-      "user_incorrect_answers": [
-        "Implementing a VPN solution"
-      ],
+      "correct_answers": ["Implementing URL scanning"],
+      "user_incorrect_answers": ["Implementing a VPN solution"],
       "options": [
         {
           "text": "Increasing network bandwidth",
@@ -416,9 +390,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 4.5: URL scanning is a method that assesses URLs in real-time, helping organizations prevent access to malicious or inappropriate websites. More bandwidth might improve network speed, but it doesn't assist in assessing the safety of URLs. While a firewall can block certain IPs and ports, it doesn't inherently provide real-time scanning of individual URLs for content assessment. A VPN provides encrypted communication and can hide user activity, but it doesn't evaluate URLs for safety. For support or reporting issues, include Question ID: 6543291e6491794aff7fb0bf in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q005.png"
     },
@@ -500,9 +472,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 4.5: Blocking inbound FTP traffic can prevent users like Jason from accessing external FTP sites. This might be the reason he can't connect. Blocking inbound HTTPS traffic for external addresses does not impact FTP access for internal users. Allowing outbound TCP traffic on port 21 (FTP) from all internal addresses permits external FTP traffic, so it's not the cause of the issue. Allowing outbound TCP traffic on port 443 (HTTPS) from all internal addresses permits secure HTTPS traffic from the internal network to the internet, so it aligns with Jamario's objective. For support or reporting issues, include Question ID: 65431bccb496ed4c62e3f146 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q006.png"
     },
@@ -544,12 +514,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Root of Trust"
-      ],
-      "user_incorrect_answers": [
-        "Certificate Revocation Lists"
-      ],
+      "correct_answers": ["Root of Trust"],
+      "user_incorrect_answers": ["Certificate Revocation Lists"],
       "options": [
         {
           "text": "Online Certificate Status Protocol",
@@ -584,9 +550,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 1.4 - Root of Trust (RoT) is a source that can always be trusted. It is the foundation of a cryptographic system and is the central point of the chain of trust within that system. It can be a piece of hardware (a Hardware Root of Trust) or software based. It is important in PKI, but it doesn't provide digital certificates. Certificate Authorities (CAs) are trusted entities that issue and manage security credentials and public keys for message encryption. This does not describe the source that can always be trusted within a cryptographic system. Certificate Revocation Lists (CRLs) are lists of certificates that have been revoked by a Certificate Authority before their scheduled expiration date. This does not describe the source that can always be trusted within a cryptographic system. Online Certificate Status Protocol (OCSP) is an internet protocol used for obtaining the revocation status of a digital certificate. This does not describe the source that can always be trusted within a cryptographic system. For support or reporting issues, include Question ID: 64c3e37abcbff47f6a7e6737 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q007.png"
     },
@@ -628,12 +592,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Focuses on narrowing potential threat vectors."
-      ],
-      "user_incorrect_answers": [
-        "Defines data transmission protocols."
-      ],
+      "correct_answers": ["Focuses on narrowing potential threat vectors."],
+      "user_incorrect_answers": ["Defines data transmission protocols."],
       "options": [
         {
           "text": "Defines data transmission protocols.",
@@ -668,9 +628,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 1.2 - Threat scope reduction aims to minimize the possible avenues or channels that could be exploited by adversaries. By limiting these vectors, an organization reduces its attack surface and, therefore, its risk of exposure. Managing cryptographic keys is essential for ensuring data is stored securely, particularly when it comes to encryption. However, this process is more about data protection and confidentiality than reducing the scope or number of potential threats. Defining data transmission protocols specifies the rules for how data is transmitted across a network. While defining transmission protocols is crucial for data integrity and security, it does not inherently focus on reducing the scope of threats. Organizing data into trust zones involves segmenting the network or creating isolated environments based on levels of trust. While this can be a component of threat scope reduction, the term itself doesn't directly equate to reducing threat vectors. Implicit trust, especially, is generally avoided in Zero Trust models. For support or reporting issues, include Question ID: 652464ad3a93ce2d9f373a97 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q008.png"
     },
@@ -750,9 +708,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 4.4 - One of the primary objectives of alert tuning is to reduce false positives, increasing the overall accuracy of the alerting system. Alert tuning works to reduce false positives, not false negatives. Reducing false positives can actually increase the instance of false negatives. The primary purpose of alert tuning is to enhance the efficiency and accuracy of the alerting system by reducing false positives and tailoring the system to an organization's specific requirements. Alert tuning is not concerned with improving the user interface aesthetics of the alerting system. Alert tuning allows security analysts to identify common alerts and resolve them, which allows security analysts to focus on more significant issues. For support or reporting issues, include Question ID: 64c19f4845e9d8860c404610 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q009.png"
     },
@@ -794,9 +750,7 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "It might not detect zero-day exploits"
-      ],
+      "correct_answers": ["It might not detect zero-day exploits"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -832,9 +786,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 4.5: Signature-based detection relies on a database of known threat patterns. Therefore, it might not recognize or stop new threats or zero-day exploits because their signatures aren't in the database yet. Automatically updating with behavioral patterns of users describes behavior-based or heuristic detection, not signature-based detection. Signature-based detection relies on predefined patterns of known threats. While an IPS does process traffic, the bandwidth consumption is not a direct limitation of signature-based detection. The bandwidth concern is more about the throughput of the IPS device itself. Signature-based detection doesn't encrypt traffic. Instead, it matches traffic patterns against known threat signatures. For support or reporting issues, include Question ID: 654323d97acefad87de05679 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q010.png"
     },
@@ -876,12 +828,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Application allow list"
-      ],
-      "user_incorrect_answers": [
-        "Access control lists"
-      ],
+      "correct_answers": ["Application allow list"],
+      "user_incorrect_answers": ["Access control lists"],
       "options": [
         {
           "text": "Segmentation",
@@ -916,9 +864,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 2.5 - Application allow list is a mitigation technique that can help enforce compliance with security standards and policies on a system or network. It does this by comparing applications to a list of applications that are allowed to run. These applications have been verified and authorized by the system or network administrator. Any application that is not on the list is not allowed to run. Segmentation is a mitigation technique that involves dividing a network into smaller segments. Each has its own security policies and controls. Segmentation can limit the scope of an attack by preventing the attacker from gaining access to an entire network because it will help isolate the compromised segment. This will not help you prevent unauthorized applications from running on your system. Access control lists (ACL) are a mitigation technique that involves using a list of rules to limiting access to resources on a network. ACLs can restrict access based on various criteria, such as IP addresses, port numbers, and protocols. Limiting IP addresses and other user criterial to a particular list will likely cause problems for new users and shrink your company's user base. Patching is a mitigation technique that can help prevent exploitation of known vulnerabilities on systems and devices by updating them with the latest security fixes and enhancements. Patching involves applying patches or updates to software and systems. You will need to keep your software up to date, but this won't prevent unauthorized software from being installed on your servers. For support or reporting issues, include Question ID: 64bef2050f6a8ad3be5d3c93 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q011.png"
     },
@@ -1000,9 +946,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 2.4 - Creating clear guidelines and sharing best practices along with comprehensive training materials ensures that employees are consistently informed about security standards and practices. Regular backups are essential for data integrity and recovery, but they don't necessarily guide employees on security protocols. While multi-factor authentication strengthens login processes, it doesn't holistically educate users on varied security practices. Advanced firewalls can enhance perimeter security, but they don't directly address user knowledge and behavior related to cybersecurity. For support or reporting issues, include Question ID: 6529ee0923faf5abc28f2e1c in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q012.png"
     },
@@ -1044,12 +988,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Layoffs"
-      ],
-      "user_incorrect_answers": [
-        "Reputational damage"
-      ],
+      "correct_answers": ["Layoffs"],
+      "user_incorrect_answers": ["Reputational damage"],
       "options": [
         {
           "text": "Fines",
@@ -1084,9 +1024,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 5.4 - Layoffs may result from non-compliance, but can occur for many other reasons.. They are not directly related to non-compliance with regulations. Reputational damage refers to the harm caused to an organization's reputation and brand image due to non-compliance incidents. Negative publicity and loss of trust from customers and partners can result from non-compliance. Fines are monetary penalties imposed by regulatory authorities for failing to comply with specific regulations. Organizations may face financial repercussions if they do not adhere to the required standards. Sanctions are punitive measures taken against an organization for non-compliance. They may include restrictions, limitations, or prohibitions on certain activities, contracts, or operations. For support or reporting issues, include Question ID: 64bf5d320620f92445ad7678 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q013.png"
     },
@@ -1166,9 +1104,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.5: Scheduling File Integrity Monitoring (FIM) checks during off-peak hours can optimize resources by focusing on low-activity periods, reducing the chance of missing critical changes. Real-time alerts for all file changes may overwhelm teams in large enterprises, making it difficult to spot real threats. A robust FIM should monitor critical application files and sensitive data, not just system files, as attackers may target these areas. Relying on a single server for FIM creates a single point of failure and limits scalability, so distributing FIM across multiple servers is recommended for redundancy and efficiency.      For support or reporting issues, include Question ID: 64c124f552ce7fd0f0ee0402 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q014.png"
     },
@@ -1210,9 +1146,7 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Enforcing specific password complexity rules."
-      ],
+      "correct_answers": ["Enforcing specific password complexity rules."],
       "user_incorrect_answers": [
         "Disallowing the use of the username within the password."
       ],
@@ -1250,23 +1184,87 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 5.1 - NIST's updated guidelines suggest that complexity rules should not be enforced, allowing users to choose their own passwords within certain broad parameters. Blocking common passwords like dictionary words is in line with the NIST guidelines, which recommend preventing the use of easily guessable passwords. NIST suggests that aging policies should not be enforced, giving users the autonomy to change their passwords based on their discretion, unless a compromise is detected. While NIST does deprecate some traditional elements of password policy, it still advocates for blocking passwords that repeat contextual information, such as the username. For support or reporting issues, include Question ID: 6544925d3818ba1f4e846320 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q015.png"
     },
     {
       "question_number": "Question 16",
-      "question_text": "The Frozen Dish, a home food delivery service, is reviewing their security systems. Royston, an IT manager, has explained the PKI system to his boss. His boss is alarmed by the idea of public keys and wants to purchase a storage device to save symmetric and asymmetric keys. Royston has explained that the Windows-based devices they use have this type of storage embedded in the motherboards. What is the name of the device that Royston is referring to?",
+      "question_text": "Which element of the risk management process involves identifying the individuals or departments responsible for managing and mitigating specific risks?",
       "question_type": "multiple_choice",
-      "all_options": [],
-      "correct_answers": [],
-      "user_incorrect_answers": [],
-      "options": [],
-      "correct_indices": [],
-      "explanation": "",
-      "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q016.png"
+      "all_options": [
+        {
+          "text": "Risk owners",
+          "is_correct": true,
+          "is_user_selected": false,
+          "index": 0,
+          "explanation": "",
+          "state": "correct"
+        },
+        {
+          "text": "Risk indicators",
+          "is_correct": false,
+          "is_user_selected": false,
+          "index": 1,
+          "explanation": "",
+          "state": "skipped"
+        },
+        {
+          "text": "Risk threshold",
+          "is_correct": false,
+          "is_user_selected": false,
+          "index": 2,
+          "explanation": "",
+          "state": "skipped"
+        },
+        {
+          "text": "Risk tolerance",
+          "is_correct": false,
+          "is_user_selected": true,
+          "index": 3,
+          "explanation": "",
+          "state": "incorrect"
+        }
+      ],
+      "correct_answers": ["Risk owners"],
+      "user_incorrect_answers": ["Risk tolerance"],
+      "options": [
+        {
+          "text": "Risk owners",
+          "is_correct": true,
+          "is_user_selected": false,
+          "index": 0,
+          "explanation": "",
+          "state": "correct"
+        },
+        {
+          "text": "Risk indicators",
+          "is_correct": false,
+          "is_user_selected": false,
+          "index": 1,
+          "explanation": "",
+          "state": "skipped"
+        },
+        {
+          "text": "Risk threshold",
+          "is_correct": false,
+          "is_user_selected": false,
+          "index": 2,
+          "explanation": "",
+          "state": "skipped"
+        },
+        {
+          "text": "Risk tolerance",
+          "is_correct": false,
+          "is_user_selected": true,
+          "index": 3,
+          "explanation": "",
+          "state": "incorrect"
+        }
+      ],
+      "correct_indices": [0],
+      "explanation": "OBJ: 5.2 - Risk owners are individuals or departments who are responsible for managing and mitigating specific risks identified during the risk management process. Risk tolerance refers to an organization's willingness to accept the level of risk, but it does not pertain to the identification of risk owners. Risk indicators are specific metrics used to monitor and assess the level of risk in an organization, but they do not directly involve identifying responsible parties. Risk threshold refers to the level of risk that an organization is willing to accept, but it does not address the identification of individuals or departments responsible for managing risks. For support or reporting issues, include Question ID: 64b9eff91cce5933317db62b in your ticket. Thank you.",
+      "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q016_new.png"
     },
     {
       "question_number": "Question 17",
@@ -1306,12 +1304,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Network appliance sensor"
-      ],
-      "user_incorrect_answers": [
-        "Proxy server"
-      ],
+      "correct_answers": ["Network appliance sensor"],
+      "user_incorrect_answers": ["Proxy server"],
       "options": [
         {
           "text": "VLAN",
@@ -1346,9 +1340,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 3.2: Network appliance sensors passively monitor network traffic, looking for signs of malicious or anomalous activity. Because these sensors operate in \"listen-only\" mode, it won't disrupt regular network operations. While a load balancer distributes incoming traffic to prevent server overloads, it does not provide detailed traffic analysis or threat detection functionalities. Though a proxy server can act as an intermediary for network requests and might offer some security features, it doesn't passively monitor all network traffic for malicious activities in the same way a dedicated sensor does. A VLAN (Virtual local area network) segments a network based on operational requirements, not necessarily security needs. It doesn't analyze traffic for signs of malicious activities. For support or reporting issues, include Question ID: 652c7841a67f751703997ca2 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q017.png"
     },
@@ -1390,12 +1382,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Journaling"
-      ],
-      "user_incorrect_answers": [
-        "Incremental backup"
-      ],
+      "correct_answers": ["Journaling"],
+      "user_incorrect_answers": ["Incremental backup"],
       "options": [
         {
           "text": "Differential backup",
@@ -1430,9 +1418,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 3.4: Journaling is a form of backup that involves recording all transactions in a system, which can be used to restore the system to a previous state. Differential backups capture all changes made since the last full backup. Like incremental backups, differential backups are not done in real-time but at specific intervals, and they accumulate changes since the last full backup. A full backup involves making a complete copy of all data in the system. While comprehensive, it's typically scheduled to occur at regular intervals (e.g., nightly or weekly) and does not provide real-time replication of each transaction. Incremental backups save only the changes made since the last backup, whether that was a full or another incremental backup. This method doesn't replicate transactions in real-time but rather at scheduled intervals. For support or reporting issues, include Question ID: 64c19ec812b4631e4788b433 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q018.png"
     },
@@ -1512,9 +1498,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.7: Guardrails ensure that automated processes work within set parameters to prevent unintended outcomes or potential damage. Guardrails don't necessarily slow down processes; they provide safety mechanisms to ensure processes run correctly. Guardrails are about safety in automation, not about converting manual processes to automated ones. While guardrails help in safe automation, manual oversight, especially in complex systems, remains essential. For support or reporting issues, include Question ID: 64c01186b254165cbe231ee7 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q019.png"
     },
@@ -1556,12 +1540,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Default Credential Management"
-      ],
-      "user_incorrect_answers": [
-        "Encryption"
-      ],
+      "correct_answers": ["Default Credential Management"],
+      "user_incorrect_answers": ["Encryption"],
       "options": [
         {
           "text": "Multi-factor Authentication",
@@ -1596,9 +1576,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 2.5 - The best mitigation technique for preventing unauthorized access through widely known credentials is Default Credential Management. This involves replacing factory-set usernames and passwords, which are often publicly available and easily exploited by attackers. While Multi-factor Authentication adds security layers, it does not address the issue of default credentials. Role-based Access Control assigns permissions based on user roles, but it doesn’t mitigate risks related to factory-set credentials. Encryption protects data but does not directly prevent unauthorized access due to weak, default authentication settings. For support or reporting issues, include Question ID: 672235a0ab565f74e2bc9148 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q020.png"
     },
@@ -1640,12 +1618,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Full-disk encryption"
-      ],
-      "user_incorrect_answers": [
-        "File-level encryption"
-      ],
+      "correct_answers": ["Full-disk encryption"],
+      "user_incorrect_answers": ["File-level encryption"],
       "options": [
         {
           "text": "Database encryption",
@@ -1680,9 +1654,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 1.4 - Full-disk encryption is a security mechanism used to protect data by encrypting the entire hard drive or storage medium on which data is stored. This means that every bit of data, including the operating system, applications, and user files, is encrypted when the system is at rest. File-level encryption encrypts individual files or folders on a storage device, not the entire disk. Partition encryption encrypts a specific partition on a storage device, not the entire disk. Database encryption encrypts data at the database level, not the entire disk. For support or reporting issues, include Question ID: 64c27d66216b86411ab101bf in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q021.png"
     },
@@ -1724,12 +1696,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "IPS"
-      ],
-      "user_incorrect_answers": [
-        "IDS"
-      ],
+      "correct_answers": ["IPS"],
+      "user_incorrect_answers": ["IDS"],
       "options": [
         {
           "text": "IDS",
@@ -1764,9 +1732,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 3.2: An IPS actively analyzes network traffic for signs of malicious activity. If it detects any threats, it can take immediate action, such as dropping the malicious packets or blocking traffic from the offending IP address. While a WAF can inspect and block malicious web traffic, its scope is specifically geared towards web applications and doesn't necessarily cover all types of network traffic. An Intrusion Detection System (IDS) monitors traffic and can log and provide alerts; however, it does not actively prevent any potentially malicious content like an IPS would. A proxy server acts as an intermediary for requests from clients seeking resources from other servers. Its primary role is to forward web requests and may cache data, but it doesn't actively block malicious activities based on real-time traffic analysis. For support or reporting issues, include Question ID: 652c7548c7a7b1e22ed067b2 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q022.png"
     },
@@ -1848,9 +1814,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.6: Implementing role-based access controls (RBAC) aligns with the principle of least privilege. RBAC ensures that each employee is granted the minimum necessary privileges and permissions based on their job function, reducing the risk of unauthorized access to sensitive data and systems. Granting employees access to all resources and data beyond their current role would violate the principle of least privilege. It increases the attack surface and potential damage if their credentials are compromised or misused. Least Privilege focuses on the privileges an employee needs to complete assigned tasks. It doesn't rank the privileges or tasks to provide a bottom or lower level of privileges. Providing employees with administrative access on their workstations is not in line with the principle of least privilege. Administrative access should be limited to a select few individuals who require it to perform specific administrative tasks. For support or reporting issues, include Question ID: 64c156b393c27dd3aaef1f7e in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q023.png"
     },
@@ -1947,10 +1911,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1,
-        2
-      ],
+      "correct_indices": [1, 2],
       "explanation": "OBJ: 5.6 - External compliance reporting is crafted to meet the mandatory disclosures and inform external stakeholders such as regulators and shareholders about the company's compliance status at a high level. Internal compliance reporting is designed to give detailed insights to internal stakeholders like executives and security analysts, assisting in strategic planning and operational improvements. While compliance can indirectly affect product development by ensuring that products meet legal standards, it is not the direct aim of either internal or external reporting. Compliance reporting does not primarily aim to enhance marketing strategies but rather to ensure transparency and accountability regarding compliance. The goal of compliance reporting is not directly linked to the facilitation of team assignments, which is more related to internal operational management than compliance reporting. For support or reporting issues, include Question ID: 64c3557168c1ea425b0f0c74 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q024.png"
     },
@@ -1992,12 +1953,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Offensive"
-      ],
-      "user_incorrect_answers": [
-        "Integrated"
-      ],
+      "correct_answers": ["Offensive"],
+      "user_incorrect_answers": ["Integrated"],
       "options": [
         {
           "text": "Offensive",
@@ -2032,9 +1989,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 5.5 - Offensive penetration testing, also known as ethical hacking, aims to simulate real-world cyberattacks on an organization's systems and networks. The objective is to identify vulnerabilities and weaknesses that malicious hackers could exploit. Defensive penetration testing focuses on assessing an organization's ability to detect and respond to cyber threats. It involves testing the effectiveness of security monitoring and incident response capabilities. Integrated penetration testing is a comprehensive approach that combines multiple methods, such as physical, offensive, and defensive testing, to provide a holistic assessment of an organization's overall security posture. Physical penetration testing involves evaluating the security measures of an organization's physical premises, such as buildings, data centers, and facilities. The aim is to identify weaknesses related to access controls, surveillance systems, and other physical security aspects. For support or reporting issues, include Question ID: 64c19a9e7094641fd6bc9bb8 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q025.png"
     },
@@ -2076,12 +2031,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Data encryption and digital watermarking"
-      ],
-      "user_incorrect_answers": [
-        "Version control and backup"
-      ],
+      "correct_answers": ["Data encryption and digital watermarking"],
+      "user_incorrect_answers": ["Version control and backup"],
       "options": [
         {
           "text": "Data encryption and digital watermarking",
@@ -2116,9 +2067,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 3.3: Data encryption and digital watermarking the spreadsheet ensure unauthorized parties cannot view its content, and digital watermarking embeds a hidden mark to track and verify the document's authenticity and integrity. Password protection restricts access, and read-only access prevents modifications, but neither ensures data confidentiality from unauthorized decryption nor verifies its integrity against all forms of tampering. Network monitoring and firewalls protect against unauthorized access and attacks; they don't directly ensure the confidentiality or integrity of specific spreadsheet data. While version control and backup are crucial for maintaining data history and recovery, neither directly ensures the spreadsheet's confidentiality nor verifies its integrity. For support or reporting issues, include Question ID: 652d74f719d65e8fa8c4cf0e in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q026.png"
     },
@@ -2160,12 +2109,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "RTOS"
-      ],
-      "user_incorrect_answers": [
-        "ICS"
-      ],
+      "correct_answers": ["RTOS"],
+      "user_incorrect_answers": ["ICS"],
       "options": [
         {
           "text": "RTOS",
@@ -2200,9 +2145,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 3.1 - A real-time operating system (RTOS) is an operating system that is designed to process data or events within a specified time frame or deadline. RTOS can provide predictability, reliability, and performance for time-sensitive applications, but also require more specialized hardware and software. Industrial control systems (ICS) are systems that monitor and control physical processes in industrial environments, such as power plants, factories, or water treatment facilities. Supervisory control and data acquisition (SCADA) is a type of ICS that uses computers and networks to remotely control and collect data from industrial devices and sensors. Internet of things (IoT) is a term that refers to the network of physical devices, vehicles, appliances, and other items that are embedded with sensors, software, and connectivity to exchange data and interact with other devices or systems. IoT can enable automation, efficiency, and convenience, but also pose security and privacy challenges. Embedded systems are systems that are integrated into larger systems or devices to perform specific functions or tasks. Embedded systems can have limited resources, such as memory, power, or processing speed, but also provide efficiency, functionality, and security. For support or reporting issues, include Question ID: 64bf70128d118a676363a463 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q027.png"
     },
@@ -2244,9 +2187,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Limited security update capabilities"
-      ],
+      "correct_answers": ["Limited security update capabilities"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -2282,9 +2223,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 3.1 - SCADA systems such as this are often engineered for specific tasks and might not receive regular security updates, making them susceptible to vulnerabilities over time. SCADA systems are not typically deployed in containers; thus, this isn't a relevant security implication. Memory constraints are more pertinent to embedded or real-time systems, not inherently a SCADA security concern. While important for real-time systems, runtime efficiency is not a primary security concern for SCADA systems. For support or reporting issues, include Question ID: 652c42766000c2244d013a03 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q028.png"
     },
@@ -2326,9 +2265,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "ICS"
-      ],
+      "correct_answers": ["ICS"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -2364,9 +2301,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 3.1 - Industrial Control Systems (ICS) are integral to manufacturing and industrial environments, overseeing and controlling processes for accuracy and safety. Software-defined networking (SDN) centralizes network control using software, not related to controlling industrial processes. Serverless computing focuses on eliminating the need to manage server infrastructure, not on overseeing manufacturing operations. Embedded systems are dedicated systems performing specific tasks, not necessarily related to industrial control and monitoring. For support or reporting issues, include Question ID: 652c3383e0af1b70771153b2 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q029.png"
     },
@@ -2408,12 +2343,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Federation"
-      ],
-      "user_incorrect_answers": [
-        "Identity aggregation"
-      ],
+      "correct_answers": ["Federation"],
+      "user_incorrect_answers": ["Identity aggregation"],
       "options": [
         {
           "text": "Federation",
@@ -2448,9 +2379,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.6: By employing a federation, companies can leverage single sign-on across multiple domains or organizations. Proxy authentication means another entity is authenticating on behalf of the user, not shared access between organizations. While password synchronization can provide some ease of access, it simply means passwords are kept consistent across platforms, not shared access. Identity aggregation collects and stores user identities but doesn't necessarily mean seamless cross-organization access. For support or reporting issues, include Question ID: 65446384665e6139823dea79 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q030.png"
     },
@@ -2492,12 +2421,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Maintenance window"
-      ],
-      "user_incorrect_answers": [
-        "Baseline configuration"
-      ],
+      "correct_answers": ["Maintenance window"],
+      "user_incorrect_answers": ["Baseline configuration"],
       "options": [
         {
           "text": "Maintenance window",
@@ -2532,9 +2457,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 1.3 - A maintenance window is a scheduled timeframe during which system updates, patches, or changes are implemented. This period is specifically chosen to reduce the impact on users and ensure business continuity. A Recovery Point Objective is a metric used in disaster recovery that defines the maximum allowable amount of lost data measured in time. It does not pertain to scheduled maintenance periods. A baseline configuration represents a set of specifications for a system, against which all future changes are measured. It doesn't refer to the time frame for implementing changes. An SOP (Standard Operating Procedure) is a set of step-by-step instructions compiled by an organization to help workers carry out complex routine operations. It doesn't specify when these operations should be performed. For support or reporting issues, include Question ID: 6524d23f5aa43bae85dcdf7e in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q031.png"
     },
@@ -2576,12 +2499,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Replay"
-      ],
-      "user_incorrect_answers": [
-        "Privilege escalation"
-      ],
+      "correct_answers": ["Replay"],
+      "user_incorrect_answers": ["Privilege escalation"],
       "options": [
         {
           "text": "Replay",
@@ -2616,9 +2535,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 2.4 - A replay attack is a type of application attack that involves capturing and retransmitting data, such as authentication tokens or credentials, to impersonate a legitimate user or session. A buffer overflow attack is a type of application attack that involves sending more data than expected to a function, causing it to overwrite adjacent memory locations and execute arbitrary code. An injection attack is a type of application attack that involves inserting malicious code or commands into an application or database to execute unauthorized actions or access sensitive data. A privilege escalation attack is a type of application attack that involves exploiting a vulnerability or misconfiguration to gain higher privileges or access than intended on a system or application. For support or reporting issues, include Question ID: 64bccb7ad05f45402ccc6a35 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q032.png"
     },
@@ -2660,12 +2577,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "COPE"
-      ],
-      "user_incorrect_answers": [
-        "COBO"
-      ],
+      "correct_answers": ["COPE"],
+      "user_incorrect_answers": ["COBO"],
       "options": [
         {
           "text": "COPE",
@@ -2700,9 +2613,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.1: COPE stands for Corporate Owned Personally Enabled, which is a deployment model that involves the company providing devices to its employees and allowing them to use them for both work and personal purposes. This model can give the company full control over the security and management of these devices, as it can enforce security policies, install software updates, monitor usage, and wipe data remotely. COBO stands for Corporate Owned Business Only, which is a deployment model that involves the company providing devices to its employees and restricting them to work-related use only. This model can ensure the highest level of security and compliance for these devices, but it also reduces the productivity and satisfaction of the employees, as they have to carry multiple devices for different purposes. BYOD stands for Bring Your Own Device, which is a deployment model that allows employees to use their personal devices, such as laptops, smartphones, or tablets, to access the company’s network and applications. This model can reduce the costs and risks associated with managing and securing these devices, as the responsibility is shifted to the employees. CYOD stands for Choose Your Own Device, which is a deployment model that allows employees to choose from a list of approved devices provided by the company. This model can offer some flexibility and convenience to the employees while also enabling the company to enforce security standards and policies on these devices.\nFor support or reporting issues, include Question ID: 64b887ea4cb3fde77262ba7d in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q033.png"
     },
@@ -2744,12 +2655,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Likelihood"
-      ],
-      "user_incorrect_answers": [
-        "ARO"
-      ],
+      "correct_answers": ["Likelihood"],
+      "user_incorrect_answers": ["ARO"],
       "options": [
         {
           "text": "Risk frequency",
@@ -2784,9 +2691,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 5.2 - Likelihood measures how probable it is that a risk will occur, which is crucial for risk analysis and management. Risk frequency could be seen as similar to likelihood but is less specifically defined in risk management terminology. Probability also indicates the chance of a risk occurring but does not necessarily tie it to a specific time frame as likelihood does within the context of risk assessment. While ARO (Annualized rate of occurrence) is a measurement of how often a risk event is expected to happen annually, it doesn't describe the general probability or frequency as broadly as the term likelihood does. For support or reporting issues, include Question ID: 65487af7acaa0dbbe5e80229 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q034.png"
     },
@@ -2828,9 +2733,7 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Using encryption"
-      ],
+      "correct_answers": ["Using encryption"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -2866,9 +2769,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 3.4: Encryption is the best option as it transforms data into an unreadable format for unauthorized users, thereby safeguarding it from unauthorized access. Access control limits who can view or edit data but does not protect the data at rest from being accessed if the storage medium itself is compromised. Encryption is needed to secure the data itself. While backups are essential for data recovery, they do not directly secure the data. Backups provide redundancy but don’t protect data from unauthorized access or breaches. Parallel processing is a computational technique to speed up tasks but does not protect data; it’s unrelated to security or the protection of stored data. For support or reporting issues, include Question ID: 64c1aa4345e9d8860c40464c in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q035.png"
     },
@@ -2910,9 +2811,7 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Complexity"
-      ],
+      "correct_answers": ["Complexity"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -2948,9 +2847,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 4.7: Complexity refers to the degree of intricacy in a system or process. In automation and orchestration, high complexity can lead to challenges in maintenance, understanding, and implementation. While high complexity can lead to increased costs, the term 'cost' encompasses a broader range of financial considerations, not just those associated with intricate systems. While technical debt can be a consequence of complexity, it more specifically refers to the implied cost of additional rework caused by choosing a quicker yet less optimal solution. Ongoing supportability relates to the ease with which a system can be maintained and supported over time, but it doesn't specifically address the intricacy or convolution of a system. For support or reporting issues, include Question ID: 654341fd263aeb5dbf217248 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q036.png"
     },
@@ -2992,12 +2889,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Attestation"
-      ],
-      "user_incorrect_answers": [
-        "Internal assessment"
-      ],
+      "correct_answers": ["Attestation"],
+      "user_incorrect_answers": ["Internal assessment"],
       "options": [
         {
           "text": "Regulatory examination",
@@ -3032,9 +2925,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 5.5 - Attestation is the term that refers to the process of affirming the accuracy and completeness of compliance reports. It involves providing formal statements or declarations about the organization's compliance with specific regulations or standards. Attestation can be done internally by the organization's management or externally by a third-party auditor. An independent third-party audit involves an external and unbiased assessment conducted by an independent auditor or a third-party organization. The purpose of this audit is to provide an objective evaluation of the organization's compliance status. Independent third-party audits are often used to validate and verify compliance claims made by the organization and can offer more credibility to compliance reports. A regulatory examination is an external evaluation conducted by a government agency or a regulatory body to ensure that an organization is complying with specific regulations or industry standards. During a regulatory examination, the organization's compliance practices, controls, and processes are thoroughly reviewed to assess their alignment with the applicable rules and requirements. Internal assessment involves the organization's internal evaluation of its adherence to established compliance requirements. This process may include self-assessments, internal audits, and reviews conducted by the organization's compliance team to ensure that it meets the necessary regulatory and security standards. For support or reporting issues, include Question ID: 64c199891bfa7d3af0f5be4f in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q037.png"
     },
@@ -3116,9 +3007,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 4.8: Simulation exercises are interactive drills that involve practicing incident response procedures in a controlled environment. These exercises allow the incident response team to test and improve their capabilities in handling security incidents, identify weaknesses in their response plans, and enhance their coordination and communication during a simulated incident. The controlled environment ensures that the exercises do not impact production systems or networks. Simulation exercises are not meetings for sharing experiences and lessons learned from past security incidents. While lessons learned may be part of the exercise, the primary purpose of simulation exercises is to practice and refine the incident response process. While simulation exercises do involve theoretical discussions and planning, they go beyond just talking about incident response procedures. They typically include practical exercises and role-playing to enhance the team's ability to respond effectively to real incidents. Simulation exercises do not involve conducting live cybersecurity attacks against an organization's systems. They are not meant to create actual security incidents but rather to practice and improve the organization's response capabilities in a safe, controlled environment. For support or reporting issues, include Question ID: 64c15eb56ab51895b912b812 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q038.png"
     },
@@ -3160,12 +3049,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Brute force attack"
-      ],
-      "user_incorrect_answers": [
-        "Distributed denial-of-service attack (DDoS)"
-      ],
+      "correct_answers": ["Brute force attack"],
+      "user_incorrect_answers": ["Distributed denial-of-service attack (DDoS)"],
       "options": [
         {
           "text": "Credential stuffing",
@@ -3200,9 +3085,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 2.4 - A brute force attack involves systematically trying every possible combination until the correct one is found. Enrique's observation of multiple failed login attempts across various user accounts with diverse password combinations and a spike in computational resource usage aligns with this attack type. It's especially significant if the attacker has access to high computational power. In a credential stuffing attack, an adversary uses previously stolen username-password pairs to gain unauthorized access. This type of attack does not typically involve a wide range of password combinations. A dictionary attack involves using a predefined list of words to guess a password or key. The wide variance in login attempts Enrique noticed goes beyond just dictionary words. A DDoS attack aims to overwhelm a system's resources by flooding it with unwanted requests, causing it to become unavailable to its intended users. While there's high resource usage, the specific pattern of failed logins doesn't fit this attack profile. For support or reporting issues, include Question ID: 6527fcadb1dec676712b18ae in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q039.png"
     },
@@ -3282,9 +3165,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 5.5 - Independent third-party auditors are external to the organization, which allows for an impartial assessment, ensuring no internal biases affect the outcome. Job creation is not the primary purpose of these audits. While findings may indirectly reflect on the IT team's performance, third-party audits are designed to provide an unbiased evaluation of an organization's security, not specifically the IT team's effectiveness. While internal processes might be improved as a result of findings from third-party audits, it's not the main reason for their use. For support or reporting issues, include Question ID: 64c1aabe3c0620e9baa77d5f in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q040.png"
     },
@@ -3326,12 +3207,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Watering hole"
-      ],
-      "user_incorrect_answers": [
-        "Impersonation"
-      ],
+      "correct_answers": ["Watering hole"],
+      "user_incorrect_answers": ["Impersonation"],
       "options": [
         {
           "text": "Business email compromise",
@@ -3366,9 +3243,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 2.2 - Watering hole is a form of cyberattack that involves compromising a legitimate website that is frequented by a specific group of users, such as employees of a certain organization. The goal is to infect the users’ systems with malware when they visit the website. Brand impersonation is a form of cyberattack that involves creating fake websites, emails, or social media accounts that mimic legitimate ones. The goal is to deceive users into trusting the fake entity and revealing their information or performing malicious actions. Impersonation is a form of social engineering that involves pretending to be someone else in order to obtain information or access from a victim. Business email compromise is a form of cyberattack that involves compromising an email account of a person in authority, such as a CEO or a manager, and using it to send fraudulent requests or instructions to other employees or partners. The goal is to trick them into transferring money or disclosing confidential information. For support or reporting issues, include Question ID: 64ba1ce4adb7c15b51664d5e in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q041.png"
     },
@@ -3413,9 +3288,7 @@
       "correct_answers": [
         "Installing the cable in a conduit buried underground"
       ],
-      "user_incorrect_answers": [
-        "Running the connection on overhead poles"
-      ],
+      "user_incorrect_answers": ["Running the connection on overhead poles"],
       "options": [
         {
           "text": "Securing the cable inside the building walls at both ends",
@@ -3450,9 +3323,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 3.2: Burying the connection underground within a protective conduit offers protection from environmental factors and unauthorized tampering. Overhead poles expose the connection to environmental factors, interference, and potential tampering, making it less secure. Securing the cable at each end offers some protection within the buildings, which is a good start, but it does not address the vulnerability of the cable for the majority of the distance between the buildings, leaving it exposed to potential damage or tampering along the way. An on-ground pipe leaves the cable vulnerable to environmental elements (e.g., flooding, heat), tampering, and physical damage, which could disrupt connectivity. For support or reporting issues, include Question ID: 652c721574644bf66062a2e3 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q042.png"
     },
@@ -3494,12 +3365,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Initial report"
-      ],
-      "user_incorrect_answers": [
-        "Forensic report"
-      ],
+      "correct_answers": ["Initial report"],
+      "user_incorrect_answers": ["Forensic report"],
       "options": [
         {
           "text": "Forensic report",
@@ -3534,9 +3401,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 5.6 - The first report made to highlight an incident or suspicious activity. It typically includes basic information and is used to alert relevant teams or departments. A risk assessment is a report identifying potential vulnerabilities and threats, assessing the potential impact and likelihood of them occurring. A forensic report is a detailed analysis typically made after an investigation, containing evidence, methodologies, and conclusions about a security incident. Trend analysis looks for patterns over time to make predictions about the future. David has provided the initial report of an incident. For support or reporting issues, include Question ID: 64c3501968c1ea425b0f0c6a in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q043.png"
     },
@@ -3578,12 +3443,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Implementing 802.1X"
-      ],
-      "user_incorrect_answers": [
-        "Stateful firewall"
-      ],
+      "correct_answers": ["Implementing 802.1X"],
+      "user_incorrect_answers": ["Stateful firewall"],
       "options": [
         {
           "text": "Implementing 802.1X",
@@ -3618,9 +3479,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 3.2 - 802.1X is a standard for port-based network access control that allows a network device to be authenticated based on credentials provided by the device before it can access the network. A virtual private network (VPN) provides a secure connection between remote users and an organization's network that encrypts traffic and can require user authentication; it doesn't enforce device-level authentication for wired connections. A stateful firewall filters network traffic based on state, port, and protocol. While it offers advanced security features, it does not specifically authenticate devices before granting access. An Intrusion Detection System (IDS) monitors network traffic for signs of malicious or suspicious activity. While important for security, it doesn't enforce device authentication before granting network access. For support or reporting issues, include Question ID: 652c775ea67f751703997c9d in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q044.png"
     },
@@ -3662,12 +3521,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Tap/monitor mode"
-      ],
-      "user_incorrect_answers": [
-        "In-line mode"
-      ],
+      "correct_answers": ["Tap/monitor mode"],
+      "user_incorrect_answers": ["In-line mode"],
       "options": [
         {
           "text": "Tap/monitor mode",
@@ -3702,9 +3557,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 3.2: Tap/monitor mode refers to a device that copies network traffic for analysis without interrupting or altering the data flow, allowing administrators to monitor and capture traffic in real time for diagnostic or security purposes. Passive analysis refers to monitoring without interference; however, it is a broader term that doesn't explicitly involve capturing or duplicating the traffic for analysis. Active analysis involves interacting with or potentially modifying the network traffic during the monitoring process, which could disturb the data flow, whereas the scenario requires a read-only, non-intrusive method of capturing traffic for analysis. In-line mode involves placing the device directly within the data path, meaning it actively processes or filters traffic as it passes through, which could disrupt or alter the flow of network traffic, contrary to the requirement of capturing traffic without interference. For support or reporting issues, include Question ID: 64c178b62e60209dbaac221b in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q045.png"
     },
@@ -3784,9 +3637,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 1.3 - Downloading and installing third-party software from the internet is typically categorized as Restricted Activities within corporate environments, especially in sensitive sectors like finance, due to the potential security risks associated. Malicious software can easily be introduced into the system through unverified third-party software installations. In most institutions, using the office printer for printing documents is a regular task and isn't categorized as a restricted activity unless it involves printing sensitive data without proper authorization. While installing a recommended software update could be restricted in certain scenarios, the term \"recommended\" implies that it's an endorsed activity. Checking their corporate email is a standard activity for most employees and wouldn't be restricted in a typical business setting. For support or reporting issues, include Question ID: 6524d5085aa43bae85dcdf88 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q046.png"
     },
@@ -3828,12 +3679,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Cryptographic downgrade attack"
-      ],
-      "user_incorrect_answers": [
-        "Replay attack"
-      ],
+      "correct_answers": ["Cryptographic downgrade attack"],
+      "user_incorrect_answers": ["Replay attack"],
       "options": [
         {
           "text": "Cryptographic downgrade attack",
@@ -3868,9 +3715,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 2.4 - In a cryptographic downgrade attack, an adversary forces the communication between two parties to use a less secure protocol or cipher suite, which is easier to compromise. In this case, by allowing SSL 3.0, an older and flawed protocol, the web server can be manipulated by an attacker to use this outdated protocol, making the data transmission less secure. Brute force attacks involve trying many different passwords or encryption keys until the correct one is found. It doesn't specifically focus on exploiting vulnerabilities in encryption protocols. An on-path attack involves an attacker secretly intercepting and possibly altering the communication between two parties. While related, it doesn't specifically focus on downgrading encryption protocols. A replay attack involves capturing valid data transmission and then fraudulently repeating or delaying it. This doesn't concern the strength or type of encryption protocol being used. For support or reporting issues, include Question ID: 6527f8e0291a89bc5869331b in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q047.png"
     },
@@ -3912,9 +3757,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "To continuously improve security measures"
-      ],
+      "correct_answers": ["To continuously improve security measures"],
       "user_incorrect_answers": [
         "To establish centralized governance structures"
       ],
@@ -3952,9 +3795,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 5.1 - The purpose of monitoring and revision in information security is to continuously monitor the effectiveness of security measures, identify weaknesses or vulnerabilities, and make necessary improvements to enhance the overall security posture of the organization. Monitoring and revision are not directly related to establishing governance structures. Governance structures define the decision-making and authority in the organization, whereas monitoring and revision are about assessing and enhancing security practices. While monitoring and revision may play a role in ensuring access control policies are effective, it is not their primary purpose. Access control policies focus on managing and controlling user access to resources based on their roles and responsibilities. Monitoring and revision may be used to ensure compliance with industry-specific regulations, but it is not their primary purpose. Compliance with regulations is a separate aspect of information security management. For support or reporting issues, include Question ID: 64b88e8575f3764616371b72 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q048.png"
     },
@@ -4036,9 +3877,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 2.4 - The combination of missing logs and an unauthorized account creation suggests malicious activity. Attackers remove evidence of their presence and actions by deleting or altering logs. Pausing a backup for maintenance is plausible, but it wouldn't result in the creation of an unauthorized account, nor would it typically remove logs. While the IT team creating a new account for a new employee and forgetting to inform him might explain the creation of a new account, it doesn't account for the missing logs. It's also a best practice for IT to notify of such changes. While low storage could prevent backups, it wouldn't delete logs or create unauthorized accounts. For support or reporting issues, include Question ID: 64bd6a2b37f9b1bab3d87220 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q049.png"
     },
@@ -4080,9 +3919,7 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Volume encryption"
-      ],
+      "correct_answers": ["Volume encryption"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -4118,9 +3955,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 1.4 - Volume encryption, like VeraCrypt, allows for the encryption of a specific volume or virtual drive. This means Kelly Innovations can encrypt just the virtual disk drive without affecting the entire physical disk. Full-disk encryption encrypts the entire physical drive, which might not be required if only a specific virtual volume needs protection. While database encryption encrypts entire databases, it doesn't target specific volumes or virtual drives. File-level encryption encrypts specific files or folders but doesn't cater to entire volumes or virtual drives. For support or reporting issues, include Question ID: 65258355d7819dc1960699b8 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q050.png"
     },
@@ -4162,9 +3997,7 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "HIPS"
-      ],
+      "correct_answers": ["HIPS"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -4200,9 +4033,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 2.5 - HIPS (Host-based Intrusion Prevention System), which monitors and blocks suspicious activities like unauthorized port openings in real time, preventing potential data exfiltration. IDS (Intrusion Detection System) only detects suspicious activity but does not prevent it. AV (Antivirus) helps detect malware but does not specifically monitor for unauthorized port access. WCF (Web Content Filtering) controls internet usage but doesn’t prevent unauthorized local actions on the system. For support or reporting issues, include Question ID: 672233be556839597288f3ee in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q051.png"
     },
@@ -4244,12 +4075,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Risk owners"
-      ],
-      "user_incorrect_answers": [
-        "Risk tolerance"
-      ],
+      "correct_answers": ["Risk owners"],
+      "user_incorrect_answers": ["Risk tolerance"],
       "options": [
         {
           "text": "Risk tolerance",
@@ -4284,9 +4111,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 5.2 - Risk owners are individuals or departments who are responsible for managing and mitigating specific risks identified during the risk management process. Risk tolerance refers to an organization's willingness to accept the level of risk, but it does not pertain to the identification of risk owners. Risk indicators are specific metrics used to monitor and assess the level of risk in an organization, but they do not directly involve identifying responsible parties. Risk threshold refers to the level of risk that an organization is willing to accept, but it does not address the identification of individuals or departments responsible for managing risks. For support or reporting issues, include Question ID: 64b9eff91cce5933317db62b in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q052.png"
     },
@@ -4328,12 +4153,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Supply chain"
-      ],
-      "user_incorrect_answers": [
-        "Unsupported systems and applications"
-      ],
+      "correct_answers": ["Supply chain"],
+      "user_incorrect_answers": ["Unsupported systems and applications"],
       "options": [
         {
           "text": "Default credentials",
@@ -4368,9 +4189,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 2.2 - Supply chain attacks involve compromising a third-party entity that provides products or services to a target organization, such as vendors, suppliers, or managed service providers. The goal is to use the compromised entity to deliver malware or perform other malicious actions to the target organization. Message-based attacks use email or other electronic messages to trick victims into revealing sensitive information or performing malicious actions. Default credentials are usernames and passwords that are set by default for certain devices or applications. Default credentials can be easily guessed by attackers and used to gain access to the system or the network. Unsupported systems and applications are systems or applications that are no longer receiving security updates or patches from their developers. Unsupported systems and applications may have vulnerabilities that can be exploited by attackers to gain unauthorized access or cause harm. In this case, the software is being supported. For support or reporting issues, include Question ID: 64ba1ae4adb7c15b51664d59 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q053.png"
     },
@@ -4412,12 +4231,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "TCO"
-      ],
-      "user_incorrect_answers": [
-        "Operational Efficiency"
-      ],
+      "correct_answers": ["TCO"],
+      "user_incorrect_answers": ["Operational Efficiency"],
       "options": [
         {
           "text": "TCO",
@@ -4452,9 +4267,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.7: The TCO (Total Cost of Ownership) not only includes the initial purchase price of the tool but also the ongoing expenses related to maintenance, updates, and other associated costs over its lifecycle. Operational efficiency refers to the effectiveness and productivity of operations but doesn't directly address the financial impact of a tool over its lifecycle. CAPEX (Capital Expenditure) pertains to the initial costs to purchase the asset or tool, not the ongoing or total costs throughout its lifecycle. While ROI (Return on Investment) evaluates the profitability or benefit of a particular investment, it doesn't primarily focus on the entire financial impact over a tool's lifecycle. For support or reporting issues, include Question ID: 6543cdb7991a76218e865559 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q054.png"
     },
@@ -4496,9 +4309,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Code Injection"
-      ],
+      "correct_answers": ["Code Injection"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -4534,23 +4345,87 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 2.4 - Code injection is an attack method in which malicious code is introduced into a vulnerable application. Strings like '', 'alert()', and 'document.cookie' are indicative of attempts to inject malicious scripts to exploit the application. It aims to execute unauthorized actions within the application, such as retrieving sensitive data. Directory traversal attacks focus on accessing files and directories stored outside the web root folder. The observed inputs, specifically oriented towards script execution, don't fall under this category. Command injection involves the execution of arbitrary commands on the host operating system. Although it's a form of injection attack, it's not usually indicated by script-related strings within application logs. CSRF attacks trick victims into executing unwanted actions on a website where they're authenticated. The attack usually involves a third party and doesn't typically involve direct code injections like the ones Jamario observed.</body>.\nTo report issues or get support, please include Question ID: 6527efd1fca22485d224f0f0 in your ticket.Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q055.png"
     },
     {
       "question_number": "Question 56",
-      "question_text": "Lorna is reviewing the logs of a domain name system (DNS) server and notices that it has received many requests for non-existent subdomains of a legitimate domain. She also observes that the responses from these requests are much larger than the requests themselves. Which of the following network attacks is MOST likely occurring on the DNS server?",
+      "question_text": "During testing of a security architecture, what method ensures the system can quickly switch to a standby system when the primary system doesn't work?",
       "question_type": "multiple_choice",
-      "all_options": [],
-      "correct_answers": [],
-      "user_incorrect_answers": [],
-      "options": [],
-      "correct_indices": [],
-      "explanation": "",
-      "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q056.png"
+      "all_options": [
+        {
+          "text": "Warm site",
+          "is_correct": false,
+          "is_user_selected": false,
+          "index": 0,
+          "explanation": "",
+          "state": "skipped"
+        },
+        {
+          "text": "Failover",
+          "is_correct": true,
+          "is_user_selected": false,
+          "index": 1,
+          "explanation": "",
+          "state": "correct"
+        },
+        {
+          "text": "Parallel processing tests",
+          "is_correct": false,
+          "is_user_selected": true,
+          "index": 2,
+          "explanation": "",
+          "state": "incorrect"
+        },
+        {
+          "text": "Clustering",
+          "is_correct": false,
+          "is_user_selected": false,
+          "index": 3,
+          "explanation": "",
+          "state": "skipped"
+        }
+      ],
+      "correct_answers": ["Failover"],
+      "user_incorrect_answers": ["Parallel processing tests"],
+      "options": [
+        {
+          "text": "Warm site",
+          "is_correct": false,
+          "is_user_selected": false,
+          "index": 0,
+          "explanation": "",
+          "state": "skipped"
+        },
+        {
+          "text": "Failover",
+          "is_correct": true,
+          "is_user_selected": false,
+          "index": 1,
+          "explanation": "",
+          "state": "correct"
+        },
+        {
+          "text": "Parallel processing tests",
+          "is_correct": false,
+          "is_user_selected": true,
+          "index": 2,
+          "explanation": "",
+          "state": "incorrect"
+        },
+        {
+          "text": "Clustering",
+          "is_correct": false,
+          "is_user_selected": false,
+          "index": 3,
+          "explanation": "",
+          "state": "skipped"
+        }
+      ],
+      "correct_indices": [1],
+      "explanation": "OBJ 3.4: Failovers are meant to keep an organization running after a significant failure. They are meant to be temporary means to prevent complete failure. They are less expensive than a full-scale backup plan. They are sort of like a spare tire for your car, where you wouldn't want to use the spare tire permanently; however, it will allow you to get home or to a place where you can buy a new tire or fix the flat one. Warm sites have much of the equipment and resources already at the site. Devices may be kept updated, but the data will need to be loaded. The warm site isn't a complete standby. Clustering, while crucial for high availability and load balancing, does not inherently ensure that control can be quickly switched in the event of a system failure. Parallel processing tests check the reliability and stability of the backup or secondary system while it's running alongside the primary system. For support or reporting issues, include Question ID: 64c19f1612b4631e4788b438 in your ticket. Thank you.",
+      "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q056_new.png"
     },
     {
       "question_number": "Question 57",
@@ -4590,9 +4465,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "The patch level of each of the targeted systems"
-      ],
+      "correct_answers": ["The patch level of each of the targeted systems"],
       "user_incorrect_answers": [
         "Source and destination IP addresses related to the alert"
       ],
@@ -4630,9 +4503,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.9: IPS (Intrusion Prevention System) and IDS (Intrusion Detection System) logs typically do not capture the patch level of the targeted system. While the patch level can be important for understanding system vulnerabilities, it is not directly logged by IPS/IDS technology, which focuses on network behavior and traffic patterns. The source and destination IP addresses related to the alert are documented in the IPS/IDS logs. These details help in understanding the path and direction of the potential intrusion, which is fundamental for any network security investigation. Timestamps are an important element in IPS/IDS logs. They provide a chronological context that can be a significant factor when correlating events and investigating security incidents. One of the crucial pieces of information provided in IPS/IDS logs is the signature or behavior that led to the alert. Having these details is vital for effective incident response and threat mitigation. For support or reporting issues, include Question ID: 64c1a832f35deb7523e71f65 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q057.png"
     },
@@ -4674,9 +4545,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "It creates an isolated zone"
-      ],
+      "correct_answers": ["It creates an isolated zone"],
       "user_incorrect_answers": [
         "It compresses traffic to speed up the network"
       ],
@@ -4714,9 +4583,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 4.5: A screened subnet, often referred to as a DMZ (Demilitarized Zone), acts as a buffer between the untrusted external network (like the Internet) and the trusted internal network. By doing so, it prevents direct access to internal resources, adding an extra layer of security. While encryption is crucial for data security, a screened subnet itself doesn't encrypt data. Its primary purpose is to segregate network zones. A screened subnet doesn't automatically update firewall rules. Firewall configurations and updates are managed separately. Screened subnets are not designed for traffic compression. Their role is to enhance security by creating a separate network zone. For support or reporting issues, include Question ID: 654322536491794aff7fb0b0 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q058.png"
     },
@@ -4758,12 +4625,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Account Lockout Policy"
-      ],
-      "user_incorrect_answers": [
-        "Multi-Factor Authentication Policy"
-      ],
+      "correct_answers": ["Account Lockout Policy"],
+      "user_incorrect_answers": ["Multi-Factor Authentication Policy"],
       "options": [
         {
           "text": "Password Complexity Policy",
@@ -4798,9 +4661,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 2.4 - The account lockout policy is designed to lock a user's account after multiple failed login attempts, which explains why employees were unable to log in after the system detected several incorrect password entries during the night. A password complexity policy enforces rules for creating strong passwords but does not cause account lockouts. Multi-factor authentication (MFA) adds extra security layers but is not responsible for locking accounts after failed attempts. Similarly, a password expiration policy requires users to update their passwords periodically but does not automatically lock accounts after failed logins. For support or reporting issues, include Question ID: 67212b7f84b5580af615eca6 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q059.png"
     },
@@ -4880,9 +4741,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 5.2 - A risk register is a comprehensive document that lists all identified risks, their potential impacts, and other relevant information related to each risk. The risk register may not directly determine the risk tolerance level of an organization, but it provides crucial information to help decision-makers understand the risks and their potential impacts, which can contribute to determining risk tolerance. While the risk register includes information about the potential impacts of identified risks, it may not provide a detailed analysis of the impact on business operations. Instead, it acts as a repository of risk-related data. While probability values can be included in the risk register, their primary purpose is to list and track identified risks rather than assigning probability values. For support or reporting issues, include Question ID: 64b9ef9f3f4084e37d4f8fdb in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q060.png"
     },
@@ -4964,9 +4823,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.7: Scripting can automate the process of enabling required services for new employees or disabling them for those leaving, ensuring consistent IT practices during transitions. Scripting aids in system management and automation, not in overseeing mentoring or training processes. Scripting automates technical tasks but doesn't influence human relationships or team dynamics. While scripting can streamline many IT-related processes, it doesn't play a role in HR's hiring or firing decisions. For support or reporting issues, include Question ID: 6543e15937ac18cc00032e35 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q061.png"
     },
@@ -5008,12 +4865,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Load balancer"
-      ],
-      "user_incorrect_answers": [
-        "IDS"
-      ],
+      "correct_answers": ["Load balancer"],
+      "user_incorrect_answers": ["IDS"],
       "options": [
         {
           "text": "Proxy Servers",
@@ -5048,9 +4901,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 3.2: A load balancer distributes network or application traffic across many servers. This optimizes the use of resources, maximizes throughput, and reduces latency. Web application firewalls (WAF) are used to prevent attacks on backend databases and web server based software. They can be deployed as appliances or plug-in software and protect against code injection, DoS, cross-site scripting and SQL injection. They don't distribute traffic across servers. A Proxy server acts as a filter or gateway between a client and servers. Cache engines provided by the proxy server speed up communications within a network. Proxy servers also offer security by analyzing traffic patterns and signatures associated with known attacks or malicious software. An intrusion detection system (IDS) monitors network traffic for malicious activities. It alerts to the potential activity but does not prevent it from passing through the network. In this way, it provides a layer of protection without slowing down network performance. For support or reporting issues, include Question ID: 64c16b466db7b8f0bdbe55eb in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q062.png"
     },
@@ -5092,12 +4943,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "PCI DSS"
-      ],
-      "user_incorrect_answers": [
-        "NIST Special Publication 800-63"
-      ],
+      "correct_answers": ["PCI DSS"],
+      "user_incorrect_answers": ["NIST Special Publication 800-63"],
       "options": [
         {
           "text": "FIPS",
@@ -5132,9 +4979,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 5.1 - The PCI DSS (Payment Card Industry Data Security Standard) is a widely-recognized security standard that imposes strict security measures for organizations handling credit cards from major card issuers to safeguard cardholder information against theft and fraud. ISO/IEC 27001 is an international standard for managing information security; it is not exclusive to the protection of credit card data. FIPS (Federal Information Processing Standards) are U.S. government standards that outline the requirements for cryptographic modules within federal computer systems and are not specifically related to credit card data protection. NIST SP 800-63 offers guidelines for digital identity management, which includes general recommendations for access control but does not deal specifically with credit card data security. For support or reporting issues, include Question ID: 65484ed1d368f5a99a797d0f in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q063.png"
     },
@@ -5176,12 +5021,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Applying security updates"
-      ],
-      "user_incorrect_answers": [
-        "Baseline configuration establishment"
-      ],
+      "correct_answers": ["Applying security updates"],
+      "user_incorrect_answers": ["Baseline configuration establishment"],
       "options": [
         {
           "text": "Baseline configuration establishment",
@@ -5216,9 +5057,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 4.3: Actively monitoring for and applying security updates is an essential activity in vulnerability management. It helps in addressing and rectifying known vulnerabilities in software and hardware, thereby reducing the chances of exploitation. Setting a baseline configuration is vital for determining system changes and anomalies. However, it doesn't directly involve rectifying vulnerabilities in software or hardware. While continuously observing system activities is essential for detecting anomalies or potential threats, regular system monitoring doesn't directly deal with addressing known vulnerabilities in systems. Although penetration testing can help identify vulnerabilities by simulating cyberattacks, the act itself doesn't address the vulnerabilities that are already known. For support or reporting issues, include Question ID: 6541d1ec017ef401cbd78f21 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q064.png"
     },
@@ -5300,9 +5139,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 4.8: Training is crucial in the incident response process because it ensures that incident response team members are knowledgeable and well-prepared to handle security incidents effectively and efficiently. Training equips them with the necessary skills, knowledge, and best practices to recognize, contain, eradicate, and recover from incidents. While compensating incident response team members appropriately is essential for their dedication and efforts, it is not the primary purpose of training. Training focuses on building skills and knowledge to respond effectively to incidents. Identifying and classifying incidents based on their severity and impact is part of the incident response process, but it is not directly related to the importance of training. Training to avoid social engineering is a good idea and may reduce incidents, but it is only one type of incident that may occur. Training ensures that the response team knows what to do if an event occurs. For support or reporting issues, include Question ID: 64c15e396ab51895b912b80d in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q065.png"
     },
@@ -5344,12 +5181,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Independent assessments"
-      ],
-      "user_incorrect_answers": [
-        "Right-to-audit clause"
-      ],
+      "correct_answers": ["Independent assessments"],
+      "user_incorrect_answers": ["Right-to-audit clause"],
       "options": [
         {
           "text": "Right-to-audit clause",
@@ -5384,9 +5217,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 5.3 - Independent assessments involve hiring an external third-party organization to evaluate and assess the vendor's security posture and controls. Penetration testing is a type of assessment that involves authorized simulated attacks on a vendor's systems and infrastructure to identify potential security weaknesses. It will test the security posture of a company, but an internal penetration test would not involve a third-party. Evidence of internal audits refers to documentation or proof that the vendor has conducted its internal security audits to assess and maintain the effectiveness of its security measures. It is an internal audit conducted by the vendor, not by a third party A right-to-audit clause is a provision in a vendor contract that grants the organization the authority to conduct audits on the vendor's security controls and practices. This allows the organization to do the audits. It doesn't involve a third-party. For support or reporting issues, include Question ID: 64bb3b44ef9efcf8d3fa32a1 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q066.png"
     },
@@ -5428,12 +5259,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "SPF"
-      ],
-      "user_incorrect_answers": [
-        "DKIM"
-      ],
+      "correct_answers": ["SPF"],
+      "user_incorrect_answers": ["DKIM"],
       "options": [
         {
           "text": "DKIM",
@@ -5468,9 +5295,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 4.5: Jamario should implement SPF (Sender Policy Framework), as it lets him specify which mail servers are authorized to send emails on behalf of the company's domain. While DMARC (Domain-based Message Authentication, Reporting, and Conformance) uses the results of SPF and DKIM checks, it doesn't directly list authorized servers for a domain. IMAP (Internet Message Access Protocol) is utilized for retrieving emails from a server and isn't designed to specify authorized sending servers for a domain. DKIM (DomainKeys Identified Mail) provides validation of the domain name identity associated with a message through cryptographic authentication, but it doesn't dictate authorized servers. For support or reporting issues, include Question ID: 65433c17a25d7ae61173fe3c in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q067.png"
     },
@@ -5512,9 +5337,7 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Acceptance"
-      ],
+      "correct_answers": ["Acceptance"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -5550,9 +5373,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 5.2 - The risk management strategy of Acceptance means acknowledging the existence of the risk but choosing not to take any action to mitigate it. Since no mitigation attempts are made, the company is using the acceptance risk management strategy. The risk management strategy of Avoidance involves eliminating the risk entirely by abstaining from activities or situations that may expose the organization to potential threats. The company is not avoiding the blizzard and its impacts, they are accepting the risk if a blizzard takes place. The risk management strategy of Mitigation involves taking proactive measures to reduce the likelihood or impact of a risk event. They are not taking any steps to reduce the likelihood of a blizzard, so they are not using the mitigation strategy. The risk management strategy of Transference involves shifting the risk to a third party, such as an insurance company, to handle potential losses. The company is not shifting the risk in this situation. It is simply accepting it. For support or reporting issues, include Question ID: 64b9f42b3f4084e37d4f8fef in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q068.png"
     },
@@ -5594,12 +5415,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Open public ledger"
-      ],
-      "user_incorrect_answers": [
-        "Hashing algorithms"
-      ],
+      "correct_answers": ["Open public ledger"],
+      "user_incorrect_answers": ["Hashing algorithms"],
       "options": [
         {
           "text": "Open public ledger",
@@ -5634,9 +5451,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 1.4 - An open public ledger, especially when associated with blockchain, is decentralized and distributed across a peer-to-peer network, ensuring no single entity has control over the entire transactional history. While digital certificates authenticate the identity of the certificate holder, they don't ensure a distributed transactional record. Hashing converts input data of any size into a fixed-length value, but doesn't specify how data is distributed. Asymmetric encryption involves using a pair of keys – a public key and a private key – for encryption and decryption, respectively. For support or reporting issues, include Question ID: 65244be9c232135cf418f242 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q069.png"
     },
@@ -5718,9 +5533,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 4.3: Environmental variables refer to the unique characteristics of an organization's infrastructure, business environment, and operational context that can impact vulnerability assessments and risk analysis. Understanding these variables is crucial to conducting effective vulnerability management and developing appropriate risk mitigation strategies. While vulnerability scanning tools may use various parameters, environmental variables refer to different aspects related to an organization's infrastructure and business environment. These variables are not specific conditions triggering automated responses; rather, they are factors related to an organization's infrastructure and business environment that impact vulnerability management processes. While physical security factors are important, environmental variables in this context have a different focus. For support or reporting issues, include Question ID: 64bff94c6d2c14dfab27f297 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q070.png"
     },
@@ -5762,12 +5575,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "TKIP"
-      ],
-      "user_incorrect_answers": [
-        "WEP"
-      ],
+      "correct_answers": ["TKIP"],
+      "user_incorrect_answers": ["WEP"],
       "options": [
         {
           "text": "WEP",
@@ -5802,9 +5611,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 4.1: TKIP stands for Temporal Key Integrity Protocol, and it is an encryption protocol that uses keys to encrypt each packet of data. TKIP was introduced by WPA to replace WEP, and it is compatible with older devices that do not support WPA2 or AES. WPA stands for Wi-Fi Protected Access, and it is a security standard that uses either TKIP or AES as the encryption protocol. WPA does not refer to a specific encryption protocol but rather a set of features and requirements that ensure wireless security. AES stands for Advanced Encryption Standard, and it is an encryption protocol that does not use keys to encrypt each packet of data. Instead, AES uses a symmetric-key algorithm that encrypts the entire data stream with a single key. AES is the most secure and efficient encryption protocol for wireless networks, but it requires devices that support WPA2/3. Older devices may not be compatible with AES. WEP stands for Wired Equivalent Privacy, and it is an encryption protocol that also uses keys to encrypt each packet of data. WEP was the first encryption protocol for wireless networks, but it has been deprecated and should never be used. For support or reporting issues, include Question ID: 64b9802da61c722f14d2c36b in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q071.png"
     },
@@ -5846,12 +5653,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Organized crime"
-      ],
-      "user_incorrect_answers": [
-        "Unskilled attackers"
-      ],
+      "correct_answers": ["Organized crime"],
+      "user_incorrect_answers": ["Unskilled attackers"],
       "options": [
         {
           "text": "Organized crime",
@@ -5886,9 +5689,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ: 2.1 - Organized crime organizations are threat actors that are composed of groups or networks of criminals and are motivated primarily by financial gain. Organized crime can launch coordinated and profitable attacks against businesses, governments, or individuals. A hacktivist is a threat actor that is motivated by philosophical or political beliefs and often targets organizations or governments that they disagree with. Hacktivists are not motivated by financial gain but rather by social or political change. An insider threat is a threat actor that has legitimate access to an organization’s network, systems, or data and is motivated by revenge, greed, or ideology. Insider threats are not composed of groups or networks but rather of individuals within an organization. An unskilled attackers are threat actors that have little or no technical skills and are motivated by curiosity, boredom, or personal gain. Unskilled attackers are not composed of groups or networks but rather of individuals with low resources and capabilities. \nFor support or reporting issues, include Question ID: 64b86046030c7ba35a5609dd in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q072.png"
     },
@@ -5930,12 +5731,8 @@
           "state": "incorrect"
         }
       ],
-      "correct_answers": [
-        "Typosquatting"
-      ],
-      "user_incorrect_answers": [
-        "Watering hole"
-      ],
+      "correct_answers": ["Typosquatting"],
+      "user_incorrect_answers": ["Watering hole"],
       "options": [
         {
           "text": "Business email compromise",
@@ -5970,9 +5767,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 2.2 - Typosquatting is a form of cyberattack that involves registering domain names that are similar to legitimate ones but have spelling errors or variations. The goal is to trick users into visiting malicious websites that may steal their information or infect their systems with malware. Watering hole is a form of cyberattack that involves compromising a legitimate website that is frequented by a specific group of users, such as employees of a certain organization. The goal is to infect the users’ systems with malware when they visit the website. Business email compromise is a form of cyberattack that involves compromising an email account of a person in authority, such as a CEO or a manager, and using it to send fraudulent requests or instructions to other employees or partners. The goal is to trick them into transferring money or disclosing confidential information. Brand impersonation is a form of cyberattack that involves creating fake websites, emails, or social media accounts that mimic legitimate ones. The goal is to deceive users into trusting the fake entity and revealing their information or performing malicious actions. For support or reporting issues, include Question ID: 64ba1a7ab711a9b6c71715d7 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q073.png"
     },
@@ -6054,9 +5849,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 3.3: Under the EU's GDPR, sensitive personal data refers to specific categories of personal information that could harm an individual if made public. This includes, but is not limited to, religious beliefs, political opinions, trade union membership, gender, sexual orientation, racial or ethnic origin, genetic data, and health information. The intention behind categorizing such data as sensitive is to ensure its protection and prevent its misuse. While employment history and salary details are personal data, they are not specifically categorized as sensitive under the GDPR. However, they should still be protected, but they don't fall under the specially protected categories. Preferences like favorite movies or hobbies, while personal, are not considered as sensitive under the GDPR's specific criteria. Online purchase history is a form of personal data, but it isn't classified as sensitive in the context of the GDPR's specialized categories. For support or reporting issues, include Question ID: 64c18bc65739c7304716075b in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q074.png"
     },
@@ -6098,12 +5891,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Failover"
-      ],
-      "user_incorrect_answers": [
-        "Parallel processing tests"
-      ],
+      "correct_answers": ["Failover"],
+      "user_incorrect_answers": ["Parallel processing tests"],
       "options": [
         {
           "text": "Parallel processing tests",
@@ -6138,9 +5927,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 3.4: Failovers are meant to keep an organization running after a significant failure. They are meant to be temporary means to prevent complete failure. They are less expensive than a full-scale backup plan. They are sort of like a spare tire for your car, where you wouldn’t want to use the spare tire permanently; however, it will allow you to get home or to a place where you can buy a new tire or fix the flat one. Warm sites have much of the equipment and resources already at the site. Devices may be kept updated, but the data will need to be loaded. The warm site isn't a complete standby. Clustering, while crucial for high availability and load balancing, does not inherently ensure that control can be quickly switched in the event of a system failure. Parallel processing tests check the reliability and stability of the backup or secondary system while it's running alongside the primary system. For support or reporting issues, include Question ID: 64c19f1612b4631e4788b438 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q075.png"
     },
@@ -6182,12 +5969,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "System/process audit"
-      ],
-      "user_incorrect_answers": [
-        "OSINT"
-      ],
+      "correct_answers": ["System/process audit"],
+      "user_incorrect_answers": ["OSINT"],
       "options": [
         {
           "text": "System/process audit",
@@ -6222,9 +6005,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.3: A system/process audit is a thorough review of an organization's operations, ensuring adherence to specific standards and identifying potential areas for improvement. OSINT leverages publicly available data sources to gather intelligence on targets, providing valuable insights without breaching any laws. Penetration testing is a simulated cyberattack against a system to check for exploitable vulnerabilities, often involving a combination of tools and manual techniques. A risk assessment involves identifying, evaluating, and analyzing risks to an organization’s assets and operations with the aim of implementing measures to control and mitigate those risks. While risk assessments are crucial for understanding and mitigating potential risks and vulnerabilities within an organization, they do not specifically focus on ensuring that procedures, controls, and operations comply with established guidelines, standards, or regulations. For support or reporting issues, include Question ID: 653d463ec421a41924fc2696 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q076.png"
     },
@@ -6266,12 +6047,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Network Access Control"
-      ],
-      "user_incorrect_answers": [
-        "Endpoint Detection and Response"
-      ],
+      "correct_answers": ["Network Access Control"],
+      "user_incorrect_answers": ["Endpoint Detection and Response"],
       "options": [
         {
           "text": "Network Access Control",
@@ -6306,9 +6083,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 2.5 - For mitigating security risks associated with a BYOD (Bring Your Own Device) policy, Network Access Control manages a wider range of helpful techniques to mitigate risk. It can evaluate the device's security settings, check and enforce compliance, and ensure the device meets a minimum security standard. Configuration enforcement ensures that each device complies with corporate security policies before connecting to the network, reducing vulnerability exposure from non-compliant devices, but doesn't address as wide a range of techniques as NAC does. Device Encryption secures stored data but doesn’t ensure compliance with configuration standards. Endpoint Detection and Response focuses on identifying and responding to threats, rather than enforcing device configurations, which is critical for BYOD security.   For support or reporting issues, include Question ID: 6722349e556839597288f3f3 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q077.png"
     },
@@ -6350,12 +6125,8 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "SMTP"
-      ],
-      "user_incorrect_answers": [
-        "IMAP"
-      ],
+      "correct_answers": ["SMTP"],
+      "user_incorrect_answers": ["IMAP"],
       "options": [
         {
           "text": "IMAP",
@@ -6390,9 +6161,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 2.2 - Simple Mail Transfer Protocol (SMTP) port is a type of open service port that is commonly used for email servers. It is most commonly used to perform spamming, spoofing, or phishing attacks because it is used to send and email messages. Hypertext Transfer Protocol (HTTP) port is a type of open service port that is commonly used for web servers and can be exploited by attackers to perform injection attacks, such as SQL injection or cross-site scripting. It is the default port for HTTP, the protocol used to transfer web pages and data. Post Office Protocol (POP) port is a type of open service port that is commonly used for email clients. It is most commonly used to perform eavesdropping, data theft, or malware delivery attacks because it is used to retrieve email messages from a server. Internet Message Access Protocol (IMAP) port is a type of open service port that is commonly used for email clients. It is most commonly used to perform eavesdropping, data theft, or malware delivery attacks because it is used to retrieve email messages on a server. For support or reporting issues, include Question ID: 64b9ea100607a460c0b526d1 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q078.png"
     },
@@ -6472,9 +6241,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 4.4 - Data Loss Prevention (DLP) tools do analyze data movement and usage within an organization to protect sensitive data. They prevent data loss, not access to systems. The primary purpose of DLP solutions is to safeguard sensitive data from unauthorized access and inadvertent distribution. DLP systems are capable of identifying potential data breaches and can take corrective and preventative actions, such as alerting administrators or blocking user actions. DLP tools do enforce data security policies and thereby help in maintaining the confidentiality and integrity of sensitive data within the organization. For support or reporting issues, include Question ID: 64c19e13f35deb7523e71f42 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q079.png"
     },
@@ -6556,9 +6323,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        0
-      ],
+      "correct_indices": [0],
       "explanation": "OBJ 4.9: From an endpoint perspective, details regarding unusual or unauthorized activities, such as unexpected processes, unauthorized file access, and suspicious network connections, could provide critical evidence during a security investigation. While frequently restarting a device could be an indication of technical issues with the endpoint device, it is not directly useful for investigating a specific security incident unless correlated with other suspicious activities. Although tracking installed and uninstalled applications could be useful in some investigations, without contextual details (such as who made the changes and why), this data alone would not likely suffice to pinpoint a specific security incident. Simply having the total number of files on an endpoint would not provide useful information for a specific security investigation. It is the access and modification details of the files that would be more valuable, especially if suspicious activity is detected. For support or reporting issues, include Question ID: 64c170612e60209dbaac21fd in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q080.png"
     },
@@ -6600,9 +6365,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "FIPS"
-      ],
+      "correct_answers": ["FIPS"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -6638,9 +6401,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 5.1 - FIPS (Federal Information Processing Standards) are standards that provide important guidelines and requirements for cryptography used to secure federal information systems, except those related to national security. PCI DSS relates to the protection of cardholder data and is not focused on the cryptographic requirements for federal information systems. While ISO/IEC 27001 is an important standard for information security management systems, it does not set specific requirements for cryptographic modules within federal computer systems. This publication provides guidelines for digital identity but does not specify requirements for cryptographic modules within federal systems. For support or reporting issues, include Question ID: 6548502fc6ba39a276ae8881 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q081.png"
     },
@@ -6690,10 +6451,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Incident Reporting",
-        "Workstation Security"
-      ],
+      "correct_answers": ["Incident Reporting", "Workstation Security"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -6737,10 +6495,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1,
-        2
-      ],
+      "correct_indices": [1, 2],
       "explanation": "Employees must learn how to secure their workstations, including the use of password-protected screensavers and locking devices when unattended. OBJ: 5.6 - The training should emphasize the importance of reporting any suspicious activity or security breaches immediately as per company protocol. Team building is beneficial for work culture but does not directly contribute to operational security awareness. While ergonomics is important for employee well-being, it is not directly related to operational security practices. Unless the training specifically addresses the security risks of using social media, general social media management is not a primary component of operational security. For support or reporting issues, include Question ID: 64c355ba68c1ea425b0f0c79 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q082.png"
     },
@@ -6782,12 +6537,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Hashing"
-      ],
-      "user_incorrect_answers": [
-        "Private"
-      ],
+      "correct_answers": ["Hashing"],
+      "user_incorrect_answers": ["Private"],
       "options": [
         {
           "text": "Tokenization",
@@ -6822,9 +6573,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 3.3: Hashing provides a one-way, irreversible technique for securing data, making it appropriate for securing passwords. In other words, a person who gains access to the hashed password won't be able to discover the original password Private data relates to data classification and privacy but neither elaborates a method to secure data like passwords. Encryption is the process of converting information or data into a code to prevent unauthorized access. It often uses an algorithm to replace the original data with other data. If a person figures out or acquires the algorithm, the data can be decrypted. While tokenization can provide security, it wouldn’t be the best choice for passwords since it is essentially reversible, providing a mapping back to the original data. A person who has access to the database where the token and the password that is linked to the token, can use the token to find the original password. For support or reporting issues, include Question ID: 64c197ef6bd44bdb096b83b8 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q083.png"
     },
@@ -6866,12 +6615,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Bloatware"
-      ],
-      "user_incorrect_answers": [
-        "Spyware"
-      ],
+      "correct_answers": ["Bloatware"],
+      "user_incorrect_answers": ["Spyware"],
       "options": [
         {
           "text": "Trojan horse",
@@ -6906,9 +6651,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ: 2.4 - Bloatware refers to software that comes pre-installed on a device, which might be unnecessary or unwanted by the user, and can often consume system resources. Mary's experience aligns with typical bloatware characteristics. Ransomware locks files or systems and demands a ransom. Mary doesn't mention any encryption or demands related to her new laptop. Spyware covertly tracks user activities and can monitor local application activity. Mary's issue doesn't seem to revolve around any tracking or monitoring. A Trojan horse is malware disguised as legitimate software. Mary's concern is about pre-installed software, not software she mistakenly downloaded or installed. For support or reporting issues, include Question ID: 65281dd3d631f5bd4a085cef in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q084.png"
     },
@@ -6950,9 +6693,7 @@
           "state": "correct"
         }
       ],
-      "correct_answers": [
-        "Rules of engagement"
-      ],
+      "correct_answers": ["Rules of engagement"],
       "user_incorrect_answers": [],
       "options": [
         {
@@ -6988,9 +6729,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ: 5.3 - Rules of engagement are a set of guidelines outlining the scope, limitations, and rules for conducting a specific security assessment, such as the assessment of the vendor's systems and networks. Setting the rules of engagement helps ensure that the penetration testing will go smoothly and not have to be interrupted because the testers or the vendors didn't understand what was going to take place. A Non-disclosure agreement (NDA) is a legal contract that ensures the protection of sensitive information and maintains confidentiality between the organization and the vendor. A vendor may request an NDA be prepared and signed, before penetration testing begins, however, it is not always the case. A Memorandum of understanding (MOU) is a formal agreement between two or more parties outlining their mutual understanding and cooperation on specific projects or initiatives. It isn't part of the required materials for a penetration test of a vendor's systems. A Service-level agreement (SLA) is a formal contract that defines the expected level of service between the organization and the vendor. It isn't part of the required materials for a penetration test of a vendor's systems. For support or reporting issues, include Question ID: 64bb3f5548f9d4fbc1cdd3fe in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q085.png"
     },
@@ -7032,12 +6771,8 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Credential replay"
-      ],
-      "user_incorrect_answers": [
-        "Password spraying"
-      ],
+      "correct_answers": ["Credential replay"],
+      "user_incorrect_answers": ["Password spraying"],
       "options": [
         {
           "text": "Password brute-forcing",
@@ -7072,9 +6807,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ: 2.4 - Credential replay attacks involve attackers reusing previously captured user credentials to gain unauthorized access. The old passwords being used in the attempts suggest that they might have been captured earlier and are now being replayed. Password brute-forcing is an attack method where numerous combinations are tried until the correct password is identified. The use of valid usernames and previously valid passwords does not fit this method. Session hijacking involves taking over an already established user session. Sophie's observations were about login attempts, not overtaking ongoing sessions. In password spraying, the attacker tries a few common passwords against many accounts. This scenario describes specific, formerly valid passwords being used, not common passwords against multiple accounts. For support or reporting issues, include Question ID: 652991b0e6732441ea7f234f in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q086.png"
     },
@@ -7156,9 +6889,7 @@
           "state": "incorrect"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 4.8: The lessons learned phase in the incident response process involves documenting the incident response process, identifying areas for improvement, and implementing changes to enhance future incident response efforts. It includes analyzing the incident response actions taken, evaluating their effectiveness, and applying knowledge gained from the incident to improve incident response procedures and security measures. Identifying and classifying incidents based on their severity and impact to the organization is part of the Detection phase in the incident response process. This phase involves recognizing that an incident has occurred and understanding its potential implications but does not directly address lessons learned. Analyzing the evidence and determining the root cause of the incident falls under the Analysis phase of the incident response process. This phase aims to understand how the incident occurred and what vulnerabilities were exploited but does not directly relate to lessons learned. Developing an incident response plan, defining roles and responsibilities, and conducting regular training and drills belong to the Preparation phase of the incident response process. This phase ensures that the organization is ready to respond effectively to incidents but does not directly involve the lessons learned from a specific incident. For support or reporting issues, include Question ID: 64c15d6c6ab51895b912b808 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q087.png"
     },
@@ -7240,9 +6971,7 @@
           "state": "correct"
         }
       ],
-      "correct_indices": [
-        3
-      ],
+      "correct_indices": [3],
       "explanation": "OBJ 3.3: Geolocation data is information that can identify the physical location of a device and, by extension, its user. When collected, stored, and analyzed without proper consent or transparency, it can infringe upon an individual's privacy. Users might not be aware of how frequently their location is being tracked, who has access to this data, and for what purposes it might be used, leading to potential misuse and violation of personal privacy. While having geolocation on may affect the device's performance or battery life, it is not a security concern that would be as concerning to Dwayne as tracking a user's movement. Geolocation data is about determining physical location. It doesn't have a direct influence on the graphic or visual quality of an application. Geolocation data can be used to personalize content or services based on location, but it does not inherently improve the computational efficiency of algorithms. For support or reporting issues, include Question ID: 64c18e458a3754c97798b028 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q088.png"
     },
@@ -7284,9 +7013,7 @@
           "state": "skipped"
         }
       ],
-      "correct_answers": [
-        "Implementing DNS filtering"
-      ],
+      "correct_answers": ["Implementing DNS filtering"],
       "user_incorrect_answers": [
         "Implementing biometric authentication for all employees"
       ],
@@ -7324,9 +7051,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        1
-      ],
+      "correct_indices": [1],
       "explanation": "OBJ 4.5: DNS filtering is an effective security measure that blocks access to malicious or inappropriate websites by controlling DNS queries, preventing threats from reaching the network, and improving security. Biometric authentication strengthens user verification by using unique characteristics, like fingerprints or facial recognition, and offers greater security than traditional passwords; however, it does not proactively block malicious websites. Next-generation firewalls (NGFWs) with deep packet inspection add security by identifying and blocking malicious content at the application layer, though they don’t specifically block known harmful websites. While file sharing supports collaboration, it also presents security risks. Properly configured firewall rules can help control access, balancing security needs with the necessity of data sharing. For support or reporting issues, include Question ID: 64ba90f75522696b2bdef3d8 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q089.png"
     },
@@ -7408,9 +7133,7 @@
           "state": "skipped"
         }
       ],
-      "correct_indices": [
-        2
-      ],
+      "correct_indices": [2],
       "explanation": "OBJ 4.5: Implementing Secure Sockets Layer (SSL) is an effective approach to enhance data security during transmission. SSL (and its successor, Transport Layer Security, or TLS) provides end-to-end encryption, ensuring that data is encrypted before leaving the sender and decrypted upon arrival at the receiver. This prevents unauthorized parties from intercepting and reading sensitive data as it travels over the network. Mandating the use of SSL and TLS in all data transmissions is relatively easy for an organization. Quality of Service (QoS) is used to prioritize network traffic and allocate bandwidth based on different criteria, such as application type or data type. While QoS can improve network performance and ensure timely delivery of sensitive data, it does not address the primary concern of encrypting the data during transmission. Network hubs are outdated and have largely been replaced by switches in modern network infrastructures. Using a hub instead of a switch does not contribute to data security during transmission. In fact, hubs are less secure since they broadcast data to all connected devices, allowing potential eavesdropping by unauthorized parties. A Virtual Private Network (VPN) establishes a secure encrypted tunnel between two endpoints, ensuring that data passing through the tunnel remains confidential and protected from eavesdropping or tampering. organizations will have much more difficulty guaranteeing that customers will use VPNs when connecting to the organizations' server. They can, however, control the use of SSL and TLS, so VPNs are not the most effective way to improve security in this circumstance.   For support or reporting issues, include Question ID: 64c1295552ce7fd0f0ee0411 in your ticket. Thank you.",
       "screenshot_path": "quiz_screenshots/Practice_set_2/exam_1/q090.png"
     }
